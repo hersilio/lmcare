@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <appointmentDistributionOrgPref>true</appointmentDistributionOrgPref>
+    <captureResourceUtilizationOrgPref>true</captureResourceUtilizationOrgPref>
+    <enableAccountScoreEnabled>false</enableAccountScoreEnabled>
+    <enableAnyResourceTypeOrgPref>false</enableAnyResourceTypeOrgPref>
+    <enableAppFrmAnywhereOrgPref>true</enableAppFrmAnywhereOrgPref>
+    <enableAppInviteOrgPref>false</enableAppInviteOrgPref>
+    <enableBlockResourceAvailabilityOrgPref>true</enableBlockResourceAvailabilityOrgPref>
+    <enableCapacitySchedulingPref>false</enableCapacitySchedulingPref>
+    <enableCreateMultiAttendeeEventOrgPref>false</enableCreateMultiAttendeeEventOrgPref>
+    <enableDepriveSoqlAccessGuestUserOrgPref>true</enableDepriveSoqlAccessGuestUserOrgPref>
+    <enableDepriveSoqlAccessOrgPref>true</enableDepriveSoqlAccessOrgPref>
+    <enableDiscoveryFrameworkMetadata>false</enableDiscoveryFrameworkMetadata>
+    <enableDontSharePartyprofWPortalOrgPref>false</enableDontSharePartyprofWPortalOrgPref>
+    <enableDropInAppointmentsOrgPref>false</enableDropInAppointmentsOrgPref>
+    <enableEnhancedQuestionCreation>true</enableEnhancedQuestionCreation>
+    <enableEpcDeleteAccess>false</enableEpcDeleteAccess>
+    <enableEventManagementOrgPref>true</enableEventManagementOrgPref>
+    <enableEventWriteOrgPref>false</enableEventWriteOrgPref>
+    <enableIndustriesAssessment>false</enableIndustriesAssessment>
+    <enableIndustriesAssessmentPrefill>false</enableIndustriesAssessmentPrefill>
+    <enableMultiResourceOrgPref>true</enableMultiResourceOrgPref>
+    <enableMultipleTopicsForShiftsOrgPref>false</enableMultipleTopicsForShiftsOrgPref>
+    <enableNewTimelineSetupFlow>false</enableNewTimelineSetupFlow>
+    <enableOverbookingOrgPref>false</enableOverbookingOrgPref>
+    <enablePCMConfigRules>false</enablePCMConfigRules>
+    <enablePartyProfileParentSharingOrgPref>false</enablePartyProfileParentSharingOrgPref>
+    <enablePartyprofParentMultiSharingOrgPref>false</enablePartyprofParentMultiSharingOrgPref>
+    <enablePreBookedFallbackMechOrgPref>false</enablePreBookedFallbackMechOrgPref>
+    <enableSchedulerPaymentsPref>false</enableSchedulerPaymentsPref>
+    <enableShareSaWithArOrgPref>false</enableShareSaWithArOrgPref>
+    <enableTimelinePref>false</enableTimelinePref>
+    <enableTopicTimeSlot>false</enableTopicTimeSlot>
+    <partyProfMultiShrPrtnrsOrgPref>false</partyProfMultiShrPrtnrsOrgPref>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
+</IndustriesSettings>

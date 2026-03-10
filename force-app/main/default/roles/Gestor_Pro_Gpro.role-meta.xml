@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>PRO - Gestor Contas</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>PRO - Gestor Contas</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>PRO_Responsavel_Gestores_projeto_PRO</parentRole>
+</Role>

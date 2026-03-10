@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <label>Estado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Por contactar</fullName>
+                <default>true</default>
+                <label>Por contactar</label>
+            </value>
+            <value>
+                <fullName>Contactado sem sucesso</fullName>
+                <default>false</default>
+                <label>Contactado sem sucesso</label>
+            </value>
+            <value>
+                <fullName>Em contacto</fullName>
+                <default>false</default>
+                <label>Em contacto</label>
+            </value>
+            <value>
+                <fullName>Em negociação</fullName>
+                <default>false</default>
+                <label>Em negociação</label>
+            </value>
+            <value>
+                <fullName>Concluído</fullName>
+                <default>false</default>
+                <label>Concluído</label>
+            </value>
+            <value>
+                <fullName>Converted</fullName>
+                <default>false</default>
+                <label>Converted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

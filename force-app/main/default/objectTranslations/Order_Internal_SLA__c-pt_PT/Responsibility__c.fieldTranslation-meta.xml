@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Responsabilidade --></label>
+    <name>Responsibility__c</name>
+    <picklistValues>
+        <masterLabel>Cliente</masterLabel>
+        <translation><!-- Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipa Central</masterLabel>
+        <translation><!-- Equipa Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fornecedor</masterLabel>
+        <translation><!-- Fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalador</masterLabel>
+        <translation><!-- Instalador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loja</masterLabel>
+        <translation><!-- Loja --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

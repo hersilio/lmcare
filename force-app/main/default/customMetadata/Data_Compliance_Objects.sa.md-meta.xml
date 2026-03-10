@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>sa</label>
+    <protected>false</protected>
+    <values>
+        <field>fields__c</field>
+        <value xsi:type="xsd:string">{&quot;street&quot;:&quot;xxxxxxxx&quot;,&quot;city&quot;:&quot;xxxxxxxx&quot;,&quot;countryCode&quot;:null,&quot;geocodeAccuracy&quot;:null,&quot;latitude&quot;:null,&quot;longitude&quot;:null,&quot;postalCode&quot;:&quot;xxxxxxxx&quot;,&quot;state&quot;:null,&quot;stateCode&quot;:null,&quot;Phone&quot;:&quot;000 000 000&quot;,&quot;Email&quot;:&quot;xxxxxxx@xxxxxx.com&quot;}</value>
+    </values>
+    <values>
+        <field>objectType__c</field>
+        <value xsi:type="xsd:string">sa</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Razão de Cancelamento --></label>
+    <name>SCH_RazaoCancelamento__c</name>
+    <picklistValues>
+        <masterLabel>Desisti de realizar o projeto</masterLabel>
+        <translation><!-- Desisti de realizar o projeto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não tenho disponibilidade para esta data</masterLabel>
+        <translation><!-- Não tenho disponibilidade para esta data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optei por outro fornecedor</masterLabel>
+        <translation><!-- Optei por outro fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outra</masterLabel>
+        <translation><!-- Outra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenho vários agendamentos na LEROY MERLIN</masterLabel>
+        <translation><!-- Tenho vários agendamentos na LEROY MERLIN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

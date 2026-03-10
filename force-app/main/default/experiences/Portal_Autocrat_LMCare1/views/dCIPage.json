@@ -1,0 +1,136 @@
+{
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "10daa937-284b-4471-85b7-ed55c7f07085",
+  "label" : "DCI Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "9f0a85e7-4846-41c2-968c-c65cb7537dc0",
+          "columns" : [ {
+            "UUID" : "7a032223-4a64-46fe-ae14-dfc3a0761731",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "9f0a85e7-4846-41c2-968c-c65cb7537dc0",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "d06628d2-7d80-43de-8d0e-1a53b8ce6835",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "c6a59bf4-ee60-421c-9eed-06476c81d5c5",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Novo Pedido DCI"
+              }, {
+                "UUID" : "145d8e99-8a83-4df8-9ff1-abe897621992",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Pedidos DCI"
+              } ],
+              "useOverflowMenu" : true
+            }
+          },
+          "componentName" : "forceCommunity:tabLayout",
+          "id" : "d06628d2-7d80-43de-8d0e-1a53b8ce6835",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "flowArguments" : "",
+                "flowName" : "LM_DCI_Portal"
+              },
+              "componentName" : "forceCommunity:flowCommunity",
+              "id" : "0754c2f5-b9a5-4438-90c1-5cf2c07f6941",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "c6a59bf4-ee60-421c-9eed-06476c81d5c5",
+            "regionLabel" : "Novo Pedido DCI",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : false,
+                "filterName" : "DCI_Todos_os_Pedidos",
+                "layout" : "FULL",
+                "pageSize" : 10,
+                "scope" : "Order",
+                "showActionBar" : false,
+                "showChartsPanel" : false,
+                "showDisplay" : "grid",
+                "showFilterPanel" : false,
+                "showImageIcon" : false,
+                "showManualRefreshButton" : true,
+                "showObjectName" : true,
+                "showPinnedList" : false,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "aca55f4d-7927-4001-9a47-faf91e87039e",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "145d8e99-8a83-4df8-9ff1-abe897621992",
+            "regionLabel" : "Pedidos DCI",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7a032223-4a64-46fe-ae14-dfc3a0761731",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f12f1eda-9c05-47a8-9ed5-6a2c763d2575",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "DCI Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ead9a00f-e5fb-4c82-a712-e4f906abf28c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1fdd2e41-e9c2-4f71-b11a-ae69b127e5ea",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-dci"
+}

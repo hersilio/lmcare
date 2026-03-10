@@ -1,0 +1,10 @@
+<template>
+    <lightning-datatable
+        data={searchResults}
+        columns={columns}
+        key-field="clientNumber"
+        onrowselection={handleRowSelection}
+        max-row-selection="1"
+        >
+    </lightning-datatable>
+</template>

@@ -1,0 +1,301 @@
+<apex:page StandardController="Order" extensions="LM_OrderCustomController" renderAs="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" >
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+         @page {
+          size:A4;
+          margin:8mm;
+        }
+    
+        body {
+            font-family:Arial;
+        }
+
+        h1{
+            font-size:22pt;
+            margin-top:5px;
+        }
+        
+        h2{
+            margin-bottom:5px;
+            padding-bottom:0;
+        }
+
+        .infoTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .infoTable tr, .infoTable td {
+            border: 1px solid black;
+            padding:5px;
+        }
+
+        li {
+            padding-bottom: 10px;
+            font-size: 11pt;
+        } 
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <apex:image url="{!$Resource.LM_PdfTemplateHeader}" width="100%"/>
+    </header>
+   <main>
+
+      
+        <h2>
+            Serviço de Recolha de Resíduos de Construção e Demolição
+        </h2>
+        <h1><b>Nº: {!Order.OrderNumber} &nbsp;&nbsp;&nbsp; LOJA: {!Order.Store_Name__c}</b></h1>
+        <p>Estimado(a) cliente,</p>
+        <p>O seu processo de solicitação de recolha de resíduos de construção e demolição foi registado e será processado o mais breve possível.</p>
+        <p><b>Dados fornecidos pelo cliente na abertura do processo:</b></p>
+
+        <table class="infoTable" cellspacing="0">
+            <tr>
+                <td colspan="2"><b>Nome:</b> {!Order.Account.Name}</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Morada:</b> {!Order.Account.ShippingStreet}</td>
+            </tr>
+            <tr>
+                <td width="250"><b>Código Postal:</b> {!Order.Account.ShippingPostalCode}</td>
+                <td><b>Localidade:</b> {!Order.Account.ShippingCity}</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>NIF:</b> {!Order.NIF__c}</td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <b>Contacto:</b> {!Order.Account.Phone}<br />
+                        <b>Email:</b> {!Order.Account.E_Mail_Empresa__c}
+                    </div>
+                </td>
+                <td>
+                    <b>Morada Obra:</b> {!Order.ShippingStreet}<br />
+                    <b>Código Postal Obra:</b> {!Order.ShippingPostalCode}<br />
+                    <b>Localidade Obra:</b> {!Order.ShippingCity}<br />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table class="infoTable" cellspacing="0">
+            <tr>
+                <td width="250"><b>Parceiro Prestador Serviço:</b></td>
+                <td>{!Order.Store__r.RE_Partner__r.Name}</td>
+                <td><b>Contactos:</b></td>
+                <td>
+                    {!Order.Store__r.RE_Partner__r.E_mail_Empresa__c}<br />
+                    {!Order.Store__r.RE_Partner__r.Phone}
+                </td>
+            </tr>
+        </table>
+
+        
+        <br/>
+        <apex:dataTable style="border:1px solid black; padding:5px; text-align:center;" value="{!OrderItems}" var="orderItem" width="100%">
+            <apex:column >
+                <apex:facet name="header">Nome</apex:facet>
+                <apex:outputText value="{!orderItem.PricebookEntry.Name}"/>
+            </apex:column>
+    
+            <apex:column >
+                <apex:facet name="header">Quantidade</apex:facet>
+                <apex:outputText value="{!FLOOR(orderItem.Quantity)}"/>
+            </apex:column>
+            
+            <!--
+            <apex:column >
+                <apex:facet name="header">Preço Unitário</apex:facet>
+                <apex:outputText value="{!orderItem.UnitPrice} €"/>
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Preço Total</apex:facet>
+                <apex:outputText value="{!orderItem.TotalPrice} €"/>
+            </apex:column>
+            
+            -->
+        </apex:dataTable>
+        
+        <!--
+        <table class="infoTable" cellspacing="0" style='margin-top:5px'>
+            <tr>
+                <td width="75%"><b>TOTAL:</b></td>
+                <td style='text-align:center'>
+                   <apex:outputText value="{0, number, ###,##0.00 €}">
+                   <apex:param value="{!Order.TotalAmount}" />
+                   </apex:outputText>
+                </td>
+            </tr>
+        </table>
+        -->
+    
+        <br/>
+        
+        <table class="infoTable">
+            <tr style='height:150px; vertical-align:top; text-align:left'>
+                <td width="250"><b>Nº Big Bags:</b> <br /> <br />
+                <apex:outputText value="{!SUBSTITUTE(JSENCODE(Order.Big_Bag_Numbers__c),'\n','<br/>')}" style="white-space:pre;" escape="false"/>
+                </td>
+                <td colspan="3"><b>Observações:</b><br />
+                    <i>Cliente alertado para a obrigatoriedade de registo no site SILIAMB</i><br/><br/>
+                    {!Order.Notes__c}
+                </td>
+            </tr>
+        </table>
+        <p>
+            Mais informamos da necessidade de previamente o produtor dos resíduos se inscrever na plataforma SILIAMB,
+            de forma a poder emitir a e-GAR. segue o site para o efeito: <a
+                href="https://siliamb.apambiente.pt/pages/public/login.xhtm">https://siliamb.apambiente.pt/pages/public/login.xhtm</a>
+        </p> 
+        
+        <apex:image url="{!$Resource.LM_PdfTemplateHeader}" width="100%"/>
+
+<div>
+    <div style="clear:both;">
+        <table style="border-collapse:collapse;border:none;">
+            <tbody>
+                <tr>
+                    <td style="width: 266.25pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:center;'><strong><span style='font-family:"Leroy Merlin Sans";'>CONDIÇÕES GERAIS DO SERVIÇO DE RECOLHA E GESTÃO DE RESÍDUOS</span></strong></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'></span></p>
+
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>A </span><strong><span style='font-family:"Leroy Merlin Sans";'>LEROY MERLIN</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;(BCM - Bricolage, S.A.), com sede na Rua Quinta do Paizinho, n.º 10-12 2790-045 Carnaxide, NIPC 506 848 558, facilita aos seus clientes o acesso ao serviço de recolha e gestão de resíduos, de acordo com as seguintes condições gerais:</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>1.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>O serviço de recolha e gestão de resíduos será prestado por empresas parceiras, na data que o cliente solicita, nunca num prazo inferior a 24 horas. As empresas parceiras prestadoras do serviço, comprometem-se a cumprir o prazo ou no máximo não exceder 72 horas, informando sempre o cliente.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>2.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Aquando da solicitação do serviço de recolha e gestão de resíduos na loja Leroy Merlin, o cliente fornecerá os seus dados de identificação, como o NIF, morada fiscal, contactos telefónicos, e-mail, assim como os dados da obra onde pretenda a colocação dos equipamentos adquiridos e obrigando-se a tratar de todas as condições camarárias que implicam a aquisição destes serviços e as condições gerais do serviço aceites com o aluguer dos equipamentos.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>3.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Toda a gestão do processo operacional será tratada diretamente pela empresa parceira prestadora do serviço, sem carecer de intervenção da LEROY MERLIN.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>4.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Existem 2 tipos de equipamentos para recolha de resíduos que podem ser comprados e alugados:&nbsp;</span></p>
+                        <p style='margin:0cm;margin-left:15px;font-size:15px;font-family:"Times New Roman",serif;'><strong>a. </strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Big-Bag’s: compra disponível na loja, levantado no ato da compra e informando a empresa parceira imediatamente após o seu preenchimento para se proceder à sua recolha. O Cliente poderá adquirir o Big Bag disponível para venda nas lojas Leroy Merlin e deslocar-se diretamente às instalações das empresas parceiras para entrega dos resíduos.</span></p>
+                        <p style='margin:0cm;margin-left:15px;font-size:15px;font-family:"Times New Roman",serif;'><strong>b. </strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Contentores: pedido de serviço/informação solicitado em loja, cuja entrega deve ser solicitada pelo cliente à empresa parceira, nos prazos estabelecidos em cima, o seu levantamento pode ser feito pela empresa parceira nos prazos máximos de permanência do equipamento em obra, estabelecido em baixo, ou quando comunicado à empresa parceira pelo cliente.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'></span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>5.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>O serviço deverá ser pedido à empresa parceira com uma antecedência mínima de 48 horas, através dos contactos disponibilizados pela Leroy Merlin, permitindo uma maior rapidez e eficiência no seu agendamento e realização. Salvo acordo expresso entre o cliente e a empresa parceira prestadora do serviço, os</span></p>
+                    </td>
+                    <td style="width: 266.25pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>contentores ficarão em obra durante um período máximo de 7 dias consecutivos. Os serviços apenas serão prestados em dias úteis. Não existem tempos máximos de permanência dos Big-Bags com o cliente, excepto os estabelecidos câmarariamente quando estes estão na via pública.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>6.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>O preço do serviço de gestão de resíduos incluirá o IVA à taxa legal em vigor e será comunicado ao cliente pela empresa parceira após realizar o orçamento para cada caso específico. Por sua vez, o cliente poderá consultar nas lojas Leroy Merlin a Tabela de Preços vigente em cada momento e disponibilizadas pela empresa parceira onde toma conhecimento dos valores por quilo/tonelada de cada um dos resíduos, bem como o preço aproximado do transporte e o aluguer dos equipamentos.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>7.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Os preços poderão ser atualizados anualmente pelo parceiro, mediante divulgação expressa aos clientes, tendo cada atualização em conta o último índice de variação de preços no consumidor, publicado pelo Instituto Nacional de Estatística para a classe em apreço, à data da comunicação.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>8.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>As empresas parceiras prestadoras do serviço encontram-se devidamente licenciados para a gestão de resíduos não perigosos e o seu transporte. Dos resíduos mais comuns em obra destacam-se os seguintes: betão, tijolos, cerâmicos, madeira, plásticos, solos e rochas, gessos e pladur, materiais de isolamento não perigosos, materiais ferrosos, entre outros. Não poderão ser colocados dentro dos contentores resíduos perigosos para o ambiente e/a saúde humana, como por exemplo: telhas de fibrocimento com amianto (vulgo lusalite) e outros materiais que contenham amianto na sua composição, tela de alcatrão, misturas betuminosas (vulgo alcatrão das estradas), latas de tinta com e sem tintas, diluentes e outros resíduos em que nas suas embalagens tenham sinalização de perigosos. Segundo o DL 178/2006, de 05 de setembro na sua redação atual, a responsabilidade da gestão de resíduos é do produtor e de quem o mesmo contrata para a sua gestão, e proíbe o abandono e a sua queima a céu aberto, bem como a descarga em locais não licenciados para a sua gestão. Para o devido encaminhamento de RCD, o DL 102-D/2020, de 10 de dezembro, juntamente com a Portaria 28/2019 de 18 de Janeiro (que altera a Portaria 145/2017, de 26 de Abril), estabelecem que estes resíduos devem ser acompanhados com uma Guia de Acompanhamento de Resíduos Electrónica (e-GAR) emitidas na Plataforma SILIAMB da Agência Portuguesa do Ambiente (APA) https://siliamb.apambiente.pt. Previamente o produtor terá que se inscrever na mesma, atempadamente, para poder emitir a e-GAR. Agradecemos que nos contacte para que possamos</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:center;'><strong><span style='font-family:"Leroy Merlin Sans";'>&nbsp;</span></strong></p>
+        <table style="border-collapse:collapse;border:none;">
+            <tbody>
+                <tr>
+                    <td style="width: 266.25pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>ajudar a agilizar processos. Para que seja efetuado o transporte em segurança, o Código da Estrada diz que os contentores, ou demais equipamentos de acondicionamento, não poderão ser cheios acima do seu nível máximo, sob pena de contra-ordenação no seu transporte. &nbsp;As empresas parceiras prestadoras do serviço cumprem com toda esta legislação em vigor, desde a colocação do contentor, ao seu transporte e correto encaminhamento final dos seus resíduos.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>9.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>A manutenção das condições de funcionamento dos equipamentos e a sua operacionalidade é da responsabilidade do cliente enquanto o mesmo lhe estiver alugado. Caso exista algum dano causado ao mesmo, as responsabilidades e custos de manutenção ser-lhe-ão imputados de acordo com o prejuízo causado.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>10.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>É da responsabilidade do cliente todos os danos provocados na via pública (passeios, canalizações subterrâneas, asfalto etc.) com a colocação dos contentores, quando a mesma for efetuada em local indicado expressamente pelo cliente, apesar de não adequado, e com o devido alerta da empresa parceira.&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>11.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Caso o cliente tenha pago o aluguer de um contentor e pretenda anular o serviço, poderá fazê-lo até 24h antes da data de colocação do mesmo no cliente. Caso se trate de um Big-Bag, a devolução só é possível caso o Big-Bag se encontre em perfeitas condições, e não tenha sido utilizado. Caso contrário, a devolução não será possível.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>12.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>É da responsabilidade do cliente a obtenção de quaisquer licenças ou autorizações necessárias ou exigíveis para a realização do serviço de recolha e gestão de resíduos nomeadamente o pedido de ocupação ou corte de via pública, normalmente requerido nas juntas de freguesia correspondentes à localização da obra, não podendo por qualquer forma ser imputadas à Leroy Merlin ou empresa parceira prestadora do serviço quaisquer consequências decorrentes quer da realização do serviço de recolha e gestão de resíduos sem as autorizações ou licenças exigíveis quer da impossibilidade de realizar o serviço por falta de licenças e/ou autorizações. É da responsabilidade do cliente a correcta colocação dos Big-Bags, sendo que devem estar junto da estrada para acesso directo dos veículos das empresas parceiras prestadoras do serviço. Os Big-Bags não são removidos por cima de obstáculos, como veículos, contentores de lixo e outros equipamentos urbanos e/ou particulares.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>13.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>&nbsp;As empresas parceiras prestadoras do serviço, &nbsp; &nbsp; reservam-se o direito de não efetuar o serviço caso haja perigo e/ou iminência de incumprimento de regras de trânsito e circulação rodoviária, mesmo que a situação não tenha sido colocada previamente ao serviço. No caso de as empresas parceiras e transportadoras efectuarem uma deslocação em vão, em que não seja possível realizar o serviço por motivos alheios à s/vontade, será cobrado um valor de transporte, consoante a volumetria e a localização da obra.</span></p>
+                    </td>
+                    <td style="width: 266.25pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>14.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>&nbsp;Não poderão ser colocados objectos de grande porte (colchões, sofás, móveis inteiros, etc.) dentro dos contentores. Caso o cliente pretenda uma solução para os mesmos, terão de consultar a LEROY MERLIN para apresentação de proposta.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>15.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>&nbsp;A empresa parceira prestadora do serviço está coberta com os seguros nos termos da legislação aplicável, sendo que a Leroy Merlin não se responsabiliza por danos causados durante a prestação dos serviços.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>16.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>No âmbito de sua atividade comercial, a LEROY MERLIN, tem a necessidade de recolher dados pessoais, os quais serão tratados exclusivamente para efeitos da comercialização de bens e serviços, bem como da gestão da relação comercial subjacente. A veracidade e disponibilização dos dados pessoais é da exclusiva responsabilidade do titular dos mesmos. Caso assim o autorize, a LEROY MERLIN poderá ainda tratar os seus dados para lhe enviar, de acordo com as suas preferências, informações sobre as melhores ofertas de produtos e serviços por si comercializados, bem como para aferir o seu grau de satisfação relativamente aos mesmos.</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Os dados pessoais serão conservados enquanto mantiver uma relação comercial com a LEROY MERLIN ou por um período máximo de 5 anos, após o qual serão eliminados. Os dados poderão ainda ser partilhados, para as mesmas finalidades, com outras empresas do grupo empresarial a que a LEROY MERLIN pertence, denominado ADEO, cuja lista de empresas pode consultar em www.adeo.com. A LEROY MERLIN poderá recorrer a subcontratantes (ex. fornecedores, prestadores de serviços, etc…) para efeitos da execução da totalidade ou parte das finalidades identificadas, nomeadamente, com as empresas parceiras prestadoras do serviço</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Na qualidade de titular dos dados, tem direito de acesso aos seus dados, a solicitar a sua retificação, apagamento, limitação do tratamento ou portabilidade, a opor-se ao seu tratamento e a revogar, a todo o tempo, qualquer consentimento concedido. Poderá exercer esses direitos ou colocar-nos qualquer questão relacionada com o tratamento de seus dados pessoais, através do email protecaodedados@leroymerlin.pt ou do formulário eletrónico para efeitos de contacto disponível em https://www.leroymerlin.pt. </span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Para mais informação sobre como a LEROY MERLIN trata os seus dados pessoais, consulte a nossa Política de Privacidade em </span><a href="http://www.leroymerlin.pt/pt/politica-de-privacidade-e-cookies"><span style='font-family:"Leroy Merlin Sans Light Regular";color:#1155CC;'>www.leroymerlin.pt/pt/politica-de-privacidade-e-cookies</span></a><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp; ou contacte o seu Encarregado da Proteção de Dados (epd@leroymerlin.pt).</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="page-break-after: always"/>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>&nbsp;</span></strong></p>
+        <table style="border-collapse:collapse;border:none;">
+            <tbody>
+                <tr>
+                    <td style="width: 266.25pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                        
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><strong><span style='font-family:"Leroy Merlin Sans";'>17.&nbsp;</span></strong><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>As condições gerais do serviço constantes dos pontos antecedentes foram previamente estabelecidas pela Leroy Merlin, sendo consideradas condições gerais do serviço, declarando o cliente, livre e expressamente, ter conhecimento pleno das mesmas e aceitar o seu conteúdo. O cliente declara, através da assinatura do presente documento, conhecer e aceitar as condições supra .</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+
+                        <div style='margin:5px; float:left; border:1px black solid; height:40px; width:40px; display: block;'></div>  <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";text-align:justify;'>Se entender que deve opor-se a que os seus dados sejam utilizados para futuras ações, assinale com uma cruz.</span></p>
+                        
+                        
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>Assinatura: _____________________________________</span></p>                        
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>Local: ________________________&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>Data: _______________________&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                    </td>
+                    <td style="width: 266.25pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
+            <apex:pageBlock rendered="{!Order.Validacao_Manual__c}">
+                <p style="font-size:10pt;">
+                        Documento assinado manualmente por {!Order.Account_Name__c}, NIF {!Order.NIF__c} em &nbsp;
+                        <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                        <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                        </apex:outputText>
+                </p>
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{!!Order.Validacao_Manual__c}">
+                <p style="font-size:10pt;">
+                    Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
+                    <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                    <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                    </apex:outputText>
+                </p>
+            </apex:pageBlock>
+        </apex:pageBlock>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><span style='font-family:"Leroy Merlin Sans Light Regular";'>&nbsp;</span></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;text-align:justify;'><u><span style='font-family:"Leroy Merlin Sans Light Regular";'><span style="text-decoration:none;">&nbsp;</span></span></u></p>
+        <p style='margin:0cm;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
+             
+    </div>
+        
+</div>
+            
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                
+
+    </main>
+
+</body>
+
+</html>
+</apex:page>

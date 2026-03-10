@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Recolha Entulho</label>
+    <protected>false</protected>
+    <values>
+        <field>Attachment_Name__c</field>
+        <value xsi:type="xsd:string">Termos e Condições de Serviço</value>
+    </values>
+    <values>
+        <field>Custo_Fixo_BT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Attachment_Template__c</field>
+        <value xsi:type="xsd:string">LM_Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>Email_BCC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_CC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Static_File_Attachment__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">LM_Email_Recolha_Entulho_Antes</value>
+    </values>
+    <values>
+        <field>Email_Template_After_Token__c</field>
+        <value xsi:type="xsd:string">LM_Email_Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>Email_To__c</field>
+        <value xsi:type="xsd:string">felipe.gil@techremotehub.com</value>
+    </values>
+    <values>
+        <field>Email_de_Envio__c</field>
+        <value xsi:type="xsd:string">lmcare@leroymerlin.pt</value>
+    </values>
+    <values>
+        <field>GDrive_Process_Folder_Name__c</field>
+        <value xsi:type="xsd:string">Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>Order_Record_Type__c</field>
+        <value xsi:type="xsd:string">LM_Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>Process_Guidelines__c</field>
+        <value xsi:type="xsd:string">&lt;b&gt;Solicitação de Recolha de Resíduos de construção e demolição&lt;/b&gt;
+
+Cliente solicita o serviço no Espaço de Serviços da loja onde poderá aconselhar-se sobre a modalidade de recolha de entulho que mais se adequa às suas necessidades.
+Cód. BigBag       49000084
+Cód. Contentor   49013027
+
+Entrega dos Contentores:
+Para os contentores, o Cliente deverá indicar a data para a sua entrega. 
+O agendamento deverá ser feito com uma antecedência mínima de 24h. No caso do Big-bag de 1m³, o mesmo está disponível em loja e o Cliente deverá levá-lo consigo aquando a solicitação do serviço.
+
+Recolha dos Contentores:
+Para solicitar a recolha do material dentro do prazo de aluguer basta contactar a empresa parceira prestadora do serviço
+
+
+O que o Cliente deverá garantir:
+Para colocar estes equipamentos na via pública, o Cliente deve pedir uma “Licença de Ocupação de Via Pública” junto da sua Junta de Freguesia ou Câmara Municipal;
+A inscrição na plataforma da APA para emissão do código da e-GAR. Quando a SGR for recolher os Big Bags ou Contentores, precisa de saber o código para emitir a Guia de Ambiente de Resíduos (e-GAR), de forma a acompanhar a recolha dos resíduos.
+
+Como colocar corretamente o Big-Bag na rua?
+Deve colocá-lo em cima do passeio ou no estacionamento, próximo da via de circulação de automóveis.
+Deve garantir que não fique obstruído por nenhuma viatura ou outro obstáculo, de modo a ser possível a sua retirada por meio de um carro devidamente adaptado.</value>
+    </values>
+    <values>
+        <field>Process_Prefix__c</field>
+        <value xsi:type="xsd:string">LM_RE</value>
+    </values>
+    <values>
+        <field>Promessa_a_Cliente__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">LeroyMerlin</value>
+    </values>
+    <values>
+        <field>SMS_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">SMS_Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>SendSMS__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_After_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_Before_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Static_Attachment_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Supervisao_de_Caixa__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Token_Template_Name__c</field>
+        <value xsi:type="xsd:string">SMS_Recolha_Entulho</value>
+    </values>
+    <values>
+        <field>Valor_Deslocacao__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

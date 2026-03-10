@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retificação de medidas de tampo de pedra --></label>
+    <name>Retificacao_de_medidas_de_tampo_de_pedra__c</name>
+</CustomFieldTranslation>

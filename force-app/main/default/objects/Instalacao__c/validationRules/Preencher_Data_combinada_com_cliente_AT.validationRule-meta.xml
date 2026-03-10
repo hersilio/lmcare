@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Data_combinada_com_cliente_AT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(ISPICKVAL( Abrir_Assistencia_Tecnica_de_Incidencia__c , &apos;SIM&apos;),
+ISBLANK( Data_combinada_c_clienteAT__c )
+)</errorConditionFormula>
+    <errorDisplayField>Data_combinada_c_clienteAT__c</errorDisplayField>
+    <errorMessage>Preencher o campo Data combinada c/ cliente na Assistência técnica de Incidência</errorMessage>
+</ValidationRule>

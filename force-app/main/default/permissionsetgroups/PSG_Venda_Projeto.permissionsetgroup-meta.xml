@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Venda_Projeto</label>
+    <permissionSets>LeroyProfissional_NovoContacto</permissionSets>
+    <permissionSets>PS_ConversaoDeLead</permissionSets>
+    <permissionSets>PS_CriarOpportunity</permissionSets>
+    <permissionSets>PS_SuportePosCompra_Escrita</permissionSets>
+    <permissionSets>PS_VendaProjeto_Escrita</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

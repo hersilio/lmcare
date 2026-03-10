@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ID de requisito da habilidade</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ID de requisitos da habilidade</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <name>skillrequirement_id</name>
+</CustomFieldTranslation>

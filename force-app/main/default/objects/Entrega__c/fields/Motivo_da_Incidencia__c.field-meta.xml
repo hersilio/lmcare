@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_da_Incidencia__c</fullName>
+    <label>Motivo da Incidência</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Artigos a mais</fullName>
+                <default>false</default>
+                <label>Artigos a mais</label>
+            </value>
+            <value>
+                <fullName>Erro de Projeto</fullName>
+                <default>false</default>
+                <label>Erro de Projeto</label>
+            </value>
+            <value>
+                <fullName>Artigos danificados</fullName>
+                <default>false</default>
+                <label>Artigos danificados</label>
+            </value>
+            <value>
+                <fullName>Instalador</fullName>
+                <default>false</default>
+                <label>Instalador</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

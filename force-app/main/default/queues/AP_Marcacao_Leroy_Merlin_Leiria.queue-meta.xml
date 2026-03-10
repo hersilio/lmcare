@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>AP Marcação - Leroy Merlin Leiria</name>
+    <queueMembers>
+        <users>
+            <user>diogo.c.mendes@leroymerlin.pt</user>
+            <user>jose.q.garces@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>LM_Leads</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

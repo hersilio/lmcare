@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>lead</label>
+    <protected>false</protected>
+    <values>
+        <field>fields__c</field>
+        <value xsi:type="xsd:string">{&quot;Salutation&quot;:null,&quot;FirstName&quot;:&quot;xxxxxxxx&quot;,&quot;LastName&quot;:&quot;xxxxxxxx&quot;,&quot;MiddleName&quot;:&quot;xxxxxxxx&quot;,&quot;Suffix&quot;:&quot;xxxxxxxx&quot;,&quot;NIF__c&quot;:&quot;000000000&quot;,&quot;Email&quot;:&quot;xxxxxxx@xxxxxx.com&quot;,&quot;SCH_Indicativo_do_Pais__c&quot;:&quot;xxx&quot;,&quot;Phone&quot;:&quot;000 000 000&quot;,&quot;Contacto_Preferencial__c&quot;:null,&quot;MobilePhone&quot;:&quot;000 000000&quot;,&quot;Autoriza_ser_contactado_pela_LM__c&quot;:false,&quot;Tem_Dados_Portugueses__c&quot;:false,&quot;country&quot;:null,&quot;street&quot;:&quot;xxxxxxxx&quot;,&quot;postalCode&quot;:&quot;xxxxxxx&quot;,&quot;city&quot;:&quot;xxxxxxx&quot;,&quot;state&quot;:null}</value>
+    </values>
+    <values>
+        <field>objectType__c</field>
+        <value xsi:type="xsd:string">lead</value>
+    </values>
+</CustomMetadata>

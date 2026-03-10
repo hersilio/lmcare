@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>07 - AMADORA</name>
+    <queueMembers>
+        <roles>
+            <role>LM_Amadora_0_Diretor_de_Loja</role>
+            <role>LM_Amadora_0_Manager</role>
+            <role>LM_Amadora_0_Operacional</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

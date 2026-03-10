@@ -1,0 +1,181 @@
+<apex:page StandardController="Order" extensions="LM_OrderCustomController" renderas="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" >
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+         @page {
+          size:A4;
+          margin:8mm;
+        }
+    
+        body {
+            font-family:Arial,sans-serif;
+        }
+        *{
+            margin:0cm;
+        }
+        footer {
+            text-align: center;
+            padding: 3px;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+  <header>
+      <apex:image url="{!$Resource.LM_PdfTemplateHeader}" width="100%"/>
+  </header>
+  <main>
+    <div>
+      <div style="clear:both;">
+          <p><strong><span style="font-size:24px;font-family:Roboto;">Declaração Conformidade Instalação</span></strong></p>
+          <p><strong><span style="font-size:24px;font-family:Roboto;color:windowtext;text-decoration:none;"></span><span style="font-size:24px;font-family:Roboto;color:windowtext;text-decoration:none;">{!Order.Sale_Type__c}</span></strong><strong><span style="font-size:24px;font-family:Roboto;">&nbsp;{!Order.Sale_Number__c} <span style="">LEROY MERLIN {!Order.Store_Name__c}</span></span></strong></p>
+          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;">&nbsp;</span></strong></p>
+
+          
+          <p style='text-align:center;margin:5px 0px;'><strong><span style="font-size:13px;font-family:Roboto;color:black;">DADOS CLIENTE</span></strong></p>
+          <table style="width: 100%; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td style="width: 265.65pt; border: 1pt solid black;padding: 5pt;height: 38pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">NOME: {!Order.Account_Name__c}</span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">E-MAIL: {!Order.Account.E_Mail_Empresa__c} </span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">NIF: {!Order.Account.NIF__c} </span></strong></p>
+                      </td>
+                      <td style="width: 265.65pt; border: 1pt solid black;padding: 5pt;height: 38pt;vertical-align: top; vertical-align:middle;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">TELEFONE: {!Order.Account.Phone}</span></strong></p>
+                      </td>
+                  </tr>
+                      
+              </tbody>
+          </table>
+          <br/>
+          <apex:outputPanel rendered="{!NOT(Order.B2B_Revendedor__c)}">
+          <p style='text-align:center;margin:5px 0px;'><strong><span style="font-size:13px;font-family:Roboto;color:black;">DADOS EMPRESA INSTALADORA</span></strong></p>
+          <table style="width: 5.3e+2pt; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td colspan="2" style="width: 531.3pt;border: 1pt solid black;padding: 5pt;height: 30pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">NOME: {!Order.Installed_By__c} - {!Order.Installer__r.Name}</span></strong></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 265.65pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;height: 35.25pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">TELEFONE: {!Order.Installer__r.Phone}</span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">E-MAIL: {!Order.Installer__r.E_Mail_Empresa__c}</span></strong></p>
+                          </td>
+                      <td style="width: 265.65pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 5pt;height: 35.25pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">NIF: {!Order.Installer__r.NIF__c}</span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;color:black;">N&ordm; CERTIFICA&Ccedil;&Atilde;O: {!Order.Installer__r.Certification_No__c}</span></strong></p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          <br/>
+        </apex:outputPanel>
+          <p style='text-align:center;margin:5px 0px;'><strong><span style="font-size:13px;font-family:Roboto;color:black;">DADOS EQUIPAMENTO {!IF(Order.B2B_Revendedor__c = True,"FORNECIDO" ,"INSTALADO")}</span></strong></p>
+          <table style="width: 5.3e+2pt; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td rowspan="2" style="width: 94.75pt;border: 1pt solid black;padding: 5pt 5.4pt;height: 18.55pt;vertical-align: top;">
+                          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;background:  white;">MARCA: &nbsp; &nbsp; &nbsp;</span></strong></p>
+                      </td>
+                      <td rowspan="2" style="width: 94.75pt;border: 1pt solid black;padding: 5pt 5.4pt;height: 18.55pt;vertical-align: top;">
+                          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;background:  white;">MODELO:</span></strong></p>
+                      </td>
+                      <td style="width: 232.5pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 5pt;height: 18.55pt;vertical-align: top;">
+                          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;background:  white;">N&Uacute;MERO DE S&Eacute;RIE</span></strong></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 232.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 5pt;height: 25.7pt;vertical-align: top;">
+                          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;background:  white;">UNIDADES EXTERNAS&nbsp;</span></strong><strong><em><span style="font-size:9px;font-family:Roboto;color:black;">(A preencher ** sa&iacute;da da mercadoria )</span></em></strong></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 94.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 10.05pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:11px;font-family:  Roboto;color:black;">{!Order.Equipment_Brand__c}</span></strong></p>
+                      </td>
+                      <td style="width: 204pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0pt 5pt;height: 10.05pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:11px;font-family:  Roboto;color:black;">{!Order.Equipment_Model__c}</span></strong></p>
+                      </td>
+                      <td style="width: 232.5pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 5pt;height: 10.05pt;vertical-align: top;">
+                        <p style='font-size:15px;'><strong><span style="font-size:11px;font-family:  Roboto;color:black;">{!Order.Equipment_Serial_No__c}</span></strong></p>      
+                    </td>
+                  </tr>
+                  
+              </tbody>
+            </table>
+
+          <p style='font-size:15px;text-align:center;'><strong><span style="font-size:13px;font-family:Roboto;color:black;"> &nbsp; </span></strong></p>
+          
+          <table style="width: 5.3e+2pt;margin-top:10px; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td style="width: 531.3pt;border: 1pt solid black;padding: 5pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;">Dou o meu consentimento expresso para que a LEROY MERLIN realize o tratamento dos meus dados pessoais para efeitos de comunicação à Autoridade Portuguesa do Ambiente (APA,I.P) e à Autoridade de segurança Alimentar e Económica (ASAE), sendo os mesmos conservados por um período de 5 anos.</span></strong></p>                    
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          <table style="width: 5.3e+2pt;margin-top:10px; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td style="width: 531.3pt;border: 1pt solid black;padding: 5pt;vertical-align: top;">
+                      <apex:pageBlock rendered="{!NOT(Order.B2B_Revendedor__c)}">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;background:  white;">A instalação deste equipamento só pode ser efetuada por um técnico certificado , pertencente a uma empresa certificada em gases fluorados, de acordo o disposto no n.º 1 do artigo 7.º do Decreto-lei n.º 145/2017, de 30 de novembro. </span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;background:  white;">Mais informo que tomei conhecimento que , o incumprimento desta obrigação é considerada uma contraordenação ambiental grave, enquadrada pela alínea g) do n.º 2 do artigo 23.º do Decreto-lei n.º 145/2017, de 30 de novembro.</span></strong></p>
+                      </apex:pageBlock>
+                      <apex:pageBlock rendered="{!Order.B2B_Revendedor__c}">
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;background:  white;">O Cliente Profissional declara expressamente que o equipamento se destina a ser revendido a um utilizador final nos termos e para os efeitos do disposto no Decreto-lei n.o 145/2017, de 30 de Novembro. </span></strong></p>
+                          <p style='font-size:15px;'><strong><span style="font-size:12px;font-family:  Roboto;background:  white;">Mais informo que tomei conhecimento que , o incumprimento desta obrigação é considerada uma contraordenação ambiental grave, enquadrada pela alínea g) do n.º 2 do artigo 23.º do Decreto-lei n.º 145/2017, de 30 de novembro.</span></strong></p>
+                      </apex:pageBlock>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <table style="width: 5.3e+2pt;margin-left:.75pt;margin-top:10px; border-collapse:collapse;">
+              <tbody>
+                  <tr>
+                      <td style="width: 264pt;border: 1pt solid black;padding: 5pt;vertical-align: top;">
+                          <p style='font-size:15px;border:none;'><strong><span style="font-size:13px;font-family:  Roboto;background:  white;">Assinatura do vendedor&nbsp;</span></strong><strong><span style="font-size:12px;font-family:  Roboto;background:  white;">{!Order.Operator__c}</span></strong></p>
+                      </td>
+                      <td style="width: 264.75pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 5pt;vertical-align: top;">
+                          <p style='font-size:15px;border:none;'><strong><span style="font-size:13px;font-family:  Roboto;background:  white;">Assinatura do cliente&nbsp;</span></strong></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="width: 264pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;vertical-align: top;">
+                          <p style='font-size:15px;border:none;'><strong><span style="font-size:13px;font-family:  Roboto;background:  white;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _____/____/___________</span></strong></p>
+                      </td>
+                      <td style="width: 264.75pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 5pt;vertical-align: top;">
+                          <p style='font-size:15px;'><strong><span style="font-size:13px;font-family:  Roboto;background:  white;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _____/____/___________</span></strong></p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+  </div>
+  <br/><br/>
+  <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
+        <p style="font-size:11px;">Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
+        <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+            <apex:param value="{!Order.Data_Validacao_Token__c}" /> 
+        </apex:outputText> 
+        </p>
+    </apex:pageBlock>
+
+</main>
+<footer>
+    
+<p style="color:#808080;font-size:8px;margin-top:20px;">BCM - BRICOLAGE S.A. - NIPC:506 848 558 - Capital Social: € 5.232.052 - M.C.R.C. de Cascais<br></br>
+    Rua Quinta do Paizinho n.º 10-12, 2790-237 Carnaxide - Portugal<br></br>
+    T+351 214 166 700 | F+351 214 164 003 </p>
+
+</footer>
+
+</body>
+
+</apex:page>

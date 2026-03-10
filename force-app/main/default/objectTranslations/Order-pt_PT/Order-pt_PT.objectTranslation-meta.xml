@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pedido de Serviço</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pedidos de Serviço</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Aluguer de Ferramentas</layout>
+        <sections>
+            <label><!-- Dados Pagamento (Aluguer) --></label>
+            <section>Dados Pagamento (Aluguer)</section>
+        </sections>
+        <sections>
+            <label><!-- Dados Pagamento (Devolução) --></label>
+            <section>Dados Pagamento (Devolução)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assistência Técnica</layout>
+        <sections>
+            <label><!-- Acompanhamento --></label>
+            <section>Acompanhamento</section>
+        </sections>
+        <sections>
+            <label><!-- Dados da Assistência --></label>
+            <section>Dados da Assistência</section>
+        </sections>
+        <sections>
+            <label><!-- Dados da Fatura --></label>
+            <section>Dados da Fatura</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do Artigo --></label>
+            <section>Dados do Artigo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Barras Tejadilho</layout>
+        <sections>
+            <label><!-- Dados Pagamento (Aluguer) --></label>
+            <section>Dados Pagamento (Aluguer)</section>
+        </sections>
+        <sections>
+            <label><!-- Dados Pagamento (Devolução) --></label>
+            <section>Dados Pagamento (Devolução)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Certificado Devolução</layout>
+        <sections>
+            <label><!-- Dados do Transportador --></label>
+            <section>Dados do Transportador</section>
+        </sections>
+        <sections>
+            <label><!-- Endereço de Recolha/Entrega --></label>
+            <section>Endereço de Recolha/Entrega</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do Pedido --></label>
+            <section>Informações do Pedido</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DCI</layout>
+        <sections>
+            <label><!-- Informações de Venda --></label>
+            <section>Informações de Venda</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do equipamento --></label>
+            <section>Informações do equipamento</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- Dados Pagamento --></label>
+            <section>Dados Pagamento</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Atualizar --></label>
+        <name>Atualizar_AT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Atualizar/Concluir --></label>
+        <name>Atualizar_CD</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Atualizar/Concluir --></label>
+        <name>Atualizar_Concluir</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancelar --></label>
+        <name>Cancelar</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Confirmar --></label>
+        <name>Confirmar</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Devolver --></label>
+        <name>Devolver</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Extender --></label>
+        <name>Extender</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_AF</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_AT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_BT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_CD</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_DCI</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Gerar Anexo --></label>
+        <name>Gerar_Anexo_RE</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Não Devolvido --></label>
+        <name>Nao_Devolvido</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Novo --></label>
+        <name>Novo</name>
+    </quickActions>
+</CustomObjectTranslation>

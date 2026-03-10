@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SLA Interno</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SLAs Internos</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SLA Interno Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Descrição --></label>
+            <section>Descrição</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- A Data Fim deve ser posterior a Data de Início. --></errorMessage>
+        <name>DataFimMaiorQueDataInicio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Data Início / Data Fim do SLA não pode ser posterior à Data de conclusão da AT --></errorMessage>
+        <name>DataFimPosteriorDataFimAT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Data Início do SLA não pode ser anterior a Data Início da AT --></errorMessage>
+        <name>DataInicioAnteriorAT</name>
+    </validationRules>
+</CustomObjectTranslation>

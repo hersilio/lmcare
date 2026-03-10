@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_SCH_Colaborador</label>
+    <permissionSets>InboxWithEinsteinActivityCapture_Custom</permissionSets>
+    <permissionSets>PS_SCH_SADetail</permissionSets>
+    <permissionSets>SCH_PS_SCH_Colaborador</permissionSets>
+    <permissionSets>SCH_PS_SCH_General_Permissions</permissionSets>
+    <permissionSets>Twilio_Permission_Set</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

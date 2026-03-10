@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lojas_com_Certificados_de_Devolu_o_CD</fullName>
+    <columns>NAME</columns>
+    <columns>Store_Code__c</columns>
+    <columns>GDrive_Folder__c</columns>
+    <columns>Email__c</columns>
+    <columns>Service_Email__c</columns>
+    <columns>Phone_Number__c</columns>
+    <columns>RE_Partner__c</columns>
+    <columns>Available_Services__c</columns>
+    <columns>Store_API_Name__c</columns>
+    <columns>Promessa_a_Cliente__c</columns>
+    <columns>Supervisao_de_Caixa__c</columns>
+    <columns>Emails_CD__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Available_Services__c</field>
+        <operation>includes</operation>
+        <value>LM_Certificado_Devolucao</value>
+    </filters>
+    <label>Lojas com Certificados de Devolução (CD)</label>
+</ListView>

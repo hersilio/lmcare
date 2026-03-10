@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Processos__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(Account__r.Processos__c, &quot;Assistência Técnica&quot;), &quot;Assistência Técnica;&quot;, &quot;&quot;) +
+IF(INCLUDES(Account__r.Processos__c, &quot;DCI&quot;), &quot;DCI;&quot;, &quot;&quot;) +
+IF(INCLUDES(Account__r.Processos__c, &quot;Certificado de Devolução&quot;), &quot;Certificado de Devolução;&quot;, &quot;&quot;)</formula>
+    <label>Processos</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>pt_PT</language>
+    <masterLabel>Imagem_20240513_150106</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Imagem_2024-05-13_15-01-06.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

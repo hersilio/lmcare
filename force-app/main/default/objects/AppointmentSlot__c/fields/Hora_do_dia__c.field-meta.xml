@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hora_do_dia__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  (VALUE(MID(TEXT( StartTime__c ), 12, 2)) + 1) &lt; 10,
+  &quot;0&quot; &amp; TEXT(VALUE(MID(TEXT( StartTime__c ), 12, 2)) + 1),
+  TEXT(VALUE(MID(TEXT( StartTime__c ), 12, 2)) + 1)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hora do dia</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

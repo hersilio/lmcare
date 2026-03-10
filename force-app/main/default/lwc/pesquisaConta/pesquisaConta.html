@@ -1,0 +1,196 @@
+<!--
+  @description       : 
+  @author            : Daniel Flores
+  @group             : 
+  @last modified on  : 10-10-2024
+  @last modified by  : João Rosa
+-->
+<template>
+	<div class="slds-m-top_medium slds-m-bottom_x-large">
+		<h2 class="slds-text-heading_medium slds-m-bottom_medium">
+			Pesquisa de Conta
+            <div class="slds-text-align_right"><lightning-icon icon-name="utility:salesforce1" size="x-small" variant="warning" ></lightning-icon> - mdm result / <lightning-icon icon-name="utility:salesforce1" style="--sds-c-icon-color-foreground-default: blue" size="x-small"></lightning-icon> - Salesforce result</div>
+		</h2>
+
+		<!-- Default/basic -->
+		<div class="slds-p-around_medium lgc-bg">
+			<div style="display: flex; align-items: center">
+				<lightning-combobox
+					style="width: 20%; padding: 5px; padding-left:0px;"
+					name="Campo"
+					label="Campo"
+					placeholder="Selecione o campo"
+					options={searchFields}
+					onchange={handleChangeSeachFields}
+					value={searchFieldsValue}
+				></lightning-combobox>
+
+                <template if:false={secondName}>
+                    <lightning-input
+                        style="width: 80%; padding: 5px; padding-right: 0px;"
+                        type={label}
+                        label={searchFieldsValue}
+                        onkeydown={handleNome}
+                        onchange={handleName}
+                        maxlength={maxLength}
+                        minlength={minLength}
+                        required>
+                    </lightning-input>
+                </template>
+
+                <template if:true={secondName}>
+                    <lightning-input
+                        style="width: 40%; padding: 5px;"
+                        type={label}
+                        label={searchFieldsValue}
+                        onkeydown={handleNome}
+                        onchange={handleName}
+                        maxlength={maxLength}
+                        minlength={minLength}
+                        >
+                    </lightning-input>
+
+                    <lightning-input
+                        style="width: 40%; padding: 5px; padding-right: 5px;"
+                        type="text"
+                        label="Apelido / Nome da Empresa"
+                        onkeydown={handleNome}
+                        onchange={handleLastName}
+                        maxlength={maxLength}
+                        minlength={minLength}>
+                    </lightning-input>
+                </template>
+			</div>
+
+			<template if:true={boolSpinner}>
+				<lightning-spinner
+					alternative-text="Loading"
+					size="small"
+					variant="base"
+				></lightning-spinner>
+			</template>
+
+			<template if:true={BoolTableAccounts}>
+                    <table class="slds-table slds-box_border slds-table_bordered slds-m-top_small slds-form-element"
+                        style="z-index: 1 !important; margin-top: 0px; width: 100% !important; padding: 10px;">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col" style="width: 2%;text-align: center;">
+                                </th>
+                                <th class="" scope="col" style="width: 2%;text-align: center;">
+                                </th>
+                                <th class="" scope="col" style="width: 30%;">
+                                    <div class="slds-truncate" title="First Name">Nome</div>
+                                </th>
+                                <th class="" scope="col" style="width: 10%;">
+                                    <div class="slds-truncate" title="Tipo">Nif</div>
+                                </th>
+                                <th class="" scope="col" style="width: 10%;">
+                                    <div class="slds-truncate" title="Telemovel">Contacto Telefónico</div>
+                                </th>
+                                <th class="" scope="col" style="width: 30%;">
+                                    <div class="slds-truncate" title="Email">Email</div>
+                                </th>
+                                <th class="" scope="col" style="width: 10%;">
+                                    <div class="slds-truncate" title="NCartao">Número de Cliente</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={contasMDM} for:item="element" for:index="i">
+                                <tr style="cursor: pointer;" class="slds-hint-parent row" key={element.Id} 
+                                    data-id={element.Id} data-fname={element.firstName} data-lname={element.lastName}
+                                    data-cardno={element.clientNumber} data-email={element.email} data-issf={element.isSF}  data-ismdm={element.isMDM} data-number={element.phone} onclick={handleOnClickList}>
+                                    <td>
+                                        <div class="slds-truncate" >
+                                            <lightning-icon icon-name="utility:forward" size="xx-small"></lightning-icon>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <template if:true={element.isMDM}>
+                                            <lightning-icon icon-name="utility:salesforce1" variant="warning" size="xx-small"></lightning-icon>
+                                        </template>
+                                        <template if:true={element.isSF}>
+                                            <lightning-icon icon-name="utility:salesforce1" style="--sds-c-icon-color-foreground-default: blue" size="xx-small"></lightning-icon>
+                                        </template>
+                                        
+                                    </td>
+                                    <td title={element.name}>
+                                        <div class="slds-truncate" >{element.name}</div>
+                                    </td>
+                                    <td title={element.nif}>
+                                        <div class="slds-truncate">{element.nif}</div>
+                                    </td>
+                                    <td title={element.phone}>
+                                        <div class="slds-truncate">{element.phone}</div>
+                                    </td>
+                                    <td title={element.email}>
+                                        <div class="slds-truncate">{element.email}</div>
+                                    </td>
+                                    <td title={element.clientNumber}>
+                                        <div class="slds-truncate">{element.clientNumber}</div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+            </template>
+
+
+            
+            <template if:true={onlyInSF}>
+                <lightning-card title="Conta Salesforce" style="padding: 5px;">
+                    <div class="slds-p-horizontal_small" style="display: flex;">
+                        <lightning-input label="Nome" value={accountSF.Name} read-only></lightning-input>
+                        <lightning-input label="Contacto Telefónico" value={accountSF.phoneNumber} read-only></lightning-input>
+                        <lightning-input label="NIF" value={accountSF.NIF__c} read-only></lightning-input>
+                        <lightning-input label="Email" value={accountSF.PersonEmail} read-only lwc:if={isPersonAccount}></lightning-input>
+                        <lightning-input label="Email" value={accountSF.E_mail_Empresa__c} read-only lwc:else></lightning-input>
+                        <lightning-input label="Número de Conta" value={accountSF.Numero_de_Conta__c} read-only></lightning-input>
+                        <lightning-input label="Data de última alteração" value={accountSF.LastModifiedDate} read-only></lightning-input>
+                    </div>
+                </lightning-card>
+            </template>
+
+
+            <template if:true={mdmInSF}>
+                <lightning-card title="Conta MDM" style="padding: 5px;">
+                    <div class="slds-p-horizontal_small" style="display: flex;">
+                        <lightning-input label="Nome" value={accountMDM.name} read-only></lightning-input>
+                        <lightning-input label="Contacto Telefónico" value={accountMDM.phone} read-only></lightning-input>
+                        <lightning-input label="NIF" value={accountMDM.nif} read-only></lightning-input>
+                        <lightning-input label="Email" value={accountMDM.email} read-only></lightning-input>
+                        <lightning-input label="Número de Conta" value={accountMDM.clientNumber} read-only></lightning-input>
+                        <lightning-input label="Data de última alteração" value={accountMDM.updatedAt} read-only></lightning-input>
+                    </div>
+                </lightning-card>
+
+                <lightning-card title="Conta Salesforce" style="padding: 5px;">
+                    <div class="slds-p-horizontal_small" style="display: flex;">
+                        <lightning-input label="Nome" value={accountSF.Name} read-only></lightning-input>
+                        <lightning-input label="Contacto Telefónico" value={accountSF.Phone} read-only></lightning-input>
+                        <lightning-input label="NIF" value={accountSF.NIF__c} read-only></lightning-input>
+                        <lightning-input label="Email" value={accountSF.PersonEmail} read-only lwc:if={isPersonAccount}></lightning-input>
+                        <lightning-input label="Email" value={accountSF.E_mail_Empresa__c} read-only lwc:else></lightning-input>
+                        <lightning-input label="Número de Conta" value={accountSF.Numero_de_Conta__c} read-only></lightning-input>
+                        <lightning-input label="Data de última alteração" value={accountSF.LastModifiedDate} read-only></lightning-input>
+                    </div>
+                    <lightning-button label="Atualizar Conta" onclick={newAccountSF} slot="footer"></lightning-button>
+                </lightning-card>
+            </template>
+
+            <template if:true={mdmNotInSF}>
+                <lightning-card title="Conta MDM" style="padding: 5px;">
+                    <div class="slds-p-horizontal_small" style="display: flex;">
+                        <lightning-input label="Nome" value={accountMDM.name} read-only></lightning-input>
+                        <lightning-input label="Contacto Telefónico" value={accountMDM.phone} read-only></lightning-input>
+                        <lightning-input label="NIF" value={accountMDM.nif} read-only></lightning-input>
+                        <lightning-input label="Email" value={accountMDM.email} read-only></lightning-input>
+                        <lightning-input label="Número de Conta" value={accountMDM.clientNumber} read-only></lightning-input>
+                    </div>
+                    <lightning-button label="Criar Conta" onclick={newAccountSF} slot="footer"></lightning-button>
+                </lightning-card>
+            </template>
+		</div>
+	</div>
+</template>

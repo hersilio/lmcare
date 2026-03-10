@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Entrega --></label>
+    <name>Tipo_de_Entrega__c</name>
+    <picklistValues>
+        <masterLabel>Entrega ao Cliente</masterLabel>
+        <translation><!-- Entrega ao Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levantamento em Loja</masterLabel>
+        <translation><!-- Levantamento em Loja --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

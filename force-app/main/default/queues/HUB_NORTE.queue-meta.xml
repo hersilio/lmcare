@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>instalacoeshubnorte@leroymerlin.pt</email>
+    <name>HUB NORTE</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>HUB_Norte_Assessores_de_Instala_o</publicGroup>
+        </publicGroups>
+        <roles>
+            <role>Coordenador_Promessa_Produto_e_Instala_o</role>
+            <role>Respons_vel_Venda_Projeto_Instala_es</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Abrir Assistência Técnica de Incidência --></label>
+    <name>Abrir_Assistencia_Tecnica_de_Incidencia__c</name>
+    <picklistValues>
+        <masterLabel>NÃO</masterLabel>
+        <translation><!-- NÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIM</masterLabel>
+        <translation><!-- SIM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

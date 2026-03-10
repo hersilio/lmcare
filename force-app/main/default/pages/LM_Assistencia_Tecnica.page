@@ -1,0 +1,298 @@
+<apex:page StandardController="Order" extensions="LM_OrderCustomController" renderAs="pdf" showHeader="false" applyHtmlTag="false" standardStylesheets="false">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <style>
+         @page {
+         margin-top: 150px;padding:0px;margin-bottom: 90px;
+         size:A4;
+         margin-left:8mm;
+         margin-right:8mm;
+         @top-center {
+         content: element(header);
+         }
+         @bottom-left {
+         content: element(footer);
+         }
+         }
+         div.header {
+         padding: 10px;
+         position: running(header);
+         }
+         div.footer {
+         display: block;
+         margin: 0 auto;
+         font-size: 10px;
+         color:gray;
+         padding: 5px;
+         position: running(footer);
+         }
+         div.content {
+         margin-left:2px;
+         }
+         table, th, td, tr {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <apex:image url="{!$Resource.LM_PdfTemplateHeader}" width="100%"/>
+      </div>
+      <div class="footer">
+         <p style="color:#808080;font-size:12px;text-align: center;">
+            BCM – BRICOLAGE S.A. - NIPC:506 848 558 – Capital Social: € 5.232.052 - M.C.R.C. de Cascais<br />
+            Rua Fernando Távora n.º1, Pisos 2, 3 e 4 (Edifício W), 2790-256 Carnaxide - Portugal<br />
+            T+351 214 166 700 | F+351 214 164 003
+         </p>
+      </div>
+      <div class='content'>
+      <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:24px;font-family:"Leroy Merlin Sans";color:black;'>Solicita&ccedil;&atilde;o de Assist&ecirc;ncia T&eacute;cnica Leroy Merlin &nbsp;</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-right:-44.55pt;'><strong><span style='font-size:24px;line-height:115%;font-family:"Leroy Merlin Sans";'>N&ordm; {!Order.OrderNumber} {!Order.Store_Name__c}</span></strong></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:8px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Estimado(a) cliente {!Order.Account_Name__c},</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Informamos atrav&eacute;s deste documento as condi&ccedil;&otilde;es gerais do servi&ccedil;o de Assist&ecirc;ncia T&eacute;cnica Leroy Merlin.</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'>
+         <span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>O seu processo de assist&ecirc;ncia t&eacute;cnica AT {!Order.OrderNumber} foi registado dia&nbsp;</span>
+         <span style='font-size:12px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>
+            <apex:outputText value="{0, date, dd/MM/yyyy}">
+               <apex:Param value="{!Order.Start_Date__c }" />
+            </apex:OutputText>
+         </span>
+         <span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>&nbsp;e ser&aacute; processado o mais rapidamente poss&iacute;vel.</span>
+      </p>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+      <table style="width: 5.3e+2pt;">
+         <tbody>
+            <tr>
+               <td colspan="2" style="width: 529.5pt;border: 1pt solid black;padding: 5pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;text-align:center;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>DADOS CLIENTE</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" style="width: 529.5pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Nome: {!Order.Account_Name__c}</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" style="width: 529.5pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Morada: {!Order.Account.ShippingStreet} {!Order.Account.ShippingCity} {!Order.Account.ShippingPostalCode} {!Order.Account.ShippingCountry}</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" style="width: 529.5pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;font-family:"Leroy Merlin Sans";color:black;'>C&oacute;digo Postal: {!Order.Account.ShippingPostalCode} &nbsp; &nbsp; &nbsp; &nbsp; Localidade: {!Order.Account.ShippingCity}</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td style="width: 194.25pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;height: 20pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>NIF: {!Order.Account.NIF__c}</span></p>
+               </td>
+               <td rowspan="3" style="width: 335.25pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 5pt;height: 20pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;background:white;'><strong><span style='font-size:13px;font-family:  "Leroy Merlin Sans";color:black;'>DADOS DE COMPRA</span></strong></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>N&ordm; do tal&atilde;o: {!Order.Receipt_Number__c} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N&ordm; da caixa: {!Order.Cashier_Number__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'>
+                     <span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>
+                        Data de compra: 
+                        <apex:outputText value="{0, date, dd/MM/yyyy}">
+                           <apex:Param value="{!Order.Data_da_Fatura_AT__c}" />
+                        </apex:OutputText>
+                     </span>
+                  </p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Sec&ccedil;&atilde;o a que pertence o produto: {!Order.Product_Section__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Refer&ecirc;ncia Leroy Merlin: {!Order.Referencia_LM_do_Artigo__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>N&uacute;mero do Fornecedor: {!Order.Supplier_AT__r.N_Fornecedor__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Designa&ccedil;&atilde;o Do Artigo: {!Order.Designacao_do_Artigo__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td style="width: 194.25pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;height: 63.75pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Contacto: {!Order.Account.Phone}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Email: {!Order.Account.E_Mail_Empresa__c}</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td style="width: 194.25pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 5pt;height: 43.9pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>{!Order.Installed_By__c} {!IF(Order.Installed_By__c=='Instalador Externo', '', ':')} {!Order.Nome_Instalador_AT__c} </span></p>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+      <table style="width: 5.3e+2pt;border-bottom:1px;border: 1pt solid black; margin-bottom:30px;">
+         <tbody>
+            <tr>
+               <td style="width: 531.3pt;padding: 5pt;vertical-align: top; border-bottom: 1px solid black;border-collapse: collapse;">
+                  <p style='margin:0cm;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-size:13px;font-family:"Leroy Merlin Sans";'>DESCRI&Ccedil;&Atilde;O AVARIA / ANOMALIA</span></p>
+               </td>
+            </tr>
+            <tr>
+               <td style="width: 531.3pt;border-image: initial;padding: 5pt;height: 114pt;vertical-align: top;">
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>{!Order.Descricao_da_Avaria__c}</span></p>
+                  <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;'><span style='font-size:13px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></p>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div style="page-break-after: always"/>
+         <p style='margin:0cm;margin-left:-7.05pt;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;background:white;border:none;'><span style='font-size:21px;line-height:115%;font-family:"Calibri",sans-serif;color:#81C961;'>CONDI&Ccedil;&Otilde;ES GERAIS DO SERVI&Ccedil;O P&Oacute;S VENDA E SERVI&Ccedil;O DE ASSIST&Ecirc;NCIA T&Eacute;CNICA</span><span style='font-size:21px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 1</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: OBJECTO</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'>
+            <span style='font-family:"Calibri",sans-serif;'>
+            O presente documento regula os Termos e Condi&ccedil;&otilde;es Gerais do Servi&ccedil;o de Assist&ecirc;ncia T&eacute;cnica (de ora em diante &ldquo;CG&rdquo;) prestado pela BCM - Bricolage, S.A. com sede na Rua Fernando Távora, N.&ordm;1, Pisos 2,3 e 4 (Edifício W), 2790-256 Carnaxide, matriculada na Conservat&oacute;ria do Registo Comercial de Cascais, sob o n&uacute;mero &uacute;nico de pessoa coletiva 506 848 558 (de ora em diante designada &ldquo;LEROY
+            MERLIN&rdquo; ou &ldquo;Loja&rdquo;) a qualquer pessoa (de ora em diante designada &ldquo;Cliente&rdquo;) que apresente um artigo adquirido na Leroy Merlin para Servi&ccedil;o de Assist&ecirc;ncia T&eacute;cnica (de ora em
+            diante &laquo;SAT&raquo;).    
+            </span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>O disposto nas presentes CG n&atilde;o prejudica ou diminui os direitos conferidos pela legisla&ccedil;&atilde;o vigente, referente a garantias de bens de consumo, ou compra e venda de bens defeituosos.
+            </span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 2</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: APRESENTA&Ccedil;&Atilde;O DO ARTIGO</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>2.1<span style="color:#81C961;">&nbsp;</span>O Cliente que deseje beneficiar do SAT da LEROY MERLIN deve obrigatoriamente apresentar a respetiva fatura de compra.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>2.2 As condi&ccedil;&otilde;es gerais s&atilde;o fornecidas ao cliente no ato de aquisi&ccedil;&atilde;o do servi&ccedil;o, de forma que o mesmo esteja devidamente informado de todo o processo no momento da compra, contudo
+            devem ser novamente facultadas para aprecia&ccedil;&atilde;o do mesmo, no in&iacute;cio do processo de SAT, atrav&eacute;s da folha de abertura devidamente assinada, a qual poder&aacute; ser f&iacute;sica ou digitalmente.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>2.3 O INSTALADOR assume perante o LEROY MERLIN e perante os seus clientes, a garantia comercial de qualidade, adequa&ccedil;&atilde;o e conformidade dos Servi&ccedil;os, pelo per&iacute;odo de 03 (tr&ecirc;s) anos,
+            respondendo diretamente pelos defeitos e a falta de conformidade da montagem, instala&ccedil;&atilde;o ou servi&ccedil;o em termos equivalentes aos previstos na legisla&ccedil;&atilde;o de defesa do consumidor e na lei geral
+            aplic&aacute;veis.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 3</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: &Oacute;NUS DE PROVA</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>3.1. Nos termos da legisla&ccedil;&atilde;o de consumo vigente, a falta de conformidade que se manifeste nos dois anos a contar da data de entrega do bem e/ou servi&ccedil;o, presume-se existente a essa mesma data, recaindo
+            sobre a LEROY MERLIN, o &oacute;nus de prova da inexist&ecirc;ncia de qualquer desconformidade. No terceiro ano de garantia, cabe ao consumidor a prova de que a falta de conformidade existia &agrave; data da entrega do bem
+            e/ou servi&ccedil;o. Neste sentido, a abertura de SAT no terceiro ano de garantia, est&aacute; condicionada &agrave; entrega, pelo Cliente, do suporte de prova necess&aacute;rio e que ateste o defeito no artigo, suporte que,
+            em qualquer caso, ser&aacute; previamente analisado pela LEROY MERLIN, a fim de atestar a fidedignidade e autenticidade do mesmo.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>3.2. A LEROY MERLIN reserva-se ao direito de n&atilde;o proceder &agrave; abertura do SAT, caso (i) o Cliente n&atilde;o apresente qualquer suporte de prova que ateste o defeito reclamado; (ii) o suporte de prova n&atilde;o
+            apresente a fundamenta&ccedil;&atilde;o necess&aacute;ria para atestar o defeito reclamado.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 4</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: CONDI&Ccedil;&Otilde;ES DE INTERVEN&Ccedil;&Atilde;O AO ABRIGO DA GARANTIA</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.1<span style="color:#81C961;">&nbsp;</span> A vig&ecirc;ncia da Garantia &eacute; comprovada pela apresenta&ccedil;&atilde;o do original da fatura emitida aquando da compra do artigo.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.2 A garantia p&oacute;s venda ser&aacute; sempre dada pelo INSTALADOR que realizou a interven&ccedil;&atilde;o.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.3 A instala&ccedil;&atilde;o ou montagem s&atilde;o da inteira e exclusiva responsabilidade do INSTALADOR, no caso deste, ap&oacute;s ser devidamente interpelado, n&atilde;o proceder &agrave; repara&ccedil;&atilde;o ou
+            ressarcimento a que est&aacute; obrigado, a LEROY MERLIN poder&aacute; recorrer aos servi&ccedil;os de outra entidade especializada para satisfazer as leg&iacute;timas pretens&otilde;es de repara&ccedil;&atilde;o do seu
+            cliente, imputando ao INSTALADOR os custos suportados para o efeito.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.4 Sem preju&iacute;zo do disposto na Cl&aacute;usula anterior, a LEROY MERLIN ser&aacute; &nbsp;respons&aacute;vel, nos termos da legisla&ccedil;&atilde;o vigente aplic&aacute;vel &agrave; compra e venda de bens de consumo
+            e &agrave; venda de coisa defeituosa, por qualquer desconformidade que se verifique aquando da entrega do artigo e/ou servi&ccedil;o ao Cliente e que se manifeste dentro do prazo de 03 (tr&ecirc;s) anos, ou 06 (seis) meses,
+            a contar da data de entrega do mesmo, consoante a compra tenha sido realizada por consumidor, ou por profissional no exerc&iacute;cio da sua atividade.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.5 Tratando-se de um artigo comprovadamente defeituoso, assiste ao Cliente o direito &agrave; reposi&ccedil;&atilde;o da conformidade atrav&eacute;s da repara&ccedil;&atilde;o ou da substitui&ccedil;&atilde;o do artigo,
+            redu&ccedil;&atilde;o proporcional do pre&ccedil;o ou resolu&ccedil;&atilde;o contratual, contanto que cumpra as regras estabelecidas na legisla&ccedil;&atilde;o em vigor</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.6 Apenas haver&aacute; lugar &agrave; repara&ccedil;&atilde;o, substitui&ccedil;&atilde;o, redu&ccedil;&atilde;o do pre&ccedil;o ou resolu&ccedil;&atilde;o contratual ao abrigo da Garantia e com os limites impostos pela
+            legisla&ccedil;&atilde;o em vigor e pela cl&aacute;usula anterior, &nbsp;quando o artigo em causa se encontrar dentro do respetivo per&iacute;odo de garantia e a desconformidade verificada, n&atilde;o advenha de mau uso ou
+            do desgaste inerente &agrave; utiliza&ccedil;&atilde;o do bem, ou ainda, quando resulte de uma instala&ccedil;&atilde;o LEROY MERLIN defeituosa ou n&atilde;o conforme, situa&ccedil;&atilde;o que deve ser devidamente apurada
+            e confirmada, numa primeira inst&acirc;ncia, pelo INSTALADOR PARCEIRO que realizou a instala&ccedil;&atilde;o.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.7 N&atilde;o est&atilde;o abrangidas pelo desconformidade e, consequentemente, n&atilde;o est&atilde;o abrangidas pela Garantia nem suscept&iacute;veis de assist&ecirc;ncia t&eacute;cnica ao abrigo da mesma, as anomalias
+            que decorram direta ou indiretamente da utiliza&ccedil;&atilde;o incorreta ou negligente e/ou da incorreta instala&ccedil;&atilde;o ou montagem do artigo quando esta tenha sido efetuada pelo Cliente. De igual forma, as
+            anomalias que o Cliente, &agrave; data da compra, tinha conhecimento e/ou n&atilde;o podia razoavelmente ignorar, n&atilde;o est&atilde;o abrangidas pelo conceito de desconformidade.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.8 A assist&ecirc;ncia t&eacute;cnica, repara&ccedil;&atilde;o ou substitui&ccedil;&atilde;o efetuadas ao abrigo da Garantia s&atilde;o gratuitas para o Cliente, ficando por conta da LEROY MERLIN todos os custos inerentes
+            &agrave; reposi&ccedil;&atilde;o da conformidade, nomeadamente o custo de porte postal, transporte, m&atilde;o-de-obra ou materiais.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.9 Salvo nas situa&ccedil;&otilde;es em que a natureza e complexidade dos bens, a gravidade do defeito e o esfor&ccedil;o necess&aacute;rio para a conclus&atilde;o da repara&ccedil;&atilde;o ou substitui&ccedil;&atilde;o
+            justifiquem um prazo superior, a LEROY MERLIN compromete-se a proceder &agrave; repara&ccedil;&atilde;o ou substitui&ccedil;&atilde;o do artigo dentro da garantia no prazo m&aacute;ximo de 30 (trinta) dias ap&oacute;s o
+            pedido de SAT.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.10 Se por algum motivo se vier a concluir que a repara&ccedil;&atilde;o a efetuar n&atilde;o est&aacute; abrangida pela Garantia e, se ainda assim, o Cliente pretender realiz&aacute;-la, dever&aacute; no prazo de 48 horas
+            ap&oacute;s interpela&ccedil;&atilde;o para o efeito, pagar a cau&ccedil;&atilde;o de 60,00&euro; para a elabora&ccedil;&atilde;o de um or&ccedil;amento de repara&ccedil;&atilde;o, aplicando-se os termos da cl&aacute;usula
+            seguinte.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.11 De igual forma, se por algum motivo se vier a concluir que a assist&ecirc;ncia t&eacute;cnica a efetuar n&atilde;o est&aacute; abrangida pela Garantia e se ainda assim o Cliente pretender realiz&aacute;-la,
+            dever&aacute; pagar o valor correspondente &agrave; desloca&ccedil;&atilde;o do t&eacute;cnico para triagem de anomalia e &agrave; elabora&ccedil;&atilde;o de um or&ccedil;amento de repara&ccedil;&atilde;o. Se, no momento,
+            for poss&iacute;vel or&ccedil;amentar e avan&ccedil;ar para a solu&ccedil;&atilde;o da anomalia e caso o Cliente pretenda adjudicar essa mesma solu&ccedil;&atilde;o, dever&aacute; pagar o respetivo valor do or&ccedil;amento.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>4.12. Os artigos instal&aacute;veis dever&atilde;o, em qualquer caso, ser analisados no local onde se encontrem instalados.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 5</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: CONDI&Ccedil;&Otilde;ES DE INTERVEN&Ccedil;&Atilde;O FORA DE GARANTIA</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>5.1 A repara&ccedil;&atilde;o efetuada fora de Garantia ser&aacute; sempre precedida de or&ccedil;amenta&ccedil;&atilde;o, devendo para este efeito o Cliente apresentar o artigo na Loja e pagar a respetiva cau&ccedil;&atilde;o no valor de 60,00&euro;. Excetua-se deste ponto, os artigos que se encontrem instalados, caso em que os mesmos dever&atilde;o ser analisados no local onde se encontrem.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>5.2 Uma vez obtido o or&ccedil;amento de repara&ccedil;&atilde;o do artigo, a LEROY MERLIN comunic&aacute;-lo-&aacute; ao Cliente atrav&eacute;s de telefone, e-mail ou SMS, e apenas prosseguir&aacute; com a respectiva
+            repara&ccedil;&atilde;o ap&oacute;s a aceita&ccedil;&atilde;o do referido or&ccedil;amento pelo Cliente, dada num prazo m&aacute;ximo de 10 (dez) dias.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>5.3 Ap&oacute;s a aceita&ccedil;&atilde;o do or&ccedil;amento, o montante de cau&ccedil;&atilde;o pago pelo Cliente ser-lhe-&aacute; devidamente descontado aquando do pagamento total do montante or&ccedil;amentado. Se o
+            Cliente n&atilde;o aceitar o or&ccedil;amento e, consequentemente, n&atilde;o pretender que a repara&ccedil;&atilde;o seja efetuada, o valor da cau&ccedil;&atilde;o n&atilde;o lhe ser&aacute; devolvido, destinando-se o mesmo
+            a fazer face aos custos de transporte e/ou de outra natureza que tenham sido suportados pela LEROY MERLIN.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>5.4 A assist&ecirc;ncia t&eacute;cnica efetuada fora de Garantia ser&aacute; sempre suportada pelo Cliente, tendo inerente o custo de desloca&ccedil;&atilde;o, que dever&aacute; ser pago diretamente ao t&eacute;cnico, no
+            final da triagem da anomalia. Se, no mesmo momento, for poss&iacute;vel or&ccedil;amentar e avan&ccedil;ar para a solu&ccedil;&atilde;o da anomalia, e se o Cliente pretender adjudicar essa mesma solu&ccedil;&atilde;o,
+            dever&aacute; tamb&eacute;m pagar o respectivo valor do or&ccedil;amento.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>5.5 Sendo necess&aacute;rio proceder &agrave; encomenda de pe&ccedil;as de substitui&ccedil;&atilde;o e/ou material adicional, inerentes &agrave; solu&ccedil;&atilde;o da anomalia, dever&aacute; o t&eacute;cnico fornecer as
+            refer&ecirc;ncias ou designa&ccedil;&otilde;es das mesmas ao Cliente, para que o mesmo adjudique a encomenda das mesmas, junto do fornecedor ou da loja, caso assim o pretenda.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 6</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: CONDI&Ccedil;&Otilde;ES DE GARANTIA SAT</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Os artigos reparados e as assist&ecirc;ncias t&eacute;cnicas efetuadas sobre os artigos fora de garantia beneficiam de uma garantia de 6 (seis) meses, a contar da data de restitui&ccedil;&atilde;o do artigo reparado ao
+            Cliente, at&eacute; ao m&aacute;ximo de 4 (quatro) repara&ccedil;&otilde;es..</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 7</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: GEST&Atilde;O DE INCID&Ecirc;NCIAS</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Em caso de lit&iacute;gio, o Cliente pode enviar uma comunica&ccedil;&atilde;o para a Rela&ccedil;&atilde;o Cliente Omnicanal (RCO), por e-mail: </span><span class="c5 c40"><a href="mailto:vozdocliente@leroymerlin.pt">vozdocliente@leroymerlin.pt</a></span>
+            <span class="c6 c5">&nbsp;ou por correio para o seguinte endere&ccedil;o: LEROY MERLIN - Rela&ccedil;&atilde;o Cliente Omnicanal / Rua Fernando Távora n&ordm; 1, Pisos 2, 3 e 4 (Edifício W), 2790-256 CARNAXIDE.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 8</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: DADOS PESSOAIS</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>No &acirc;mbito de sua atividade comercial, a LEROY MERLIN, tem a necessidade de recolher dados pessoais, os quais ser&atilde;o tratados exclusivamente para efeitos da comercializa&ccedil;&atilde;o de bens e servi&ccedil;os,
+            bem como da gest&atilde;o da rela&ccedil;&atilde;o comercial subjacente. A veracidade e disponibiliza&ccedil;&atilde;o dos dados pessoais &eacute; da exclusiva responsabilidade do titular dos mesmos.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Caso assim o autorize, a LEROY MERLIN poder&aacute; ainda tratar os seus dados para lhe enviar, de acordo com as suas prefer&ecirc;ncias, informa&ccedil;&otilde;es sobre as melhores ofertas de produtos e servi&ccedil;os por
+            si comercializados, bem como para aferir o seu grau de satisfa&ccedil;&atilde;o relativamente aos mesmos.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Os dados pessoais ser&atilde;o conservados enquanto mantiver uma rela&ccedil;&atilde;o comercial com a LEROY MERLIN ou por um per&iacute;odo m&aacute;ximo de 5 anos, ap&oacute;s o qual ser&atilde;o eliminados. Os dados
+            poder&atilde;o ainda ser partilhados, para as mesmas finalidades, com outras empresas do grupo empresarial a que a LEROY MERLIN pertence, denominado ADEO, cuja lista de empresas pode consultar em
+            </span>
+            <span class="c5"><a class="c11" href="https://www.google.com/url?q=http://www.adeo.com/&amp;sa=D&amp;source=editors&amp;ust=1743673524789826&amp;usg=AOvVaw14kbhULjMxHrBtFEWlqxpU">&nbsp;</a></span>
+            <span class="c5"><a class="c11" href="https://www.google.com/url?q=http://www.adeo.com&amp;sa=D&amp;source=editors&amp;ust=1743673524789982&amp;usg=AOvVaw317vRwThWSa98TLgP3bphz">www.adeo.com</a></span>.
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>A LEROY MERLIN poder&aacute; recorrer a subcontratantes (ex. fornecedores, prestadores de servi&ccedil;os, etc&hellip;) para efeitos da execu&ccedil;&atilde;o da totalidade ou parte das finalidades identificadas.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Na qualidade de titular dos dados, tem direito de acesso aos seus dados, a solicitar a sua retifica&ccedil;&atilde;o, apagamento, limita&ccedil;&atilde;o do tratamento ou portabilidade, a opor-se ao seu tratamento e a
+            revogar, a todo o tempo, qualquer consentimento concedido. Poder&aacute; exercer esses direitos ou colocar-nos qualquer quest&atilde;o relacionada com o tratamento de seus dados pessoais, atrav&eacute;s do email
+            protecaodedados@leroymerlin.pt ou do formul&aacute;rio eletr&oacute;nico para efeitos de contacto dispon&iacute;vel em</span><a href="https://www.leroymerlin.pt/"><span style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none;'>&nbsp;</span></a><a href="https://www.leroymerlin.pt"><span style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none;'>https://www.leroymerlin.pt</span></a><span style='font-family:"Calibri",sans-serif;'>.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>Para mais informa&ccedil;&atilde;o sobre como a LEROY MERLIN trata os seus dados pessoais, consulte a nossa Pol&iacute;tica de Privacidade em</span><a href="http://www.leroymerlin.pt/pt/politica-de-privacidade-e-cookies"><span style='font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none;'>&nbsp;www.leroymerlin.pt/pt/politica-de-privacidade-e-cookies</span></a><span style='font-family:"Calibri",sans-serif;'>&nbsp;ou contacte o seu Encarregado da Prote&ccedil;&atilde;o de Dados (epd@leroymerlin.pt).</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>ARTIGO 9</span></u><span style='font-family:"Calibri",sans-serif;color:#81C961;'>: DIREITO APLIC&Aacute;VEL</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>9.1 As presentes CG est&atilde;o sujeitas &agrave; Lei Portuguesa.&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>9.2 Qualquer lit&iacute;gio relativo &agrave; sua execu&ccedil;&atilde;o ser&aacute; da compet&ecirc;ncia do Tribunal da jurisdi&ccedil;&atilde;o em que se encontre situado o domic&iacute;lio do Cliente.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;text-align:justify;'><span style='font-family:"Calibri",sans-serif;'>9.3 Nos termos do consagrado no artigo 18.&ordm; da Lei n.&ordm; 144/2015, de 8 de Setembro, a LEROY MERLIN informa que, em caso de lit&iacute;gio, tem o cliente a possibilidade de recorrer a entidades de
+            Resolu&ccedil;&atilde;o Alternativa de Lit&iacute;gios.</span>
+         </p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><span style='font-family:"Calibri",sans-serif;'>IMPORTANTE: OS PRAZOS DE TRATAMENTO DO PEDIDO SER&Atilde;O NECESSARIAMENTE SUPERIORES CASO O PEDIDO SEJA FEITO POR CORREIO.</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><span style='font-family:"Calibri",sans-serif;'>&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;margin-left:-7.05pt;'><span style='font-family:"Calibri",sans-serif;'>Feito em dois (2) exemplares, devendo um (1) deles ser entregue ao Cliente.&nbsp;</span></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'><strong><span style='font-size:12px;line-height:115%;font-family:"Leroy Merlin Sans";'>&nbsp;</span></strong></p>
+         <p style='margin:0cm;line-height:115%;font-size:15px;font-family:"Arial",sans-serif;text-align:justify;background:white;'><span style='font-size:12px;line-height:115%;font-family:"Leroy Merlin Sans";color:black;'>Assinatura Cliente:____________________________________ &nbsp; &nbsp; &nbsp;Data _____/____________/________</span></p>
+         <br/>
+         <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
+            <apex:pageBlock rendered="{!Order.Validacao_Manual__c}">
+               <p style="font-size:10pt;">
+                     Documento assinado manualmente por {!Order.Account_Name__c}, NIF {!Order.NIF__c} em &nbsp;
+                     <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                        <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                     </apex:outputText>
+               </p>
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{!!Order.Validacao_Manual__c}">
+               <p style="font-size:10pt;">
+                     Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
+                     <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                        <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                     </apex:outputText>
+                  </p>
+               </apex:pageBlock>
+            </apex:pageBlock>
+      </div>
+   </body>
+</apex:page>

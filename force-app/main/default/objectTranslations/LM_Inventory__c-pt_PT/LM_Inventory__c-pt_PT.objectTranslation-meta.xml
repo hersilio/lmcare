@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item de Inventário</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventário</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Inventário Layout</layout>
+        <sections>
+            <label><!-- Armazem --></label>
+            <section>Armazem</section>
+        </sections>
+        <sections>
+            <label><!-- Atelier de Reparação --></label>
+            <section>Atelier de Reparação</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

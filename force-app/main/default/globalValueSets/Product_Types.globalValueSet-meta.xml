@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aluguer</fullName>
+        <default>false</default>
+        <label>Aluguer</label>
+    </customValue>
+    <customValue>
+        <fullName>Caução</fullName>
+        <default>false</default>
+        <label>Caução</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumível</fullName>
+        <default>false</default>
+        <label>Consumível</label>
+    </customValue>
+    <customValue>
+        <fullName>Recolha de Entulho</fullName>
+        <default>false</default>
+        <label>Recolha de Entulho</label>
+    </customValue>
+    <masterLabel>Product Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

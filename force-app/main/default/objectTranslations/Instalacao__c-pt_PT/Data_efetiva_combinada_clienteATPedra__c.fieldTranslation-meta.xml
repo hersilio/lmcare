@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Data efetiva combinada c/ cliente --></label>
+    <name>Data_efetiva_combinada_clienteATPedra__c</name>
+</CustomFieldTranslation>

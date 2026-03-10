@@ -1,0 +1,160 @@
+{
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "58e410c0-9016-4881-b495-f4ac9b693cfa",
+  "label" : "AT Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "ae84e0bb-0f1f-4f90-be0a-48bc9e808140",
+          "columns" : [ {
+            "UUID" : "1f92b639-9233-4cdd-9b3d-f9f779f12da5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "ae84e0bb-0f1f-4f90-be0a-48bc9e808140",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "b21f8ae5-792e-4396-839e-c81ebd805891",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "1eebfd5f-3b6e-402d-a85f-dd3cec3bee9f",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Novo Pedido AT"
+              }, {
+                "UUID" : "bc1f97c4-7930-4a08-9f32-307fa7ac0056",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Pedidos AT"
+              }, {
+                "UUID" : "3bdefb75-f9c6-4d0f-8aa8-f35ba4a294bc",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "Dashboards"
+              } ],
+              "useOverflowMenu" : true
+            }
+          },
+          "componentName" : "forceCommunity:tabLayout",
+          "id" : "b21f8ae5-792e-4396-839e-c81ebd805891",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "flowArguments" : "",
+                "flowName" : "LM_Assistencia_Tecnica_Portal"
+              },
+              "componentName" : "forceCommunity:flowCommunity",
+              "id" : "cc795155-6a80-4bff-aab9-c98abf2b235f",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "1eebfd5f-3b6e-402d-a85f-dd3cec3bee9f",
+            "regionLabel" : "Novo Pedido AT",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : false,
+                "filterName" : "AT_s_Nacional_Total",
+                "layout" : "FULL",
+                "pageSize" : 25,
+                "scope" : "Order",
+                "showActionBar" : false,
+                "showChartsPanel" : false,
+                "showDisplay" : "showall",
+                "showFilterPanel" : false,
+                "showImageIcon" : false,
+                "showManualRefreshButton" : true,
+                "showObjectName" : false,
+                "showPinnedList" : false,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "0f96ec7a-76c8-43e4-876d-ff2351320db4",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "bc1f97c4-7930-4a08-9f32-307fa7ac0056",
+            "regionLabel" : "Pedidos AT",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "height" : "850",
+                "recordId" : "kAZTQPhIYxWNNPPYprNhXVfIxPfdgl123"
+              },
+              "componentName" : "forceCommunity:dashboard",
+              "id" : "bb71d2a7-d844-4986-a713-d0c3ddc7fa4c",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "3bdefb75-f9c6-4d0f-8aa8-f35ba4a294bc",
+            "regionLabel" : "Dashboards",
+            "regionName" : "3",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1f92b639-9233-4cdd-9b3d-f9f779f12da5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "310116e7-e066-479a-9832-7758cb3ca4d6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AT Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "94352ba2-3f35-4cfc-8fa4-a19a81f01ab6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "96a71a5b-1916-4960-8b01-fefd30e4a78e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-at"
+}

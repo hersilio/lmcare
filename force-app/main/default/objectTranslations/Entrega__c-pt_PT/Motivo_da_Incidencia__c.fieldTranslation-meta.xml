@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo da Incidência --></label>
+    <name>Motivo_da_Incidencia__c</name>
+    <picklistValues>
+        <masterLabel>Artigos a mais</masterLabel>
+        <translation><!-- Artigos a mais --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Artigos danificados</masterLabel>
+        <translation><!-- Artigos danificados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro de Projeto</masterLabel>
+        <translation><!-- Erro de Projeto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalador</masterLabel>
+        <translation><!-- Instalador --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

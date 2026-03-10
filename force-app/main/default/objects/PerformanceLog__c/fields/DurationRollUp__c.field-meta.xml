@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DurationRollUp__c</fullName>
+    <label>Duration</label>
+    <summarizedField>PerformanceLogEntry__c.Duration__c</summarizedField>
+    <summaryForeignKey>PerformanceLogEntry__c.PerformanceLog__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

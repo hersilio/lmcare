@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>LM_Aluguer_Ferramentas</fullName>
+        <default>false</default>
+        <label>Aluguer de Ferramentas</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_Recolha_Entulho</fullName>
+        <default>false</default>
+        <label>Recolha de Entulho</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_Assistencia_Tecnica</fullName>
+        <default>false</default>
+        <label>Assistência Técnica</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_Barras_Tejadilho</fullName>
+        <default>false</default>
+        <label>Barras de Tejadilho</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_DCI</fullName>
+        <default>false</default>
+        <label>DCI</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_Certificado_Devolucao</fullName>
+        <default>false</default>
+        <label>Certificados de Devolução</label>
+    </customValue>
+    <masterLabel>Serviços Disponíveis</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

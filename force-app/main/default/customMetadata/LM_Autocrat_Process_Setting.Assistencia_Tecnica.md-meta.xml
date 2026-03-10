@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Assistencia Tecnica</label>
+    <protected>false</protected>
+    <values>
+        <field>Attachment_Name__c</field>
+        <value xsi:type="xsd:string">Termos e Condições de Serviço</value>
+    </values>
+    <values>
+        <field>Custo_Fixo_BT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Attachment_Template__c</field>
+        <value xsi:type="xsd:string">LM_Assistencia_Tecnica</value>
+    </values>
+    <values>
+        <field>Email_BCC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_CC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Static_File_Attachment__c</field>
+        <value xsi:type="xsd:string">LM_AT_Formulario_Editavel</value>
+    </values>
+    <values>
+        <field>Email_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">LM_Email_AT_Cliente_Antes</value>
+    </values>
+    <values>
+        <field>Email_Template_After_Token__c</field>
+        <value xsi:type="xsd:string">LM_Email_AT_Cliente</value>
+    </values>
+    <values>
+        <field>Email_To__c</field>
+        <value xsi:type="xsd:string">felipe.gil@techremotehub.com</value>
+    </values>
+    <values>
+        <field>Email_de_Envio__c</field>
+        <value xsi:type="xsd:string">assistencias.tecnicas@leroymerlin.pt</value>
+    </values>
+    <values>
+        <field>GDrive_Process_Folder_Name__c</field>
+        <value xsi:type="xsd:string">Assistencia_Tecnica</value>
+    </values>
+    <values>
+        <field>Order_Record_Type__c</field>
+        <value xsi:type="xsd:string">LM_Assistencia_Tecnica</value>
+    </values>
+    <values>
+        <field>Process_Guidelines__c</field>
+        <value xsi:type="xsd:string">O pedido de Assistência Técnica só poderá ter início com a apresentação do talão de compra do produto. 
+
+Se a instalação do produto FOI EFECTUADA através da Leroy Merlin, a garantia da instalação é de dois anos. O pedido deverá SEMPRE ser enviado numa primeira fase para o Técnico Instalador. 
+Caso o Técnico Instalador da Leroy Merlin identifique que se trata de um defeito do Produto, este deverá remeter para a loja um Relatório para Serviços identificando a anomalia identificada. 
+O passo seguinte, será encaminhar o Pedido de Assistência Técnica e o Relatório do Técnico Instalador para o Fornecedor, para se dar início ao pedido junto do mesmo. 
+
+Se a Instalação NÃO FOI EFETUADA por um técnico da Leroy Merlin e o defeito é da Instalação? 
+Os custos inerentes à deslocação e tempo disponibilizado pelo SAT/Fornecedor serão da responsabilidade do cliente. 
+Se a anomalia for reparável, o Cliente tem opção de solicitar um orçamento para a reparação efectiva da mesma. 
+
+Se a Instalação NÃO foi efetuada por um técnico da Leroy Merlin e o defeito é do Produto? 
+O pedido de Assistência Técnica deve SEMPRE ser enviado para o SAT/Fornecedor. 
+Os custos inerentes à deslocação e tempo disponibilizado pelo SAT/Fornecedor serão&lt;br&gt; sempre da responsabilidade destes intervenientes.</value>
+    </values>
+    <values>
+        <field>Process_Prefix__c</field>
+        <value xsi:type="xsd:string">LM_AT</value>
+    </values>
+    <values>
+        <field>Promessa_a_Cliente__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">LeroyMerlin</value>
+    </values>
+    <values>
+        <field>SMS_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">SMS_Assistencia_Tecnica</value>
+    </values>
+    <values>
+        <field>SendSMS__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_After_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_Before_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Static_Attachment_Name__c</field>
+        <value xsi:type="xsd:string">Relatório do Parceiro</value>
+    </values>
+    <values>
+        <field>Supervisao_de_Caixa__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Token_Template_Name__c</field>
+        <value xsi:type="xsd:string">SMS_Assistencia_Tecnica</value>
+    </values>
+    <values>
+        <field>Valor_Deslocacao__c</field>
+        <value xsi:type="xsd:double">29.99</value>
+    </values>
+</CustomMetadata>

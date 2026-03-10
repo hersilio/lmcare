@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Coordenador Promessa Produto e Instalação</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Coordenador Promessa Produto e Instalação</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Respons_vel_Venda_Projeto_Instala_es</parentRole>
+</Role>

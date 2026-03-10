@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSG_Autocrat_Admin_Inst_Forn</label>
+    <permissionSets>PS_Autocrat_Admin_Inst_Forn</permissionSets>
+    <permissionSets>PS_Autocrat_Geral_Leitura</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Data_Final_Da_Instalacao</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+( Instalacao_Concluida__c , true ,
+
+ISBLANK( Final_da_Instalacao__c )
+
+)</errorConditionFormula>
+    <errorDisplayField>Final_da_Instalacao__c</errorDisplayField>
+    <errorMessage>Preencher o campo Data Final da Instalação antes de marcar a Instalação Concluída</errorMessage>
+</ValidationRule>

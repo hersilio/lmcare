@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cliente_Contactado_na_Data_de_Entrega__c</fullName>
+    <label>Cliente Contactado na Data de Entrega</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Telefone</fullName>
+                <default>false</default>
+                <label>Telefone</label>
+            </value>
+            <value>
+                <fullName>Não Contactado</fullName>
+                <default>false</default>
+                <label>Não Contactado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

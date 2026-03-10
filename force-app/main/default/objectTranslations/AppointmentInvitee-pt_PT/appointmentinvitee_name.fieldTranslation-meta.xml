@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Número de convidado da marcação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Números de convidado da marcação</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <name>appointmentinvitee_name</name>
+</CustomFieldTranslation>

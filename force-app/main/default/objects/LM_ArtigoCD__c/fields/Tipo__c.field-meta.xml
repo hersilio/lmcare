@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A Entregar</fullName>
+                <default>false</default>
+                <label>A Entregar</label>
+            </value>
+            <value>
+                <fullName>A Recolher</fullName>
+                <default>false</default>
+                <label>A Recolher</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

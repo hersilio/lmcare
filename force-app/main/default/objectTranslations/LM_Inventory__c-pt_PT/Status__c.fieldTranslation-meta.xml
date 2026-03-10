@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Avariado</masterLabel>
+        <translation><!-- Avariado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disponível</masterLabel>
+        <translation><!-- Disponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Em Reparação</masterLabel>
+        <translation><!-- Em Reparação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indisponível</masterLabel>
+        <translation><!-- Indisponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não Devolvido</masterLabel>
+        <translation><!-- Não Devolvido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reservado</masterLabel>
+        <translation><!-- Reservado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

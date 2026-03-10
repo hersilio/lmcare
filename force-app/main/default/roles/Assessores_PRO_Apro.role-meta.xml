@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>PRO - Assessor</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>PRO - Assessor</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>RESPONSAVEL_PROJETO_PRO</parentRole>
+</Role>

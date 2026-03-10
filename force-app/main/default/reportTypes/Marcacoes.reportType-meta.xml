@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>ServiceAppointment</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Report Type que lida com os Service Appointments.
+
+Total de Marcações por Loja e Tipo de Projeto
+Marcações Realizadas vs Não Realizadas
+Canal de Entrada
+Agendamentos por Vendedor
+Taxa de Comparecimento
+Performance por Tipo de Projeto</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>ServiceResources</relationship>
+    </join>
+    <label>Marcações</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Appointment ID</displayNameOverride>
+            <field>Id</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Appointment Number</displayNameOverride>
+            <field>Name</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account</displayNameOverride>
+            <field>Account</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Type</displayNameOverride>
+            <field>WorkType</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact</displayNameOverride>
+            <field>Contact</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Address</displayNameOverride>
+            <field>Address</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Street</displayNameOverride>
+            <field>Street</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>City</displayNameOverride>
+            <field>City</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State/Province (text only)</displayNameOverride>
+            <field>State</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Zip/Postal Code</displayNameOverride>
+            <field>PostalCode</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country (text only)</displayNameOverride>
+            <field>Country</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State/Province</displayNameOverride>
+            <field>StateCode</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country</displayNameOverride>
+            <field>CountryCode</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Latitude</displayNameOverride>
+            <field>Latitude</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Longitude</displayNameOverride>
+            <field>Longitude</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Geocode Accuracy</displayNameOverride>
+            <field>GeocodeAccuracy</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>Description</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Earliest Start Permitted</displayNameOverride>
+            <field>EarliestStartTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Due Date</displayNameOverride>
+            <field>DueDate</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Duration</displayNameOverride>
+            <field>Duration</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Arrival Window Start</displayNameOverride>
+            <field>ArrivalWindowStartTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Arrival Window End</displayNameOverride>
+            <field>ArrivalWindowEndTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Start</displayNameOverride>
+            <field>SchedStartTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled End</displayNameOverride>
+            <field>SchedEndTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actual Start</displayNameOverride>
+            <field>ActualStartTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actual End</displayNameOverride>
+            <field>ActualEndTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Actual Duration (Minutes)</displayNameOverride>
+            <field>ActualDuration</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Duration Type</displayNameOverride>
+            <field>DurationType</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Duration in Minutes</displayNameOverride>
+            <field>DurationInMinutes</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Territory</displayNameOverride>
+            <field>ServiceTerritory</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subject</displayNameOverride>
+            <field>Subject</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status Category</displayNameOverride>
+            <field>StatusCategory</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Note</displayNameOverride>
+            <field>ServiceNote</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Type</displayNameOverride>
+            <field>AppointmentType</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Email</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cancellation Reason</displayNameOverride>
+            <field>CancellationReason</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Additional Information</displayNameOverride>
+            <field>AdditionalInformation</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comment</displayNameOverride>
+            <field>Comments</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Capacity Usage Autonumber</displayNameOverride>
+            <field>CapacityUsageAutonumber</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anonymous Booking</displayNameOverride>
+            <field>IsAnonymousBooking</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Offsite Appointment</displayNameOverride>
+            <field>IsOffsiteAppointment</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Booking URL</displayNameOverride>
+            <field>ApptBookingInfoUrl</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Engagement Channel Type</displayNameOverride>
+            <field>EngagementChannelType</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Associated Product</displayNameOverride>
+            <field>AssociatedProduct</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Checked In Time</displayNameOverride>
+            <field>CheckedInTime</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Attendee Limit</displayNameOverride>
+            <field>AttendeeLimit</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Mode</displayNameOverride>
+            <field>AppointmentMode</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Group Appointment Access Type</displayNameOverride>
+            <field>GroupAppointmentAccessType</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Transaction</displayNameOverride>
+            <field>Transaction</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Account_Name__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contacto Associado</displayNameOverride>
+            <field>SCH_AssignedContact__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Google ICS</displayNameOverride>
+            <field>SCH_Google_ICS__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Google Meet</displayNameOverride>
+            <field>SCH_Google_Meet_URL__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner TF</displayNameOverride>
+            <field>SCH_Owner_TF__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Resource Changed TF</displayNameOverride>
+            <field>SCH_Service_Resource_Changed_TF__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>StartSchedule</displayNameOverride>
+            <field>SCH_StartSchedule__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity</displayNameOverride>
+            <field>SCH_Related_Opportunity__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Resource</displayNameOverride>
+            <field>SCH_Service_Resource__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy.Username</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <masterLabel>Service Appointments</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assigned Resource ID</displayNameOverride>
+            <field>Id</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Assigned Resource Number</displayNameOverride>
+            <field>Name</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Resource</displayNameOverride>
+            <field>ServiceResource</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Required Resource</displayNameOverride>
+            <field>IsRequiredResource</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Role</displayNameOverride>
+            <field>Role</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Event</displayNameOverride>
+            <field>Event</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Resource</displayNameOverride>
+            <field>IsPrimaryResource</field>
+            <table>ServiceAppointment.ServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource__c.RelatedRecord</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource__c.RelatedRecord.Username</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Assigned_Resource__c.Event.Owner.CompanyName</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource__c.RelatedRecord.CompanyName</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource__c.RelatedRecord.Store_API_Name__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <masterLabel>Assigned Resources</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Time_to_serve__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <masterLabel>Marcações</masterLabel>
+    </sections>
+</ReportType>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "configurationTags" : [ ],
+  "devName" : "AF_Page__c",
+  "id" : "53c8fd9b-3a98-4856-b981-82925f962889",
+  "label" : "AF Page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-af",
+  "type" : "route",
+  "urlPrefix" : "af"
+}

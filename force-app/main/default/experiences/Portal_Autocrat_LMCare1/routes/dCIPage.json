@@ -1,0 +1,12 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "configurationTags" : [ ],
+  "devName" : "DCI_Page__c",
+  "id" : "3fdaadb7-a86d-43ad-8b0c-52a3963fd91b",
+  "label" : "DCI Page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-dci",
+  "type" : "route",
+  "urlPrefix" : "dci"
+}

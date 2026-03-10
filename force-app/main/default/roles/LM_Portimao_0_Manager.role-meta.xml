@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>LM Portimao - Manager</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>LM Portimao - Manager</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>LM_Portimao_0_Diretor_de_Loja</parentRole>
+</Role>

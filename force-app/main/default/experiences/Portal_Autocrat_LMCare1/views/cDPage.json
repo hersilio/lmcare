@@ -1,0 +1,136 @@
+{
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "1a10ec37-870c-487a-88b4-764522395b00",
+  "label" : "CD Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c49bf9e7-8671-438c-a618-75aac67b6928",
+          "columns" : [ {
+            "UUID" : "b53ddde3-37b5-4053-9a14-fbdd52820432",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c49bf9e7-8671-438c-a618-75aac67b6928",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "bbf198cc-f3e0-4dda-b185-12f9b2d9207e",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "0f0db978-ba2c-4269-ae6c-bf0a3c758ee0",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Novo Pedido CD"
+              }, {
+                "UUID" : "2e0337e4-5655-4dcf-a71f-7adddab625d7",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Pedidos CD"
+              } ],
+              "useOverflowMenu" : true
+            }
+          },
+          "componentName" : "forceCommunity:tabLayout",
+          "id" : "bbf198cc-f3e0-4dda-b185-12f9b2d9207e",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "flowArguments" : "",
+                "flowName" : "LM_Certificado_Devolucao_Portal"
+              },
+              "componentName" : "forceCommunity:flowCommunity",
+              "id" : "60429a8b-259f-43db-b863-e007f85606a6",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "0f0db978-ba2c-4269-ae6c-bf0a3c758ee0",
+            "regionLabel" : "Novo Pedido CD",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : false,
+                "filterName" : "Certificado_de_Devolu_o",
+                "layout" : "FULL",
+                "pageSize" : 25,
+                "scope" : "Order",
+                "showActionBar" : false,
+                "showChartsPanel" : false,
+                "showDisplay" : "grid",
+                "showFilterPanel" : false,
+                "showImageIcon" : false,
+                "showManualRefreshButton" : true,
+                "showObjectName" : false,
+                "showPinnedList" : false,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "6e91356a-7ca6-4b6f-acdb-00b7d1a87c17",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "2e0337e4-5655-4dcf-a71f-7adddab625d7",
+            "regionLabel" : "Pedidos CD",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b53ddde3-37b5-4053-9a14-fbdd52820432",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "485d7802-f18e-4b8c-b2df-d2fe84974e9c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "CD Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0a32a427-d55c-49c8-a8f6-427d0db4c02b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "57d268bc-017e-42d9-9e43-d1abd77b795b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-cd"
+}

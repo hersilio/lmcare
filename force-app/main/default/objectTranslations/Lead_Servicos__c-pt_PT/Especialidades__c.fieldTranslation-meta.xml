@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Especialidades --></label>
+    <name>Especialidades__c</name>
+    <picklistValues>
+        <masterLabel>Alcatifa</masterLabel>
+        <translation><!-- Alcatifa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alpendres</masterLabel>
+        <translation><!-- Alpendres --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aplicação de Pladur e Estrutura</masterLabel>
+        <translation><!-- Aplicação de Pladur e Estrutura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ar Condicionado</masterLabel>
+        <translation><!-- Ar Condicionado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autoclismo PVC</masterLabel>
+        <translation><!-- Autoclismo PVC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BBQ</masterLabel>
+        <translation><!-- BBQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banheiras</masterLabel>
+        <translation><!-- Banheiras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banheiras Hidromassagem</masterLabel>
+        <translation><!-- Banheiras Hidromassagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bloco de vidro</masterLabel>
+        <translation><!-- Bloco de vidro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bombas de calor</masterLabel>
+        <translation><!-- Bombas de calor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV</masterLabel>
+        <translation><!-- CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cabines Hidromassagem</masterLabel>
+        <translation><!-- Cabines Hidromassagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cabines de base de duche</masterLabel>
+        <translation><!-- Cabines de base de duche --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cabines e Paineis ITALBOX</masterLabel>
+        <translation><!-- Cabines e Paineis ITALBOX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caldeiras Gasóleo</masterLabel>
+        <translation><!-- Caldeiras Gasóleo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caldeiras Gás</masterLabel>
+        <translation><!-- Caldeiras Gás --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caleiras</masterLabel>
+        <translation><!-- Caleiras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candeeiros</masterLabel>
+        <translation><!-- Candeeiros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churrasqueiras</masterLabel>
+        <translation><!-- Churrasqueiras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chuveiros de duche</masterLabel>
+        <translation><!-- Chuveiros de duche --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cofres</masterLabel>
+        <translation><!-- Cofres --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colunas Hidromassagem</masterLabel>
+        <translation><!-- Colunas Hidromassagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construção de Lareiras</masterLabel>
+        <translation><!-- Construção de Lareiras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eletrodomésticos</masterLabel>
+        <translation><!-- Eletrodomésticos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emissores calor</masterLabel>
+        <translation><!-- Emissores calor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Envernizamento portas</masterLabel>
+        <translation><!-- Envernizamento portas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escadas interior</masterLabel>
+        <translation><!-- Escadas interior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escadas sotão</masterLabel>
+        <translation><!-- Escadas sotão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Esquentadores</masterLabel>
+        <translation><!-- Esquentadores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estores</masterLabel>
+        <translation><!-- Estores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estores eléctricos</masterLabel>
+        <translation><!-- Estores eléctricos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estores exteriores</masterLabel>
+        <translation><!-- Estores exteriores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exaustores</masterLabel>
+        <translation><!-- Exaustores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechaduras de segurança</masterLabel>
+        <translation><!-- Fechaduras de segurança --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechaduras e/ou Puxadores</masterLabel>
+        <translation><!-- Fechaduras e/ou Puxadores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impermeabilização</masterLabel>
+        <translation><!-- Impermeabilização --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isolamento (lã de rocha)</masterLabel>
+        <translation><!-- Isolamento (lã de rocha) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janelas (medidas standart)</masterLabel>
+        <translation><!-- Janelas (medidas standart) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janelas sotão</masterLabel>
+        <translation><!-- Janelas sotão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lagos</masterLabel>
+        <translation><!-- Lagos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lambril (parede ou tecto)</masterLabel>
+        <translation><!-- Lambril (parede ou tecto) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lava Loiça</masterLabel>
+        <translation><!-- Lava Loiça --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loiças Sanitárias</masterLabel>
+        <translation><!-- Loiças Sanitárias --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobiliário jardim</masterLabel>
+        <translation><!-- Mobiliário jardim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motores garagem</masterLabel>
+        <translation><!-- Motores garagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Módulos de Cozinha</masterLabel>
+        <translation><!-- Módulos de Cozinha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Móveis Resina / Estantes / Armários</masterLabel>
+        <translation><!-- Móveis Resina / Estantes / Armários --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Móveis WC / lavatório</masterLabel>
+        <translation><!-- Móveis WC / lavatório --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paineis Solares</masterLabel>
+        <translation><!-- Paineis Solares --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paineis de Banheira</masterLabel>
+        <translation><!-- Paineis de Banheira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Painéis deslizantes</masterLabel>
+        <translation><!-- Painéis deslizantes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Papel de Parede</masterLabel>
+        <translation><!-- Papel de Parede --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabólicas / Antenas</masterLabel>
+        <translation><!-- Parabólicas / Antenas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pavimento Interior Madeira</masterLabel>
+        <translation><!-- Pavimento Interior Madeira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pavimento Vinilico</masterLabel>
+        <translation><!-- Pavimento Vinilico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pergulas</masterLabel>
+        <translation><!-- Pergulas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pintura Exterior</masterLabel>
+        <translation><!-- Pintura Exterior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pintura Interior</masterLabel>
+        <translation><!-- Pintura Interior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pintura e reparação portas</masterLabel>
+        <translation><!-- Pintura e reparação portas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pintura portas lisa novas</masterLabel>
+        <translation><!-- Pintura portas lisa novas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piscinas (enterradas)</masterLabel>
+        <translation><!-- Piscinas (enterradas) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piscinas (superficie)</masterLabel>
+        <translation><!-- Piscinas (superficie) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piso Radiante</masterLabel>
+        <translation><!-- Piso Radiante --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaqueta decorativa</masterLabel>
+        <translation><!-- Plaqueta decorativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portas Entrada</masterLabel>
+        <translation><!-- Portas Entrada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portas Interiores</masterLabel>
+        <translation><!-- Portas Interiores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recuperadores calor</masterLabel>
+        <translation><!-- Recuperadores calor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relva sintetica</masterLabel>
+        <translation><!-- Relva sintetica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remodelações</masterLabel>
+        <translation><!-- Remodelações --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revestimento e/ou pavimento Cerâmico</masterLabel>
+        <translation><!-- Revestimento e/ou pavimento Cerâmico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revistimento exterior (capoto) ETICS</masterLabel>
+        <translation><!-- Revistimento exterior (capoto) ETICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roupeiros modulares</masterLabel>
+        <translation><!-- Roupeiros modulares --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roupeiros à medida</masterLabel>
+        <translation><!-- Roupeiros à medida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salamandras</masterLabel>
+        <translation><!-- Salamandras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seca-toalhas</masterLabel>
+        <translation><!-- Seca-toalhas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem especialidade definida</masterLabel>
+        <translation><!-- Sem especialidade definida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sistemas de Rega</masterLabel>
+        <translation><!-- Sistemas de Rega --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soalho Exterior (composite/madeira)</masterLabel>
+        <translation><!-- Soalho Exterior (composite/madeira) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solo exterior (pedra, cerâmica)</masterLabel>
+        <translation><!-- Solo exterior (pedra, cerâmica) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substituição cabelagem electrica</masterLabel>
+        <translation><!-- Substituição cabelagem electrica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telha sandwich</masterLabel>
+        <translation><!-- Telha sandwich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Termoacumuladores</masterLabel>
+        <translation><!-- Termoacumuladores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toldos</masterLabel>
+        <translation><!-- Toldos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torneira Cozinha</masterLabel>
+        <translation><!-- Torneira Cozinha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torneiras</masterLabel>
+        <translation><!-- Torneiras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Varões / Cortinados</masterLabel>
+        <translation><!-- Varões / Cortinados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vedações / Cercas</masterLabel>
+        <translation><!-- Vedações / Cercas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventoinhas</masterLabel>
+        <translation><!-- Ventoinhas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Videoporteiros</masterLabel>
+        <translation><!-- Videoporteiros --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

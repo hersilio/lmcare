@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pendentes mercadorias</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pendentes mercadorias</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Entrega de Mercadoria</layout>
+        <sections>
+            <label><!-- Hiperligações personalizadas --></label>
+            <section>Hiperligações personalizadas</section>
+        </sections>
+        <sections>
+            <label><!-- Incidência de Entrega --></label>
+            <section>Incidência de Entrega</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Preencher o Motivo de Não reembolso. --></errorMessage>
+        <name>Motivo_de_nao_reembolso</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Preencher_Data_de_Reembolso --></errorMessage>
+        <name>Preencher_Data_de_Reembolso</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Updates field Searcheables_Concat__c in object Order when the Order is created</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Formula_SearcheablesConcat</name>
+        <dataType>String</dataType>
+        <expression>LEFT(IF({!$Record.Account.RecordType.DeveloperName} == &apos;PersonAccount&apos;, {!$Record.Account.FirstName} + &quot; &quot; +  {!$Record.Account.LastName}, {!$Record.Account.Name}) +
+&quot; &quot; +  {!$Record.Account.E_mail_Empresa__c} + &quot; &quot; + {!$Record.Account.Phone} + &quot; &quot; + {!$Record.Account.NIF__c} + &quot; &quot; + {!$Record.Account.Numero_de_Conta__c} + &quot; &quot; + {!$Record.Store__r.Name}, 255)</expression>
+    </formulas>
+    <interviewLabel>LM_UpdateSearchFieldsOnAccUpdate {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LM_UpdateSearchFieldsOnOrderCreate</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UpdateTriggeringOrder</name>
+        <label>Update Triggering Order</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Searcheables_Concat__c</field>
+            <value>
+                <elementReference>Formula_SearcheablesConcat</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UpdateTriggeringOrder</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.Store__c}) || ISNEW()</filterFormula>
+        <object>Order</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

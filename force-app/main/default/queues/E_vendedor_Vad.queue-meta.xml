@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>E-vendedor - Vad</name>
+    <queueMembers>
+        <users>
+            <user>adelio.leite@leroymerlin.pt</user>
+            <user>ana.p.nunes1@leroymerlin.pt</user>
+            <user>andre.d.fernandes@leroymerlin.pt</user>
+            <user>barbara.h.oliveira@leroymerlin.pt</user>
+            <user>catarina.b.ramos@leroymerlin.pt</user>
+            <user>daniela.q.sereno@leroymerlin.pt</user>
+            <user>filipa.h.dias@leroymerlin.pt</user>
+            <user>gisela.v.saldanha@leroymerlin.pt</user>
+            <user>hugo.a.faria@leroymerlin.pt</user>
+            <user>joao.s.cunha@leroymerlin.pt</user>
+            <user>joao.v.rodrigues@leroymerlin.pt</user>
+            <user>joao.r.coelho@leroymerlin.pt</user>
+            <user>joao.c.silva@leroymerlin.pt</user>
+            <user>leticia.c.borges@leroymerlin.pt</user>
+            <user>leticia.p.testani@ext.leroymerlin.pt</user>
+            <user>lino.s.faria@ext.leroymerlin.pt</user>
+            <user>luis.s.simoes@leroymerlin.pt</user>
+            <user>marina.l.ramos@leroymerlin.pt</user>
+            <user>marisol.silva@leroymerlin.pt</user>
+            <user>paula.c.lopes@leroymerlin.pt</user>
+            <user>ricardo.c.ribeiro@leroymerlin.pt</user>
+            <user>silvia.c.lopes@leroymerlin.pt</user>
+            <user>telma.s.ferreira@leroymerlin.pt</user>
+            <user>victor.c.fernandes@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>LM_Leads</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

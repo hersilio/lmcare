@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Vendedor - Leroy Merlin Leiria</name>
+    <queueMembers>
+        <users>
+            <user>ana.l.jorge@leroymerlin.pt</user>
+            <user>diogo.l.geriante@leroymerlin.pt</user>
+            <user>marta.s.paulos@leroymerlin.pt</user>
+            <user>paulo.v.charrinho@leroymerlin.pt</user>
+            <user>ricardo.c.varela@leroymerlin.pt</user>
+            <user>susana.trincao@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>LM_Leads</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

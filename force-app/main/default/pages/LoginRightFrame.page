@@ -1,0 +1,90 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+    <style>
+        body {
+            font-family: 'Salesforce Sans', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .logo {
+            /* Standard size restored */
+            max-width: 250px; 
+            height: auto;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .test-note {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 12px;
+            border: 1px solid #ffeeba;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-style: italic;
+            text-align: center;
+        }
+        .link-box {
+            background-color: #f4f7f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #0070d2;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0070d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="container">
+     
+     <img src="{!$Resource.LM_LOGO_bigger}" 
+     onerror="this.style.display='none'" 
+     alt="Leroy Merlin Logo" 
+     class="logo" />
+     
+
+        <h1>Portal LMCARE</h1>
+
+        
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
+
+         <div class="link-box">
+            O acesso deve ser feito através da opção <span class="bold-text">"Log in with PingID"</span>.
+        </div>
+        <div class="link-box">
+            Os acessos são desativados automaticamente após 20 dias de inatividade. Caso necessites de o reactivar, utiliza o <a href="https://adeo.service-now.com/lmpt?id=sc_cat_item&sys_id=74acc094c346719014fa36477d013149" target="_blank">link para o DSD</a> 
+            e escolhe a opção "Reativação".
+        </div>
+
+        <div class="link-box">
+            Se não tens conta criada deves pedir criação pelo <a href="https://adeo.service-now.com/lmpt?id=sc_cat_item&sys_id=74acc094c346719014fa36477d013149" target="_blank">link para o DSD</a>
+            e escolhe a opção "Acesso à Aplicação". <span class="bold-text">Após a submissão, o teu manager vai receber um email para aprovação</span>. Enquanto o pedido não for aprovado não segue para criação.
+        </div>
+    </div>
+</apex:page>

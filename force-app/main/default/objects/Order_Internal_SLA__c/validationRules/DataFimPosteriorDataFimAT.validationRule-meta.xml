@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataFimPosteriorDataFimAT</fullName>
+    <active>true</active>
+    <description>A Data Fim do SLA não pode ser posterior a Data Fim da AT</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Order__r.ActivatedDate)),
+  OR(
+    EndDate__c &gt; DATEVALUE(Order__r.ActivatedDate),
+    StartDate__c &gt; DATEVALUE(Order__r.ActivatedDate)
+  )
+)</errorConditionFormula>
+    <errorMessage>A Data Início / Data Fim do SLA não pode ser posterior à Data de conclusão da AT</errorMessage>
+</ValidationRule>

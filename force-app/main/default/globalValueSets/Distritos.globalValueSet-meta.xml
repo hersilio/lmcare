@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Açores</fullName>
+        <default>false</default>
+        <label>Açores</label>
+    </customValue>
+    <customValue>
+        <fullName>Aveiro</fullName>
+        <default>false</default>
+        <label>Aveiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Beja</fullName>
+        <default>false</default>
+        <label>Beja</label>
+    </customValue>
+    <customValue>
+        <fullName>Braga</fullName>
+        <default>false</default>
+        <label>Braga</label>
+    </customValue>
+    <customValue>
+        <fullName>Bragança</fullName>
+        <default>false</default>
+        <label>Bragança</label>
+    </customValue>
+    <customValue>
+        <fullName>Castelo Branco</fullName>
+        <default>false</default>
+        <label>Castelo Branco</label>
+    </customValue>
+    <customValue>
+        <fullName>Coimbra</fullName>
+        <default>false</default>
+        <label>Coimbra</label>
+    </customValue>
+    <customValue>
+        <fullName>Corvo</fullName>
+        <default>false</default>
+        <label>Corvo</label>
+    </customValue>
+    <customValue>
+        <fullName>Covilhã</fullName>
+        <default>false</default>
+        <label>Covilhã</label>
+    </customValue>
+    <customValue>
+        <fullName>Évora</fullName>
+        <default>false</default>
+        <label>Évora</label>
+    </customValue>
+    <customValue>
+        <fullName>Faial</fullName>
+        <default>false</default>
+        <label>Faial</label>
+    </customValue>
+    <customValue>
+        <fullName>Faro</fullName>
+        <default>false</default>
+        <label>Faro</label>
+    </customValue>
+    <customValue>
+        <fullName>Flores</fullName>
+        <default>false</default>
+        <label>Flores</label>
+    </customValue>
+    <customValue>
+        <fullName>Graciosa</fullName>
+        <default>false</default>
+        <label>Graciosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Guarda</fullName>
+        <default>false</default>
+        <label>Guarda</label>
+    </customValue>
+    <customValue>
+        <fullName>Leiria</fullName>
+        <default>false</default>
+        <label>Leiria</label>
+    </customValue>
+    <customValue>
+        <fullName>Lisboa</fullName>
+        <default>false</default>
+        <label>Lisboa</label>
+    </customValue>
+    <customValue>
+        <fullName>Madeira</fullName>
+        <default>false</default>
+        <label>Madeira</label>
+    </customValue>
+    <customValue>
+        <fullName>Pico</fullName>
+        <default>false</default>
+        <label>Pico</label>
+    </customValue>
+    <customValue>
+        <fullName>Ponta Delgada</fullName>
+        <default>false</default>
+        <label>Ponta Delgada</label>
+    </customValue>
+    <customValue>
+        <fullName>Portalegre</fullName>
+        <default>false</default>
+        <label>Portalegre</label>
+    </customValue>
+    <customValue>
+        <fullName>Porto</fullName>
+        <default>false</default>
+        <label>Porto</label>
+    </customValue>
+    <customValue>
+        <fullName>Porto Santo</fullName>
+        <default>false</default>
+        <label>Porto Santo</label>
+    </customValue>
+    <customValue>
+        <fullName>Santa Maria</fullName>
+        <default>false</default>
+        <label>Santa Maria</label>
+    </customValue>
+    <customValue>
+        <fullName>Santarém</fullName>
+        <default>false</default>
+        <label>Santarém</label>
+    </customValue>
+    <customValue>
+        <fullName>São Jorge</fullName>
+        <default>false</default>
+        <label>São Jorge</label>
+    </customValue>
+    <customValue>
+        <fullName>Setúbal</fullName>
+        <default>false</default>
+        <label>Setúbal</label>
+    </customValue>
+    <customValue>
+        <fullName>Terceira</fullName>
+        <default>false</default>
+        <label>Terceira</label>
+    </customValue>
+    <customValue>
+        <fullName>Viana do Castelo</fullName>
+        <default>false</default>
+        <label>Viana do Castelo</label>
+    </customValue>
+    <customValue>
+        <fullName>Vila Real</fullName>
+        <default>false</default>
+        <label>Vila Real</label>
+    </customValue>
+    <customValue>
+        <fullName>Viseu</fullName>
+        <default>false</default>
+        <label>Viseu</label>
+    </customValue>
+    <masterLabel>Distritos</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,43 @@
+<!--
+  @description       : 
+  @author            : Francisco Ribeiro
+  @group             : 
+  @last modified on  : 27-03-2024
+  @last modified by  : Francisco Ribeiro
+-->
+<template>
+    <div>
+        <!-- Modal/Popup Box LWC header here -->
+        <header class="slds-modal__header">
+            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Sincronizar Conta</h2>
+        </header>
+        <!-- Modal/Popup Box LWC body starts here -->
+        <div style="text-align: center;" class="slds-modal__content slds-p-around_medium">
+            <template if:true={spinner}>
+                <div class="spinner">
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+            </template>
+
+            <template if:false={spinner}>
+                <template if:true={synced}>
+                    <lightning-button class="slds-p-around_medium" variant="neutral" label="Sincronizar" onclick={sync}></lightning-button>
+                </template>
+
+                <template if:false={synced}>
+                    <h2 style="text-align: center;" class="slds-text-heading_medium slds-m-bottom_medium">
+                        {message}
+                    </h2>
+                </template>
+            </template>
+        </div>
+        <!-- Modal/Popup Box LWC footer starts here -->
+        <footer class="slds-modal__footer">
+            <template if:false={spinner}>
+                <template if:false={synced}>
+                    <lightning-button class="slds-p-around_medium" variant="neutral" label="Concluir" onclick={closeAction}></lightning-button>
+                </template>
+            </template>
+        </footer>
+    </div>
+</template>

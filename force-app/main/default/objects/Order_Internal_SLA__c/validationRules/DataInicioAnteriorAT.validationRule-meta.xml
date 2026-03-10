@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataInicioAnteriorAT</fullName>
+    <active>true</active>
+    <description>Data Inicio do SLA é inferior a Data Inicio da AT</description>
+    <errorConditionFormula>StartDate__c  &lt;  Order__r.EffectiveDate</errorConditionFormula>
+    <errorMessage>A Data Início do SLA não pode ser anterior a Data Início da AT</errorMessage>
+</ValidationRule>

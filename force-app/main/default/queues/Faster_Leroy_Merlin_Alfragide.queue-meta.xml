@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Faster - Leroy Merlin Alfragide</name>
+    <queueMembers>
+        <users>
+            <user>nelson.n.moreira@leroymerlin.pt</user>
+            <user>nuno.s.sanches@leroymerlin.pt</user>
+            <user>paula.c.fernandes@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>LM_Leads</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

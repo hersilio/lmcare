@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "d7098c96-c2df-4c83-8d92-e97683750ecc",
+    "propertyOverrides" : {
+      "activeViewId" : "b990efc8-78e7-4341-980e-405d586b022e"
+    },
+    "targetId" : "9545080a-e336-4ae3-9d69-a2dba4a80a93",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "BT_Page_BT_Page_Page",
+  "id" : "745bef3e-7e62-451d-a881-ef5d74307a38",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,69 @@
+{
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "64a35cd4-668c-4eb8-9d82-726c2bcb24d4",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "71178340-9a10-4802-9d5e-56cbf6ed786e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "7c64db12-64f6-445c-9bab-987dc6aa631e",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : false,
+        "filterName" : "My_Orders",
+        "layout" : "FULL",
+        "pageSize" : 10,
+        "scope" : "Order",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "showall",
+        "showFilterPanel" : false,
+        "showImageIcon" : false,
+        "showManualRefreshButton" : true,
+        "showObjectName" : false,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "11ce4029-53c6-438b-84b8-a16ad4121787",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "25168bd9-8d9a-47c7-855e-d61d6a21f55e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3c864fce-9b93-4b54-a851-05ceba6c0030",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "244aada8-411c-4b3e-b6d5-d015a954771d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d61fd5f1-4fd1-45fe-bb1b-d8637b4681b7",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d9ecb2c7-31e2-4280-abc3-869d88d05db1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

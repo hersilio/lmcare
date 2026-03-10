@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>LM Santa Maria da Feira - Operacional</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>LM Santa Maria da Feira - Operacional</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>LM_Sta_Maria_da_Feira_0_Manager</parentRole>
+</Role>

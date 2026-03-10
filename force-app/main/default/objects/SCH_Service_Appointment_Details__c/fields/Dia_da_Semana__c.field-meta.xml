@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dia_da_Semana__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  WEEKDAY(DATEVALUE(SCH_ServiceAppointment__r.SchedStartTime)),
+  1, &quot;7. Domingo&quot;,
+  2, &quot;1. Segunda-feira&quot;,
+  3, &quot;2. Terça-feira&quot;,
+  4, &quot;3. Quarta-feira&quot;,
+  5, &quot;4. Quinta-feira&quot;,
+  6, &quot;5. Sexta-feira&quot;,
+  7, &quot;6. Sábado&quot;,
+  &quot;Desconhecido&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dia da Semana</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

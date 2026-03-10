@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>E-vendedor Projeto - Vad</name>
+    <queueMembers>
+        <users>
+            <user>ana.m.modesto@leroymerlin.pt</user>
+            <user>bruno.s.teixeira@leroymerlin.pt</user>
+            <user>carla.c.pinto@leroymerlin.pt</user>
+            <user>catarina.s.almeida@leroymerlin.pt</user>
+            <user>isabel.g.vitorino@leroymerlin.pt</user>
+            <user>maria.c.silva2@leroymerlin.pt</user>
+            <user>pedro.p.filipe@leroymerlin.pt</user>
+            <user>angela.s.ramos@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>LM_Leads</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

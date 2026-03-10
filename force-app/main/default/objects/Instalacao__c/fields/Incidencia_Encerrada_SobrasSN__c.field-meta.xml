@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incidencia_Encerrada_SobrasSN__c</fullName>
+    <formula>and
+(IF( ISBLANK( Encerramento_da_Incidencia_de_Sobras__c) , false, true),
+ISPICKVAL( Certificado_Devolucao_recolha_de_sobra__c , &apos;SIM&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Incidência Encerrada</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsibility__c</fullName>
+    <description>Identifica a entidade responsável pelo período SLA interno associado a AT</description>
+    <label>Responsabilidade</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cliente</fullName>
+                <default>false</default>
+                <label>Cliente</label>
+            </value>
+            <value>
+                <fullName>Equipa Central</fullName>
+                <default>false</default>
+                <label>Equipa Central</label>
+            </value>
+            <value>
+                <fullName>Fornecedor</fullName>
+                <default>false</default>
+                <label>Fornecedor</label>
+            </value>
+            <value>
+                <fullName>Instalador</fullName>
+                <default>false</default>
+                <label>Instalador</label>
+            </value>
+            <value>
+                <fullName>Loja</fullName>
+                <default>false</default>
+                <label>Loja</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

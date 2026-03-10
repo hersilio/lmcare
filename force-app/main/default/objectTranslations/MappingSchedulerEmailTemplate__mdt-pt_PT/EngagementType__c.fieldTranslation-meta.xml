@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Type --></label>
+    <name>EngagementType__c</name>
+    <picklistValues>
+        <masterLabel>Presencial</masterLabel>
+        <translation><!-- Presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>À Distância</masterLabel>
+        <translation><!-- À Distância --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

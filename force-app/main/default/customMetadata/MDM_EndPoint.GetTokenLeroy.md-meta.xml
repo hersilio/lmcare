@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TokenLeroy</label>
+    <protected>false</protected>
+    <values>
+        <field>ApiKey__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ClientId__c</field>
+        <value xsi:type="xsd:string">0P14b7ea127ec0869665b4a9f99fb18108</value>
+    </values>
+    <values>
+        <field>ClientSecret__c</field>
+        <value xsi:type="xsd:string">0b0fe1f52eb1a2f01a6b906bcdf9b9a600adfe548e1d6b27e9241297f4ca7920</value>
+    </values>
+    <values>
+        <field>EndPoint__c</field>
+        <value xsi:type="xsd:string">https://idpb2e.adeo.com/as/token.oauth2</value>
+    </values>
+    <values>
+        <field>isSandBox__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

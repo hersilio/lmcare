@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo de Não Reembolso --></label>
+    <name>Motivo_de_Nao_Reembolso__c</name>
+    <picklistValues>
+        <masterLabel>Gesto comercial</masterLabel>
+        <translation><!-- Gesto comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Litígio com cliente</masterLabel>
+        <translation><!-- Litígio com cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Troca de artigo de valor superior</masterLabel>
+        <translation><!-- Troca de artigo de valor superior --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

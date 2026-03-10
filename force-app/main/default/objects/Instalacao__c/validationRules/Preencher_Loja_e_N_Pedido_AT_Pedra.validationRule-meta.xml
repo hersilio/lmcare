@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Loja_e_N_Pedido_AT_Pedra</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL( Abrir_Assistencia_Tecnica_Tampo_de_Pedra__c , &apos;SIM&apos;),
+OR(
+ISBLANK( N_da_loja_para_AT__c ),
+ISBLANK( N_de_Pedido_a_clienteAT__c )))</errorConditionFormula>
+    <errorMessage>Preencher os campos Nº de Loja e Nº de pedido para Assistência técnica do Tampo de Pedra</errorMessage>
+</ValidationRule>

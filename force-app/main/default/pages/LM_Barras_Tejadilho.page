@@ -1,0 +1,161 @@
+<apex:page StandardController="Order" extensions="LM_OrderCustomController" renderas="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" >
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+         @page {
+          size:A4;
+          margin:8mm;
+        }
+    
+        body {
+            font-family:Arial;
+        }
+
+        h1{
+            font-size:22pt;
+            margin-top:5px;
+        }
+        
+        h2{
+            margin-bottom:5px;
+            padding-bottom:0;
+        }
+
+        .infoTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .infoTable tr, .infoTable 
+        td {
+            border: 1px solid black;
+            padding:5px;
+        }
+
+        li {
+            padding-bottom: 8px;
+            font-size: 11pt;
+        }
+        
+        .accInfo p{
+            padding:0;
+            margin:0;
+            font-size:11pt;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <apex:image url="{!$Resource.LM_PdfTemplateHeader}" width="100%"/>
+    </header>
+    <main>
+        <h2>
+            Serviço de Aluguer de Barras Tejadilho 
+        </h2>
+        <h1><b>Nº: {!Order.OrderNumber} &nbsp;&nbsp;&nbsp; LOJA: {!Order.Store_Name__c}</b></h1>
+        <p>Estimado(a) cliente,<br/><br/>
+        Desde já agradecemos a sua preferência e informamos que o seu pedido de aluguer foi registado com sucesso.<br/>
+        Informamos através deste documento as condições gerais do serviço de aluguer de barras de tejadilho:</p>       
+        <ol style="margin-top:0;">
+            <li>
+                São barras porta-bagagens insufláveis para tejadilho para todo o tipo de veículos (excepto os que não têm tejadilho rígido e os veículos com três portas sem possibilidade de baixar as janelas traseiras).
+            </li>
+            <li>
+                O Serviço está sujeito ao pagamento de uma caução obrigatória de €75.
+            </li>
+            <li>
+                A caução é devolvida após a devolução do material em perfeitas condições.
+            </li>
+            <li>
+                Em caso de algum dano das barras durante a utilização das mesmas, a caução ficará retida na totalidade.
+            </li>
+            <li>
+                O aluguer é gratuito até 2 dias de utilização.<br/>
+                De 3 a 30 dias terá um custo diário de €1.<br/>
+                Mais de 30 dias terá um custo de €75.
+            </li>
+            <li>
+                Carga total a suportar 80Kg.
+            </li>
+            <li>
+                Portagens e multas são da total responsabilidade do Cliente.
+            </li>
+            <li>
+                O Cliente só pode alugar as barras de tejadilho se adquirir material na Loja.
+            </li>
+            <li>
+                A restituição das Barras de Tejadilho terá de ser efetuada em horário da reserva e do funcionamento da Loja  onde solicitou o serviço. O incumprimento implica o pagamento de todo o tempo decorrido desde o aluguer até à restituição.
+            </li>
+        </ol>
+        
+        <table class="infoTable" cellspacing="0">
+            <tr >
+                <td width="33%">Tabela de Preços do Aluguer</td>
+                <td width="33%">
+                    Até 2 dias<br/>
+                    De 3 a 30 dias <br/>
+                    Mais de 30 dias
+                </td>
+                <td>
+                    Gratuito<br/>
+                    1€ / dia <br/>
+                    75€
+                </td>
+            </tr>
+            <tr style='background-color:grey'>
+                <td>Preço a validar em caixa</td>
+                <td> <b>Cod. Caução - 49230041</b><br/>
+                     <b>Cod. Aluguer - 49013026</b></td>
+                <td>
+                   <apex:outputText value="{0, number, ###,##0.00 €}">
+                   <apex:param value="{!Order.BT_Total_Cost__c}" />
+                   </apex:outputText>
+                </td>
+            </tr>
+        </table>
+        
+        <p>Dados Fornecidos Pelo Cliente:</p>
+
+        <div class='accInfo'>
+            <p><b>Nome:</b> {!Order.Account.Name}</p>
+            <p><b>Morada:</b> {!Order.Account.ShippingStreet}</p>
+            <p><b>Código Postal:</b> {!Order.Account.ShippingPostalCode}</p>
+            <p><b>Localidade:</b> {!Order.Account.ShippingCity}</p>
+            <p><b>Contacto:</b> {!Order.Account.Phone}</p>
+            <p><b>Email:</b> {!Order.Account.E_Mail_Empresa__c}</p>
+            <p><b>NIF:</b> {!Order.Account.NIF__c}</p>
+        </div>
+
+        <p>Assinatura _______________________ Local ________________________ Data_________________</p><br/>
+        
+         <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
+            <apex:pageBlock rendered="{!Order.Validacao_Manual__c}">
+               <p style="font-size:10pt;">
+                     Documento assinado manualmente por {!Order.Account_Name__c}, NIF {!Order.NIF__c} em &nbsp;
+                     <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                        <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                     </apex:outputText>
+               </p>
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{!!Order.Validacao_Manual__c}">
+               <p style="font-size:10pt;">
+                     Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
+                     <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                        <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                     </apex:outputText>
+                  </p>
+               </apex:pageBlock>
+            </apex:pageBlock>
+        
+        <apex:image url="{!$Resource.HandiRackInfo}" width="100%"/>
+    </main>
+
+</body>
+
+</html>
+</apex:page>

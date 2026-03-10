@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSaveAsync__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Tells if the commit to the database step should be done asynchronously. (Useful for callouts, where commits can&apos;t happen together with external calls)</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>IsSaveAsync</label>
+    <type>Checkbox</type>
+</CustomField>

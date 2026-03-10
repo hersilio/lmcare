@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATELIER</fullName>
+    <columns>NAME</columns>
+    <columns>Loja__c</columns>
+    <columns>Product__c</columns>
+    <columns>Hallway__c</columns>
+    <columns>Cupboard__c</columns>
+    <columns>Shelves__c</columns>
+    <columns>Order__c</columns>
+    <columns>Status__c</columns>
+    <columns>Rejection_Reason__c</columns>
+    <columns>Damage_Description__c</columns>
+    <columns>Repair_Arrival_Time__c</columns>
+    <columns>Repair_Exit_Time__c</columns>
+    <columns>Quote_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Em Reparação</value>
+    </filters>
+    <label>ATELIER - Todos</label>
+</ListView>

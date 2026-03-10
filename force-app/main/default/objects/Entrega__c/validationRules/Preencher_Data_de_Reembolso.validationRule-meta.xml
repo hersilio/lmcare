@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Data_de_Reembolso</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(ISPICKVAL(Solicitado_Reembolso_a_caixas__c, &apos;SIM&apos;),
+  ISBLANK(Pedido_de_Reembolso__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Pedido_de_Reembolso__c</errorDisplayField>
+    <errorMessage>Preencher_Data_de_Reembolso</errorMessage>
+</ValidationRule>

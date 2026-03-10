@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CurrentPDS --></label>
+    <name>CurrentPDS__c</name>
+    <picklistValues>
+        <masterLabel>AT enviada a Parceiro</masterLabel>
+        <translation><!-- AT enviada a Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT enviada ao fornecedor</masterLabel>
+        <translation><!-- AT enviada ao fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda Validação</masterLabel>
+        <translation><!-- Aguarda Validação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda agendamento de peritagem</masterLabel>
+        <translation><!-- Aguarda agendamento de peritagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda agendamento do Fornecedor</masterLabel>
+        <translation><!-- Aguarda agendamento do Fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda agendamento do Parceiro</masterLabel>
+        <translation><!-- Aguarda agendamento do Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda conclusão do Parceiro</masterLabel>
+        <translation><!-- Aguarda conclusão do Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda decisão superior</masterLabel>
+        <translation><!-- Aguarda decisão superior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda entrega de material no Cliente</masterLabel>
+        <translation><!-- Aguarda entrega de material no Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda esclarecimentos por parte do Cliente</masterLabel>
+        <translation><!-- Aguarda esclarecimentos por parte do Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda esclarecimentos por parte do Parceiro</masterLabel>
+        <translation><!-- Aguarda esclarecimentos por parte do Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda informação de conclusão do Fornecedor</masterLabel>
+        <translation><!-- Aguarda informação de conclusão do Fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda levantamento/resposta por parte do cliente</masterLabel>
+        <translation><!-- Aguarda levantamento/resposta por parte do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda material para resolver AT</masterLabel>
+        <translation><!-- Aguarda material para resolver AT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda relatório de peritagem</masterLabel>
+        <translation><!-- Aguarda relatório de peritagem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda relatório do Fornecedor</masterLabel>
+        <translation><!-- Aguarda relatório do Fornecedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda relatório técnico</masterLabel>
+        <translation><!-- Aguarda relatório técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguarda resposta da secção/Loja</masterLabel>
+        <translation><!-- Aguarda resposta da secção/Loja --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelado</masterLabel>
+        <translation><!-- Cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não aceitou orçamento</masterLabel>
+        <translation><!-- Cliente não aceitou orçamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concluída</masterLabel>
+        <translation><!-- Concluída --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisão abrir AT</masterLabel>
+        <translation><!-- Decisão abrir AT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisão não abrir AT</masterLabel>
+        <translation><!-- Decisão não abrir AT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviar AT a outro Parceiro</masterLabel>
+        <translation><!-- Enviar AT a outro Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fornecedor concluiu serviço</masterLabel>
+        <translation><!-- Fornecedor concluiu serviço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fornecedor identificou causa Instalação</masterLabel>
+        <translation><!-- Fornecedor identificou causa Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parceiro concluiu serviço</masterLabel>
+        <translation><!-- Parceiro concluiu serviço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parceiro não aceitou AT</masterLabel>
+        <translation><!-- Parceiro não aceitou AT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peritagem não solicitada</masterLabel>
+        <translation><!-- Peritagem não solicitada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peritagem solicitada</masterLabel>
+        <translation><!-- Peritagem solicitada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relatório técnico recebido</masterLabel>
+        <translation><!-- Relatório técnico recebido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsabilidade Civil acionada</masterLabel>
+        <translation><!-- Responsabilidade Civil acionada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

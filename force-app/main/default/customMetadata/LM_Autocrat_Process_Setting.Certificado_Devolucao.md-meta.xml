@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Certificado Devolucao</label>
+    <protected>false</protected>
+    <values>
+        <field>Attachment_Name__c</field>
+        <value xsi:type="xsd:string">Certificado de Devolucao</value>
+    </values>
+    <values>
+        <field>Custo_Fixo_BT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Attachment_Template__c</field>
+        <value xsi:type="xsd:string">LM_Certificado_Devolucao</value>
+    </values>
+    <values>
+        <field>Email_BCC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_CC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Static_File_Attachment__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">LM_Email_Certificado_Devolucao</value>
+    </values>
+    <values>
+        <field>Email_Template_After_Token__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_To__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_de_Envio__c</field>
+        <value xsi:type="xsd:string">lmcare@leroymerlin.pt</value>
+    </values>
+    <values>
+        <field>GDrive_Process_Folder_Name__c</field>
+        <value xsi:type="xsd:string">Certificado_Devolucao</value>
+    </values>
+    <values>
+        <field>Order_Record_Type__c</field>
+        <value xsi:type="xsd:string">LM_Certificado_Devolucao</value>
+    </values>
+    <values>
+        <field>Process_Guidelines__c</field>
+        <value xsi:type="xsd:string">IMPORTANTE:  O preenchimento do formulário tem de ser feito de forma correta, se não o pedido não é validado. 
+
+Atenção os valores dos artigos tem de ser iguais aos apresentados na fatura do cliente. 
+
+Em caso de artigo danificado apenas serão validados pedido com custo superior a 50€, caso o valor seja inferior dar quebra do artigo e fazer pedido a 100% com justificação em memoria interna.</value>
+    </values>
+    <values>
+        <field>Process_Prefix__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Promessa_a_Cliente__c</field>
+        <value xsi:type="xsd:string">fgil90@gmail.com</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">LeroyMerlin</value>
+    </values>
+    <values>
+        <field>SMS_Template_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SendSMS__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Send_Email_After_Token__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Send_Email_Before_Token__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Static_Attachment_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Supervisao_de_Caixa__c</field>
+        <value xsi:type="xsd:string">felipe.gil@techremotehub.com</value>
+    </values>
+    <values>
+        <field>Token_Template_Name__c</field>
+        <value xsi:type="xsd:string">LM_Certificado_Devolucao</value>
+    </values>
+    <values>
+        <field>Valor_Deslocacao__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

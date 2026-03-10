@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_nao_reembolso</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL(Solicitado_Reembolso_a_caixas__c, &apos;NÃO&apos;),
+ISPICKVAL( Motivo_de_Nao_Reembolso__c ,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Motivo_de_Nao_Reembolso__c</errorDisplayField>
+    <errorMessage>Preencher o Motivo de Não reembolso</errorMessage>
+</ValidationRule>

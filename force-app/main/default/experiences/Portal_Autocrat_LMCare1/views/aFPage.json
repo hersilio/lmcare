@@ -1,0 +1,172 @@
+{
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "3daab002-a6a4-4bf8-bc70-132717ec8f9b",
+  "label" : "AF Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e51b2f88-6b30-4b58-b3d9-63f48c64457e",
+          "columns" : [ {
+            "UUID" : "e312cff5-c6f8-440c-babf-74ac47da0315",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e51b2f88-6b30-4b58-b3d9-63f48c64457e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "4c77ab5c-95b1-4c17-a4cd-810b4ce0a9ec",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "bab025f4-ee75-489d-8af6-4099e6f3a51f",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Novo Pedido AF"
+              }, {
+                "UUID" : "58e90e2e-29eb-4264-9777-af2f19d76c9e",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Pedidos AF"
+              }, {
+                "UUID" : "b9328906-bc70-434a-9c60-92ae436eeda9",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "Inventário"
+              } ],
+              "useOverflowMenu" : true
+            }
+          },
+          "componentName" : "forceCommunity:tabLayout",
+          "id" : "4c77ab5c-95b1-4c17-a4cd-810b4ce0a9ec",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "flowArguments" : "",
+                "flowName" : "LM_Aluguer_Ferramentas_Portal"
+              },
+              "componentName" : "forceCommunity:flowCommunity",
+              "id" : "0d6461d7-de60-47fc-a219-8cb740e8e88d",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "bab025f4-ee75-489d-8af6-4099e6f3a51f",
+            "regionLabel" : "Novo Pedido AF",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : false,
+                "filterName" : "AF",
+                "layout" : "FULL",
+                "pageSize" : 25,
+                "scope" : "Order",
+                "showActionBar" : false,
+                "showChartsPanel" : false,
+                "showDisplay" : "grid",
+                "showFilterPanel" : false,
+                "showImageIcon" : false,
+                "showManualRefreshButton" : true,
+                "showObjectName" : false,
+                "showPinnedList" : true,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "5837ae3c-f0f4-4832-8d2f-b95a5ae8102a",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "58e90e2e-29eb-4264-9777-af2f19d76c9e",
+            "regionLabel" : "Pedidos AF",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "enableInlineEdit" : false,
+                "filterName" : "AF",
+                "layout" : "FULL",
+                "pageSize" : 25,
+                "scope" : "LM_Inventory__c",
+                "showActionBar" : false,
+                "showChartsPanel" : false,
+                "showDisplay" : "grid",
+                "showFilterPanel" : false,
+                "showImageIcon" : false,
+                "showManualRefreshButton" : true,
+                "showObjectName" : false,
+                "showPinnedList" : true,
+                "showSearchBar" : true
+              },
+              "componentName" : "forceCommunity:objectHome",
+              "id" : "5107e9cf-98c9-4c7e-8bb7-6e399139bcd6",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "b9328906-bc70-434a-9c60-92ae436eeda9",
+            "regionLabel" : "Inventário",
+            "regionName" : "3",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e312cff5-c6f8-440c-babf-74ac47da0315",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "90f70089-c9d1-4053-8807-9fd785009bdd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AF Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3516294c-79c3-4656-900c-b8acaac9b24e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8edfa830-9bc5-44e2-9523-8e5644d0657b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-af"
+}

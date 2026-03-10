@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>pt_PT</language>
+    <masterLabel>Leroy_Merlin_logo_France_1995svgpn</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Leroy_Merlin_-_logo_(France,_1995-).svg.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

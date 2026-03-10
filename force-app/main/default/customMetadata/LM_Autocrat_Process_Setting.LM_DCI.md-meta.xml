@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DCI</label>
+    <protected>false</protected>
+    <values>
+        <field>Attachment_Name__c</field>
+        <value xsi:type="xsd:string">Declaração de Conformidade de Instalação</value>
+    </values>
+    <values>
+        <field>Custo_Fixo_BT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Attachment_Template__c</field>
+        <value xsi:type="xsd:string">LM_DCI</value>
+    </values>
+    <values>
+        <field>Email_BCC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_CC__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Static_File_Attachment__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_Template_API_Name__c</field>
+        <value xsi:type="xsd:string">LM_Email_DCI_Antes</value>
+    </values>
+    <values>
+        <field>Email_Template_After_Token__c</field>
+        <value xsi:type="xsd:string">LM_Email_DCI</value>
+    </values>
+    <values>
+        <field>Email_To__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Email_de_Envio__c</field>
+        <value xsi:type="xsd:string">lmcare@leroymerlin.pt</value>
+    </values>
+    <values>
+        <field>GDrive_Process_Folder_Name__c</field>
+        <value xsi:type="xsd:string">DCI</value>
+    </values>
+    <values>
+        <field>Order_Record_Type__c</field>
+        <value xsi:type="xsd:string">LM_DCI</value>
+    </values>
+    <values>
+        <field>Process_Guidelines__c</field>
+        <value xsi:type="xsd:string">Deve ser preenchido um formulário por cada Split e bomba de calor. 
+
+Exemplo: 
+Venda de 1 Multi-split 2x1 = Preencher 1 Formulário 
+Venda de 2 Multi-split 2x1 = Preencher 2 Formulários (1 Formulário para cada Multi-split) 
+
+A instalação destes equipamentos  só pode ser efetuada por um técnico certificado,&lt;br&gt; pertencente a uma empresa certificada em gases fluorados, de acordo o disposto no n.º 1&lt;br&gt; do artigo 7.º do Decreto-lei n.º 145/2017, de 30 de Novembro . 
+
+Mais informo que tomei conhecimento que , o incumprimento desta obrigação é&lt;br&gt; considerada uma contra-ordenação ambiental grave, enquadrada pela alínea g) do n.º 2 do&lt;br&gt; artigo 23.º do Decreto-lei n.º 145/2017, de 30 de Novembro. 
+
+Listagens de Certificados e Atestados Emitidos: 
+&lt;a href=&quot;https://apambiente.pt/avaliacao-e-gestao-ambiental/listagens-de-certificados-e-atestados-emitidos &quot;&gt;https://apambiente.pt/avaliacao-e-gestao-ambiental/listagens-de-certificados-e-atestados-emitidos &lt;/a&gt;</value>
+    </values>
+    <values>
+        <field>Process_Prefix__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Promessa_a_Cliente__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">LeroyMerlin</value>
+    </values>
+    <values>
+        <field>SMS_Template_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SendSMS__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_After_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Send_Email_Before_Token__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Static_Attachment_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Supervisao_de_Caixa__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Token_Template_Name__c</field>
+        <value xsi:type="xsd:string">SMS_DCI</value>
+    </values>
+    <values>
+        <field>Valor_Deslocacao__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Data_Entrega_Tampo_Combinada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL(   Tampo_de_Pedra__c , &apos;SIM&apos;),
+
+ISBLANK(  Entrega_do_Tampo_Combinada_c_Cliente__c  )
+
+)</errorConditionFormula>
+    <errorDisplayField>Entrega_do_Tampo_Combinada_c_Cliente__c</errorDisplayField>
+    <errorMessage>Preencher o campo Data de Entrega do Tampo Combinada c/ Cliente</errorMessage>
+</ValidationRule>

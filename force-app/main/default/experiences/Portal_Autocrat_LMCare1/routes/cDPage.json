@@ -1,0 +1,12 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
+  "configurationTags" : [ ],
+  "devName" : "CD_Page__c",
+  "id" : "8ad688cd-2b0b-4bf0-b0a7-97cc9f94c7a6",
+  "label" : "CD Page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-cd",
+  "type" : "route",
+  "urlPrefix" : "cd"
+}

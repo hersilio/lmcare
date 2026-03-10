@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Especialidades__c</fullName>
+    <label>Especialidades</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sem especialidade definida</fullName>
+                <default>true</default>
+                <label>Sem especialidade definida</label>
+            </value>
+            <value>
+                <fullName>Alcatifa</fullName>
+                <default>false</default>
+                <label>Alcatifa</label>
+            </value>
+            <value>
+                <fullName>Alpendres</fullName>
+                <default>false</default>
+                <label>Alpendres</label>
+            </value>
+            <value>
+                <fullName>Aplicação de Pladur e Estrutura</fullName>
+                <default>false</default>
+                <label>Aplicação de Pladur e Estrutura</label>
+            </value>
+            <value>
+                <fullName>Ar Condicionado</fullName>
+                <default>false</default>
+                <label>Ar Condicionado</label>
+            </value>
+            <value>
+                <fullName>Autoclismo PVC</fullName>
+                <default>false</default>
+                <label>Autoclismo PVC</label>
+            </value>
+            <value>
+                <fullName>Banheiras</fullName>
+                <default>false</default>
+                <label>Banheiras</label>
+            </value>
+            <value>
+                <fullName>Banheiras Hidromassagem</fullName>
+                <default>false</default>
+                <label>Banheiras Hidromassagem</label>
+            </value>
+            <value>
+                <fullName>BBQ</fullName>
+                <default>false</default>
+                <label>BBQ</label>
+            </value>
+            <value>
+                <fullName>Bloco de vidro</fullName>
+                <default>false</default>
+                <label>Bloco de vidro</label>
+            </value>
+            <value>
+                <fullName>Bombas de calor</fullName>
+                <default>false</default>
+                <label>Bombas de calor</label>
+            </value>
+            <value>
+                <fullName>Cabines de base de duche</fullName>
+                <default>false</default>
+                <label>Cabines de base de duche</label>
+            </value>
+            <value>
+                <fullName>Cabines e Paineis ITALBOX</fullName>
+                <default>false</default>
+                <label>Cabines e Paineis ITALBOX</label>
+            </value>
+            <value>
+                <fullName>Cabines Hidromassagem</fullName>
+                <default>false</default>
+                <label>Cabines Hidromassagem</label>
+            </value>
+            <value>
+                <fullName>Caldeiras Gás</fullName>
+                <default>false</default>
+                <label>Caldeiras Gás</label>
+            </value>
+            <value>
+                <fullName>Caldeiras Gasóleo</fullName>
+                <default>false</default>
+                <label>Caldeiras Gasóleo</label>
+            </value>
+            <value>
+                <fullName>Caleiras</fullName>
+                <default>false</default>
+                <label>Caleiras</label>
+            </value>
+            <value>
+                <fullName>Candeeiros</fullName>
+                <default>false</default>
+                <label>Candeeiros</label>
+            </value>
+            <value>
+                <fullName>CCTV</fullName>
+                <default>false</default>
+                <label>CCTV</label>
+            </value>
+            <value>
+                <fullName>Churrasqueiras</fullName>
+                <default>false</default>
+                <label>Churrasqueiras</label>
+            </value>
+            <value>
+                <fullName>Chuveiros de duche</fullName>
+                <default>false</default>
+                <label>Chuveiros de duche</label>
+            </value>
+            <value>
+                <fullName>Cofres</fullName>
+                <default>false</default>
+                <label>Cofres</label>
+            </value>
+            <value>
+                <fullName>Colunas Hidromassagem</fullName>
+                <default>false</default>
+                <label>Colunas Hidromassagem</label>
+            </value>
+            <value>
+                <fullName>Construção de Lareiras</fullName>
+                <default>false</default>
+                <label>Construção de Lareiras</label>
+            </value>
+            <value>
+                <fullName>Eletrodomésticos</fullName>
+                <default>false</default>
+                <label>Eletrodomésticos</label>
+            </value>
+            <value>
+                <fullName>Emissores calor</fullName>
+                <default>false</default>
+                <label>Emissores calor</label>
+            </value>
+            <value>
+                <fullName>Envernizamento portas</fullName>
+                <default>false</default>
+                <label>Envernizamento portas</label>
+            </value>
+            <value>
+                <fullName>Escadas interior</fullName>
+                <default>false</default>
+                <label>Escadas interior</label>
+            </value>
+            <value>
+                <fullName>Escadas sotão</fullName>
+                <default>false</default>
+                <label>Escadas sotão</label>
+            </value>
+            <value>
+                <fullName>Esquentadores</fullName>
+                <default>false</default>
+                <label>Esquentadores</label>
+            </value>
+            <value>
+                <fullName>Estores</fullName>
+                <default>false</default>
+                <label>Estores</label>
+            </value>
+            <value>
+                <fullName>Estores eléctricos</fullName>
+                <default>false</default>
+                <label>Estores eléctricos</label>
+            </value>
+            <value>
+                <fullName>Estores exteriores</fullName>
+                <default>false</default>
+                <label>Estores exteriores</label>
+            </value>
+            <value>
+                <fullName>Exaustores</fullName>
+                <default>false</default>
+                <label>Exaustores</label>
+            </value>
+            <value>
+                <fullName>Fechaduras de segurança</fullName>
+                <default>false</default>
+                <label>Fechaduras de segurança</label>
+            </value>
+            <value>
+                <fullName>Fechaduras e/ou Puxadores</fullName>
+                <default>false</default>
+                <label>Fechaduras e/ou Puxadores</label>
+            </value>
+            <value>
+                <fullName>Impermeabilização</fullName>
+                <default>false</default>
+                <label>Impermeabilização</label>
+            </value>
+            <value>
+                <fullName>Isolamento (lã de rocha)</fullName>
+                <default>false</default>
+                <label>Isolamento (lã de rocha)</label>
+            </value>
+            <value>
+                <fullName>Janelas (medidas standart)</fullName>
+                <default>false</default>
+                <label>Janelas (medidas standart)</label>
+            </value>
+            <value>
+                <fullName>Janelas sotão</fullName>
+                <default>false</default>
+                <label>Janelas sotão</label>
+            </value>
+            <value>
+                <fullName>Lagos</fullName>
+                <default>false</default>
+                <label>Lagos</label>
+            </value>
+            <value>
+                <fullName>Lambril (parede ou tecto)</fullName>
+                <default>false</default>
+                <label>Lambril (parede ou tecto)</label>
+            </value>
+            <value>
+                <fullName>Lava Loiça</fullName>
+                <default>false</default>
+                <label>Lava Loiça</label>
+            </value>
+            <value>
+                <fullName>Loiças Sanitárias</fullName>
+                <default>false</default>
+                <label>Loiças Sanitárias</label>
+            </value>
+            <value>
+                <fullName>Mobiliário jardim</fullName>
+                <default>false</default>
+                <label>Mobiliário jardim</label>
+            </value>
+            <value>
+                <fullName>Módulos de Cozinha</fullName>
+                <default>false</default>
+                <label>Módulos de Cozinha</label>
+            </value>
+            <value>
+                <fullName>Motores garagem</fullName>
+                <default>false</default>
+                <label>Motores garagem</label>
+            </value>
+            <value>
+                <fullName>Móveis Resina / Estantes / Armários</fullName>
+                <default>false</default>
+                <label>Móveis Resina / Estantes / Armários</label>
+            </value>
+            <value>
+                <fullName>Móveis WC / lavatório</fullName>
+                <default>false</default>
+                <label>Móveis WC / lavatório</label>
+            </value>
+            <value>
+                <fullName>Paineis de Banheira</fullName>
+                <default>false</default>
+                <label>Paineis de Banheira</label>
+            </value>
+            <value>
+                <fullName>Painéis deslizantes</fullName>
+                <default>false</default>
+                <label>Painéis deslizantes</label>
+            </value>
+            <value>
+                <fullName>Paineis Solares</fullName>
+                <default>false</default>
+                <label>Paineis Solares</label>
+            </value>
+            <value>
+                <fullName>Papel de Parede</fullName>
+                <default>false</default>
+                <label>Papel de Parede</label>
+            </value>
+            <value>
+                <fullName>Parabólicas / Antenas</fullName>
+                <default>false</default>
+                <label>Parabólicas / Antenas</label>
+            </value>
+            <value>
+                <fullName>Pavimento Interior Madeira</fullName>
+                <default>false</default>
+                <label>Pavimento Interior Madeira</label>
+            </value>
+            <value>
+                <fullName>Pavimento Vinilico</fullName>
+                <default>false</default>
+                <label>Pavimento Vinilico</label>
+            </value>
+            <value>
+                <fullName>Pergulas</fullName>
+                <default>false</default>
+                <label>Pergulas</label>
+            </value>
+            <value>
+                <fullName>Pintura e reparação portas</fullName>
+                <default>false</default>
+                <label>Pintura e reparação portas</label>
+            </value>
+            <value>
+                <fullName>Pintura Exterior</fullName>
+                <default>false</default>
+                <label>Pintura Exterior</label>
+            </value>
+            <value>
+                <fullName>Pintura Interior</fullName>
+                <default>false</default>
+                <label>Pintura Interior</label>
+            </value>
+            <value>
+                <fullName>Pintura portas lisa novas</fullName>
+                <default>false</default>
+                <label>Pintura portas lisa novas</label>
+            </value>
+            <value>
+                <fullName>Piscinas (enterradas)</fullName>
+                <default>false</default>
+                <label>Piscinas (enterradas)</label>
+            </value>
+            <value>
+                <fullName>Piscinas (superficie)</fullName>
+                <default>false</default>
+                <label>Piscinas (superficie)</label>
+            </value>
+            <value>
+                <fullName>Piso Radiante</fullName>
+                <default>false</default>
+                <label>Piso Radiante</label>
+            </value>
+            <value>
+                <fullName>Plaqueta decorativa</fullName>
+                <default>false</default>
+                <label>Plaqueta decorativa</label>
+            </value>
+            <value>
+                <fullName>Portas Entrada</fullName>
+                <default>false</default>
+                <label>Portas Entrada</label>
+            </value>
+            <value>
+                <fullName>Portas Interiores</fullName>
+                <default>false</default>
+                <label>Portas Interiores</label>
+            </value>
+            <value>
+                <fullName>Recuperadores calor</fullName>
+                <default>false</default>
+                <label>Recuperadores calor</label>
+            </value>
+            <value>
+                <fullName>Relva sintetica</fullName>
+                <default>false</default>
+                <label>Relva sintetica</label>
+            </value>
+            <value>
+                <fullName>Remodelações</fullName>
+                <default>false</default>
+                <label>Remodelações</label>
+            </value>
+            <value>
+                <fullName>Revestimento e/ou pavimento Cerâmico</fullName>
+                <default>false</default>
+                <label>Revestimento e/ou pavimento Cerâmico</label>
+            </value>
+            <value>
+                <fullName>Revistimento exterior (capoto) ETICS</fullName>
+                <default>false</default>
+                <label>Revistimento exterior (capoto) ETICS</label>
+            </value>
+            <value>
+                <fullName>Roupeiros à medida</fullName>
+                <default>false</default>
+                <label>Roupeiros à medida</label>
+            </value>
+            <value>
+                <fullName>Roupeiros modulares</fullName>
+                <default>false</default>
+                <label>Roupeiros modulares</label>
+            </value>
+            <value>
+                <fullName>Salamandras</fullName>
+                <default>false</default>
+                <label>Salamandras</label>
+            </value>
+            <value>
+                <fullName>Seca-toalhas</fullName>
+                <default>false</default>
+                <label>Seca-toalhas</label>
+            </value>
+            <value>
+                <fullName>Sistemas de Rega</fullName>
+                <default>false</default>
+                <label>Sistemas de Rega</label>
+            </value>
+            <value>
+                <fullName>Soalho Exterior (composite/madeira)</fullName>
+                <default>false</default>
+                <label>Soalho Exterior (composite/madeira)</label>
+            </value>
+            <value>
+                <fullName>Solo exterior (pedra, cerâmica)</fullName>
+                <default>false</default>
+                <label>Solo exterior (pedra, cerâmica)</label>
+            </value>
+            <value>
+                <fullName>Substituição cabelagem electrica</fullName>
+                <default>false</default>
+                <label>Substituição cabelagem electrica</label>
+            </value>
+            <value>
+                <fullName>Telha sandwich</fullName>
+                <default>false</default>
+                <label>Telha sandwich</label>
+            </value>
+            <value>
+                <fullName>Termoacumuladores</fullName>
+                <default>false</default>
+                <label>Termoacumuladores</label>
+            </value>
+            <value>
+                <fullName>Toldos</fullName>
+                <default>false</default>
+                <label>Toldos</label>
+            </value>
+            <value>
+                <fullName>Torneira Cozinha</fullName>
+                <default>false</default>
+                <label>Torneira Cozinha</label>
+            </value>
+            <value>
+                <fullName>Torneiras</fullName>
+                <default>false</default>
+                <label>Torneiras</label>
+            </value>
+            <value>
+                <fullName>Varões / Cortinados</fullName>
+                <default>false</default>
+                <label>Varões / Cortinados</label>
+            </value>
+            <value>
+                <fullName>Vedações / Cercas</fullName>
+                <default>false</default>
+                <label>Vedações / Cercas</label>
+            </value>
+            <value>
+                <fullName>Ventoinhas</fullName>
+                <default>false</default>
+                <label>Ventoinhas</label>
+            </value>
+            <value>
+                <fullName>Videoporteiros</fullName>
+                <default>false</default>
+                <label>Videoporteiros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

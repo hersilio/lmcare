@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marcação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marcações</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout de Compromisso de serviço</layout>
+        <sections>
+            <label><!-- Contactos Marcação --></label>
+            <section>Contactos Marcação</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancelar Marcação --></label>
+        <name>SCH_Cancel_Appointment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Concluir Marcação --></label>
+        <name>SCH_Completed_Service_Appointment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Modificar Marcação --></label>
+        <name>SCH_Modify_Service_Appointment</name>
+    </quickActions>
+</CustomObjectTranslation>
