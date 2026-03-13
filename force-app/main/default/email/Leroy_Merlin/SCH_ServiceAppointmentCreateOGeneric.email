@@ -1,0 +1,9 @@
+<messaging:emailTemplate subject="{!relatedTo.EmailSubject__c}" recipientType="User" relatedToType="ServiceAppointment">
+    <messaging:htmlEmailBody >
+        <!-- Container com padding para melhor espaçamento no corpo do email -->
+        <div style="padding: 24px;">
+            <!-- Passa o registro completo -->
+            <c:OnlineEmailContent saId="{!relatedTo.Id}"/>
+        </div>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

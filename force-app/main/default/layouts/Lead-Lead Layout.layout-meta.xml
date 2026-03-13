@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -31,6 +30,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Setor_de_Atividade__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ProjectTag__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Equipa__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -161,11 +168,11 @@
         <label>Additional Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Observacoes__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>Description</field>
             </layoutItems>
         </layoutColumns>
@@ -291,15 +298,18 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <relatedList>RelatedFileList</relatedList>
+        <excludeButtons>EduScheduleAppointmentAction</excludeButtons>
+        <excludeButtons>New</excludeButtons>
+        <fields>Name</fields>
+        <fields>WorkType</fields>
+        <fields>SchedStartTime</fields>
+        <fields>Owner</fields>
+        <fields>ServiceTerritory</fields>
+        <fields>Status</fields>
+        <relatedList>ServiceAppointments</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>Name</fields>
-        <fields>Account</fields>
-        <fields>ParentRecord</fields>
-        <fields>SchedStartTime</fields>
-        <fields>SchedEndTime</fields>
-        <relatedList>ServiceAppointments</relatedList>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedContentNoteList</relatedList>

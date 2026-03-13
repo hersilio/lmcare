@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SENT_TO_ADEO</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>ErrorMessage__c</columns>
+    <columns>StartDateTime__c</columns>
+    <columns>DurationMs__c</columns>
+    <columns>SourceSystem__c</columns>
+    <columns>TargetSystem__c</columns>
+    <columns>Direction__c</columns>
+    <columns>HttpStatusCode__c</columns>
+    <columns>Endpoint__c</columns>
+    <columns>HttpMethod__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TargetSystem__c</field>
+        <operation>equals</operation>
+        <value>ADEO</value>
+    </filters>
+    <label>SENT TO ADEO</label>
+</ListView>
