@@ -1,0 +1,80 @@
+<apex:component controller="SCH_ServiceAppointmentCreateOnlineCtrl" access="global">
+    <!-- Passa o registro completo do ServiceAppointment -->
+    <!-- Nota: 'required' não é suportado em componentes globais -->
+    <apex:attribute name="saId" type="Id" description="ID do ServiceAppointment" assignTo="{!saIdVariable}" />
+
+
+    <div class="container" style="max-width:700px;margin:0 auto;padding:24px;font-family:Calibri,sans-serif;font-size:11pt;">
+        <!-- Header -->
+        <div class="header" style="text-align:center;">
+            <img src="https://leroymerlin--lmqa.sandbox.file.force.com/file-asset-public/image001?oid=00D2z0000008lVx" alt="LM Logo"
+                style="max-width:681px;" />
+        </div>
+
+        <!-- Greeting -->
+        <div class="section">
+            <p>Olá, {!AccountName},</p>
+        </div>
+
+        <!-- Project details -->
+        <div class="section">
+                <p>{!ProjectDetailsLabel}</p>
+        </div>
+        <apex:outputPanel rendered="{!isNotCancel}">
+            <!-- Calendar -->
+            <div class="section">
+                <p>{!CalendarLabel} ao seu calendário Google, clique aqui: <a href="{!GoogleICSUrl}">adicionar</a></p>
+            </div>
+        
+            <!-- Meet link -->
+            <apex:outputPanel rendered="{!IsCreatedOnline }">
+                <div class="section">
+                    <p>No horário marcado, aceda ao link a partir de um computador, tablet ou smartphone:
+                        <a href="{!GoogleMeetUrl}">Link</a>
+                    </p>
+                </div>
+            </apex:outputPanel>
+
+            <!-- Requirements -->
+            <div class="section">
+                <p>{!BringWithYou}</p>
+                <apex:outputText value="{!RequirementsHtml}" escape="false" />
+            </div>
+
+            <!-- Duration & Info -->
+            <div class="section">
+                <p>A duração prevista do agendamento é de {!AppointmentSize}h. E, porque sabemos que imprevistos acontecem, damos uma tolerância
+                    de 15 minutos para eventuais atrasos.</p>
+            </div>
+        </apex:outputPanel>
+        <!-- Support -->
+        <div class="section">
+            <p>{!SupportLabel}</p>
+        </div>
+
+        <!-- Thank you -->
+        <div class="section">
+            <p>Obrigado por nos confiar o seu projeto!</p>
+        </div>
+
+        <!-- Team -->
+        <div class="section highlight">
+            <p><strong>A equipa LEROY MERLIN</strong></p>
+        </div>
+
+        <!-- Footer note -->
+        <div class="section note">
+            <p>Esta mensagem foi enviada automaticamente. Agradecemos que não responda. Para qualquer dúvida ou questão consulte
+                o nosso
+                <a href="https://www.leroymerlin.pt/apoio-ao-cliente/">Apoio ao Cliente</a>
+            </p>
+        </div>
+
+        <!-- Footer image -->
+        <div class="footer" style="text-align:center;">
+            <img src="https://leroymerlin--lmqa.sandbox.file.force.com/file-asset-public/image002?oid=00D2z0000008lVx" alt="Separator"
+                style="max-width:681px;" />
+            <p class="note" style="color:#AFABAB;font-size:10pt;">&copy; LEROY MERLIN - Bricolage, Construção, Decoração e Jardim</p>
+        </div>
+    </div>
+</apex:component>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal_de_Interacao__c</fullName>
+    <inlineHelpText>Scheduler Online - cliente agenda online em autonomia (independente se o cliente escolhe fazer presencial ou online)                    
+Scheduler Loja - cliente vai à loja, o agendamento é feito pela loja (independente se o cliente escolhe fazer presencial ou online)                 
+Scheduler Telefone - cliente liga a pedir para agendar                   
+Loja - venda simples em loja (não é agendamento de projeto)                   
+VAD - venda simples pela VAD (não é agendamento de projeto)</inlineHelpText>
+    <label>Canal de entrada</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scheduler Online</fullName>
+                <default>false</default>
+                <label>Scheduler Online</label>
+            </value>
+            <value>
+                <fullName>Scheduler Loja</fullName>
+                <default>false</default>
+                <label>Scheduler Loja</label>
+            </value>
+            <value>
+                <fullName>Scheduler Telefone</fullName>
+                <default>false</default>
+                <label>Scheduler Telefone</label>
+            </value>
+            <value>
+                <fullName>Loja</fullName>
+                <default>false</default>
+                <label>Loja</label>
+            </value>
+            <value>
+                <fullName>VAD</fullName>
+                <default>false</default>
+                <label>VAD</label>
+            </value>
+            <value>
+                <fullName>Profissional</fullName>
+                <default>false</default>
+                <label>Profissional</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Importação</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Importação</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manual</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Redes Sociais</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Redes Sociais</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

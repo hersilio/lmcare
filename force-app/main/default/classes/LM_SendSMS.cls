@@ -15,6 +15,7 @@ public class LM_SendSMS implements Queueable, Database.AllowsCallouts{
     }
     
     public HttpResponse sendSMS(){
+        System.debug('Sending SMS from ' + this.SMSFrom + ' to ' + this.SMSTo + ': ' + this.SMSBody);
         
         HttpRequest req = new HttpRequest();
         Http http = new Http();

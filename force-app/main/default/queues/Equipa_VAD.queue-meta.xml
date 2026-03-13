@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Equipa VAD</name>
+    <queueMembers>
+        <users>
+            <user>elsa.o.cipriano@ext.leroymerlin.pt</user>
+            <user>jessia.l.santos@ext.leroymerlin.pt</user>
+            <user>serena.c.webba@ext.leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Create - Kitchen</label>
+    <protected>false</protected>
+    <values>
+        <field>Appointment_Size__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Cozinha</value>
+    </values>
+    <values>
+        <field>Email_Status__c</field>
+        <value xsi:type="xsd:string">Scheduled</value>
+    </values>
+    <values>
+        <field>Project_Display_Name__c</field>
+        <value xsi:type="xsd:string">a sua Cozinha</value>
+    </values>
+    <values>
+        <field>Requirements__c</field>
+        <value xsi:type="xsd:string">&lt;ul&gt;
+  &lt;li&gt;Planta ou esquisso do espaço com as medidas do espaço a incorporar o roupeiro (comprimento, largura e altura).&lt;/li&gt;
+  &lt;li&gt;Localização e medidas de elementos estruturais, como pilares e vigas, rodapés e pontos de luz.&lt;/li&gt;
+  &lt;li&gt;Se possível, imagens atuais do seu espaço e inspirações de estilo para a sua renovação.&lt;/li&gt;
+&lt;/ul&gt;</value>
+    </values>
+    <values>
+        <field>WorkTypeName__c</field>
+        <value xsi:type="xsd:string">Projeto - Cozinha</value>
+    </values>
+</CustomMetadata>
