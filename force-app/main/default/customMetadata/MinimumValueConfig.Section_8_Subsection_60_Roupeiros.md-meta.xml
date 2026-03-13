@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Secção 8 / Subsecção 60 - Roupeiros</label>
+    <protected>false</protected>
+    <values>
+        <field>CurrencyCode__c</field>
+        <value xsi:type="xsd:string">EUR</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MinimumValue__c</field>
+        <value xsi:type="xsd:double">1300.0</value>
+    </values>
+    <values>
+        <field>Notes__c</field>
+        <value xsi:type="xsd:string">Aplica-se apenas à subsecção 60 da secção 8 e deve ser avaliada antes da regra geral da secção 8.</value>
+    </values>
+    <values>
+        <field>SectionCode__c</field>
+        <value xsi:type="xsd:string">8</value>
+    </values>
+    <values>
+        <field>SectionName__c</field>
+        <value xsi:type="xsd:string">Cozinhas</value>
+    </values>
+    <values>
+        <field>SubsectionCode__c</field>
+        <value xsi:type="xsd:string">60</value>
+    </values>
+    <values>
+        <field>SubsectionName__c</field>
+        <value xsi:type="xsd:string">Roupeiros</value>
+    </values>
+</CustomMetadata>
