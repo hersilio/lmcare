@@ -261,7 +261,7 @@ global with sharing class AppointmentEntryRest {
         lead.OwnerId = ownerId;
 
 
-        if (!String.isBlank(String.valueOf(appointment.qualifications))) {
+        if (appointment.qualifications != null && !appointment.qualifications.isEmpty()) {
             L2SAPIServiceHandler.QualificationWrapper[] qualifications = appointment.qualifications;
             System.debug('++++ Qualifications = '+qualifications);
             String qualification1Parcel = '';
