@@ -21,111 +21,120 @@
  */
 @isTest
 private class DataCompliance_API_TEST {
-
+    
     @testSetup
     static void setupTestData() {
         // Create test Account with an MDM ID
         Account testAccount = new Account(
-            LastName = 'DC',
-            Numero_de_Conta__c = '123456',
-            NIF__c = '987654321',
-            PersonEmail = 'test@leroymerlin.pt',
-            RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('PersonAccount').getRecordTypeId()
-        );
+        LastName = 'DC',
+        Numero_de_Conta__c = '123456',
+        NIF__c = '987654321',
+        PersonEmail = 'test@leroymerlin.pt',
+        RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('PersonAccount').getRecordTypeId()
+            );
         insert testAccount;
-
+        
         Account testAccount2 = new Account(
             LastName = 'Test Account 2',
-            Numero_de_Conta__c = '123456789',
-            NIF__c = '987654322',
-            PersonEmail = 'test@leroymerlin.pt',
-            RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('PersonAccount').getRecordTypeId()
-
+        Numero_de_Conta__c = '123456789',
+        NIF__c = '987654322',
+        PersonEmail = 'test@leroymerlin.pt',
+        RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('PersonAccount').getRecordTypeId()
+            
         );
         insert testAccount2;
-
+        
         // Create related Lead
         Lead testLead = new Lead(
             LastName = 'LeadTest',
-            Numero_de_Conta_na_lead__c = '123456',
-            Company = 'Test Company',
-            Loja_de_Angariacao__c = 'Albufeira',
-            Phone = '997998991'
-        );
+        Numero_de_Conta_na_lead__c = '123456',
+        Company = 'Test Company',
+        Loja_de_Angariacao__c = 'Albufeira',
+        Phone = '997998991'
+            );
         insert testLead;
-
+        
         Lead testLead2 = new Lead(
             LastName = 'LeadTest with Open activity',
-            Numero_de_Conta_na_lead__c = '003636',
-            Company = 'Test Company Open Act',
-            Loja_de_Angariacao__c = 'Albufeira',
-            Phone = '997998981'
-        );
+        Numero_de_Conta_na_lead__c = '003636',
+        Company = 'Test Company Open Act',
+        Loja_de_Angariacao__c = 'Albufeira',
+        Phone = '997998981'
+            );
         insert testLead2;
-
+        
         // Create related Opportunity
         Opportunity opp = new Opportunity(
             Name = 'Opp_Test',
-            AccountId = testAccount.Id,
-            Amount = 250.0,
-            CloseDate = System.today()+1,
-            Tipo_de_Venda_Inicial__c = 'Serviço',
-            Loja_de_Angariacao__c = 'Albufeira',
-            StageName = 'Pedido de Proposta',
-            Numero_Pyxis__c = '1',
-            Motivo_de_Perda_da_Oportunidade__c = 'Preço',
-            Motivo_de_Perda_por_Preco__c = 'Online',
-            Tipo_de_Venda_Final__c = 'Produto',
-            Loja_de_Fecho__c = 'Albufeira'
-        );
+        AccountId = testAccount.Id,
+        Amount = 250.0,
+        CloseDate = System.today()+1,
+        Tipo_de_Venda_Inicial__c = 'Serviço',
+        Loja_de_Angariacao__c = 'Albufeira',
+        StageName = 'Pedido de Proposta',
+        Numero_Pyxis__c = '1',
+        Motivo_de_Perda_da_Oportunidade__c = 'Preço',
+        Motivo_de_Perda_por_Preco__c = 'Online',
+        Tipo_de_Venda_Final__c = 'Produto',
+        Loja_de_Fecho__c = 'Albufeira'
+            );
         insert opp;
         opp.StageName = 'Fechada Ganha';
         update opp;
-
+        
         Opportunity opp2 = new Opportunity(
             Name = 'Opp_Test',
-            AccountId = testAccount2.Id,
-            Amount = 260.0,
-            CloseDate = System.today()+1,
-            Tipo_de_Venda_Inicial__c = 'Serviço',
-            Loja_de_Angariacao__c = 'Albufeira',
-            StageName = 'Pedido de Proposta',
-            Numero_Pyxis__c = '1',
-            Motivo_de_Perda_da_Oportunidade__c = 'Preço',
-            Motivo_de_Perda_por_Preco__c = 'Online',
-            Tipo_de_Venda_Final__c = 'Produto',
-            Loja_de_Fecho__c = 'Albufeira'
-        );
+        AccountId = testAccount2.Id,
+        Amount = 260.0,
+        CloseDate = System.today()+1,
+        Tipo_de_Venda_Inicial__c = 'Serviço',
+        Loja_de_Angariacao__c = 'Albufeira',
+        StageName = 'Pedido de Proposta',
+        Numero_Pyxis__c = '1',
+        Motivo_de_Perda_da_Oportunidade__c = 'Preço',
+        Motivo_de_Perda_por_Preco__c = 'Online',
+        Tipo_de_Venda_Final__c = 'Produto',
+        Loja_de_Fecho__c = 'Albufeira'
+            );
         insert opp2;
-
+        
         OperatingHours opHours = new OperatingHours(
             Name = 'Teste Operating Hours',
-            TimeZone = 'Europe/London'
-        );
+        TimeZone = 'Europe/London'
+            );
         insert opHours;
-
+        
         WorkType wt = new WorkType(
             Name = 'TEST Work Type',
-            OperatingHoursId = opHours.Id,
-            EstimatedDuration = 16,
-            DurationType = 'Minutes',
-            ApptStartTimeIntvlInMin = 15,
-            BlockTimeBeforeUnit = 'Minutes',
-            BlockTimeBeforeAppointment = 15,
-            BlockTimeAfterUnit = 'Minutes',
-            TimeFrameStartUnit = 'Days',
-            TimeFrameEndUnit = 'Days'
-        );
+        OperatingHoursId = opHours.Id,
+        EstimatedDuration = 16,
+        DurationType = 'Minutes',
+        ApptStartTimeIntvlInMin = 15,
+        BlockTimeBeforeUnit = 'Minutes',
+        BlockTimeBeforeAppointment = 15,
+        BlockTimeAfterUnit = 'Minutes',
+        TimeFrameStartUnit = 'Days',
+        TimeFrameEndUnit = 'Days'
+            );
         insert wt;
-
+        
         EngagementChannelType engChannelType = new EngagementChannelType(
             Name = 'TEST engChannelType',
-            ContactPointType = 'InPerson',
-            IsActive = true,
-            UsageType = 'Salesforce Scheduler'
-        );
+        ContactPointType = 'InPerson',
+        IsActive = true,
+        UsageType = 'Salesforce Scheduler'
+            );
         insert engChannelType;
-
+    }
+    
+    @isTest
+    static void testAnonymizeUser_ValidMDM() {
+        WorkType wt = [SELECT Id FROM WorkType LIMIT 1];
+        EngagementChannelType engChannelType = [SELECT Id FROM EngagementChannelType LIMIT 1];
+        Lead testLead = [SELECT Id FROM Lead WHERE Numero_de_Conta_na_lead__c = '123456' LIMIT 1];
+        
+        Test.setMock(HttpCalloutMock.class, new CombinedMock());
+        
         ServiceAppointment sa = new ServiceAppointment(
             WorkTypeId = wt.Id,
             ParentRecordId = testLead.Id,
@@ -139,10 +148,69 @@ private class DataCompliance_API_TEST {
             Status = 'Completed'
         );
         insert sa;
-
+        
+        Test.startTest();
+        
+        RestRequest req = new RestRequest();
+        RestResponse res = new RestResponse();
+        req.requestURI = '/services/apexrest/anonymize.user/123456';
+        req.httpMethod = 'POST';
+        RestContext.request = req;
+        RestContext.response = res;
+        
+        DataCompliance_API.anonymizeUser('123456');
+        
+        Account account = [SELECT PersonEmail, Phone FROM account WHERE Numero_de_Conta__c =: '123456' LIMIT 1][0];
+        Lead lead = [SELECT NIF__c, SCH_Indicativo_do_Pais__c, Phone, postalCode FROM Lead WHERE Numero_de_Conta_na_lead__c =: '123456' LIMIT 1][0];
+        Contact contact = [SELECT LastName, Suffix, MailingStreet FROM contact LIMIT 1][0];
+        Opportunity opp = [SELECT Name FROM Opportunity LIMIT 1][0];
+        ServiceAppointment saResult = [SELECT Phone, Email FROM ServiceAppointment WHERE Id = :sa.Id];
+        Test.stopTest();
+        
+        // REVER ASSERTS INVALIDOS
+        //Account
+        // System.assertEquals(account.PersonEmail, 'xxxxxxx@xxxxxx.com', 'E_mail_Empresa__c must be xxxxxxx@xxxxxx.com');
+        // System.assertEquals(account.Phone.contains('000 000 000'), true, 'Phone must be xxxxxxxx');
+        
+        //Lead
+        // System.assertEquals(lead.NIF__c, '000000000', 'NIF__c must be 000000000');
+        // System.assertEquals(lead.SCH_Indicativo_do_Pais__c, 'xxx', 'SCH_Indicativo_do_Pais__c must be xxxxxxxx');
+        // System.assertEquals(lead.Phone.contains('000 000 000'), true, 'Phone must be xxxxxxxx');
+        // System.assertEquals(lead.postalCode, 'xxxxxxx', 'postalCode must be xxxxxxxx');
+        
+        //Contact
+        // System.assertEquals(contact.LastName, 'xxxxxxxx', 'LastName must be xxxxxxxx');
+        // System.assertEquals(contact.Suffix, 'xxxxxxxx', 'Suffix must be xxxxxxxx');
+        // System.assertEquals(contact.MailingStreet, 'xxxxxxxx', 'MailingStreet must be xxxxxxxx');
+        
+        //Opportunity
+        // System.assertEquals(opp.Name, 'xxxxxxxx', 'Name must be xxxxxxxx');
+        
+        // Service Appointment
+        // System.assertEquals(sa.Email, 'xxxxxxx@xxxxxx.com', 'Email must be xxxxxxx@xxxxxx.com');
+        // System.assertEquals(sa.Phone, '000 000 000', 'Phone must be 000 000 000');
+        
+        //Logs
+        // System.assertNotEquals([SELECT id FROM Anonimyzed_Clients__c].size(), 0, 'Log record must be present');
+        
+        // API Status
+        // System.assertEquals(200, res.statusCode, 'Expected 200 status code');
+        // System.assert(res.responseBody.toString().contains('MDM_ID UPDATED'), 'Expected MDM_ID UPDATED in response');
+    }
+    
+    @isTest
+    static void testAnonymizeUser_ValidMDM_OpenActivity() {
+        WorkType wt = [SELECT Id FROM WorkType LIMIT 1];
+        EngagementChannelType engChannelType = [SELECT Id FROM EngagementChannelType LIMIT 1];
+        Lead testLead = [SELECT Id FROM Lead WHERE Numero_de_Conta_na_lead__c = '003636' LIMIT 1];
+        Opportunity opp = [SELECT Id FROM Opportunity LIMIT 1];
+        Account testAccount2 = [SELECT Id FROM Account WHERE Numero_de_Conta__c = '123456789' LIMIT 1];
+        
+        Test.setMock(HttpCalloutMock.class, new CombinedMock());
+        
         ServiceAppointment sa2 = new ServiceAppointment(
             WorkTypeId = wt.Id,
-            ParentRecordId = testLead2.Id,
+            ParentRecordId = testLead.Id,
             Duration = 20,
             DurationType = 'Minutes',
             EngagementChannelTypeId = engChannelType.Id,
@@ -151,66 +219,12 @@ private class DataCompliance_API_TEST {
             SchedEndTime = System.now()+4,
             Phone = '987654328',
             Email = 'test.test2@leroy.com',
-            Status = 'Scheduled' // Scheduled, Completed
+            Status = 'Scheduled'
         );
         insert sa2;
-    }
-
-    @isTest
-    static void testAnonymizeUser_ValidMDM() {
+        
         Test.startTest();
-
-        RestRequest req = new RestRequest();
-        RestResponse res = new RestResponse();
-        req.requestURI = '/services/apexrest/anonymize.user/123456';
-        req.httpMethod = 'POST';
-        RestContext.request = req;
-        RestContext.response = res;
-
-        DataCompliance_API.anonymizeUser('123456');
-
-        Account account = [SELECT PersonEmail, Phone FROM account WHERE Numero_de_Conta__c =: '123456' LIMIT 1][0];
-        Lead lead = [SELECT NIF__c, SCH_Indicativo_do_Pais__c, Phone, postalCode FROM Lead WHERE Numero_de_Conta_na_lead__c =: '123456' LIMIT 1][0];
-        Contact contact = [SELECT LastName, Suffix, MailingStreet FROM contact LIMIT 1][0];
-        Opportunity opp = [SELECT Name FROM Opportunity LIMIT 1][0];
-        ServiceAppointment sa = [SELECT Phone, Email FROM ServiceAppointment WHERE Status = 'Completed' ];
-        Test.stopTest();
-
-        // REVER ASSERTS INVALIDOS
-        //Account
-        // System.assertEquals(account.PersonEmail, 'xxxxxxx@xxxxxx.com', 'E_mail_Empresa__c must be xxxxxxx@xxxxxx.com');
-        // System.assertEquals(account.Phone.contains('000 000 000'), true, 'Phone must be xxxxxxxx');
-
-        //Lead
-        // System.assertEquals(lead.NIF__c, '000000000', 'NIF__c must be 000000000');
-        // System.assertEquals(lead.SCH_Indicativo_do_Pais__c, 'xxx', 'SCH_Indicativo_do_Pais__c must be xxxxxxxx');
-        // System.assertEquals(lead.Phone.contains('000 000 000'), true, 'Phone must be xxxxxxxx');
-        // System.assertEquals(lead.postalCode, 'xxxxxxx', 'postalCode must be xxxxxxxx');
-
-        //Contact
-        // System.assertEquals(contact.LastName, 'xxxxxxxx', 'LastName must be xxxxxxxx');
-        // System.assertEquals(contact.Suffix, 'xxxxxxxx', 'Suffix must be xxxxxxxx');
-        // System.assertEquals(contact.MailingStreet, 'xxxxxxxx', 'MailingStreet must be xxxxxxxx');
-
-        //Opportunity
-        // System.assertEquals(opp.Name, 'xxxxxxxx', 'Name must be xxxxxxxx');
-
-        // Service Appointment
-        // System.assertEquals(sa.Email, 'xxxxxxx@xxxxxx.com', 'Email must be xxxxxxx@xxxxxx.com');
-        // System.assertEquals(sa.Phone, '000 000 000', 'Phone must be 000 000 000');
-
-        //Logs
-        // System.assertNotEquals([SELECT id FROM Anonimyzed_Clients__c].size(), 0, 'Log record must be present');
-
-        // API Status
-        // System.assertEquals(200, res.statusCode, 'Expected 200 status code');
-        // System.assert(res.responseBody.toString().contains('MDM_ID UPDATED'), 'Expected MDM_ID UPDATED in response');
-    }
-
-    @isTest
-    static void testAnonymizeUser_ValidMDM_OpenActivity() {
-        Test.startTest();
-
+        
         //Lead with open activity
         RestRequest req = new RestRequest();
         RestResponse res = new RestResponse();
@@ -219,7 +233,7 @@ private class DataCompliance_API_TEST {
         RestContext.request = req;
         RestContext.response = res;
         DataCompliance_API.anonymizeUser('003636');
-
+        
         //Account with open activity
         RestRequest req2 = new RestRequest();
         RestResponse res2 = new RestResponse();
@@ -228,34 +242,34 @@ private class DataCompliance_API_TEST {
         RestContext.request = req2;
         RestContext.response = res2;
         DataCompliance_API.anonymizeUser('123456789');
-
+        
         Lead lead = [SELECT NIF__c, SCH_Indicativo_do_Pais__c, Phone, postalCode FROM Lead WHERE Numero_de_Conta_na_lead__c =: '003636' LIMIT 1][0];
         Account account = [SELECT E_mail_Empresa__c, Phone FROM account WHERE Numero_de_Conta__c =: '123456789' LIMIT 1][0];
-
+        
         Test.stopTest();
-
+        
         //Lead
         System.assertEquals(lead.NIF__c, lead.NIF__c , 'NIF__c must be the same');
         System.assertEquals(lead.SCH_Indicativo_do_Pais__c, lead.SCH_Indicativo_do_Pais__c, 'SCH_Indicativo_do_Pais__c must be same');
         System.assertEquals(lead.Phone, lead.Phone, 'Phone must be the same');
         System.assertEquals(lead.postalCode, lead.postalCode, 'postalCode must be the same');
-
+        
         //Account
         System.assertEquals(account.E_mail_Empresa__c, account.E_mail_Empresa__c, 'E_mail_Empresa__c must be the same');
         System.assertEquals(account.Phone, account.Phone, 'Phone must be same');
-
+        
         //Logs
         System.assertNotEquals([SELECT id FROM Anonimyzed_Clients__c].size(), NULL, 'Log record must be present');
-
+        
         // API Status
         System.assertEquals(400, res.statusCode, 'Expected 400 status code');
         System.assert(res.responseBody.toString().contains('Not Updated - CLIENT WITH OPEN ACTIVITY'), 'Client must Not be Anonymized');
     }
-
+    
     @isTest
     static void testAnonymizeUser_MissingMDM() {
         Test.startTest();
-
+        
         RestRequest req = new RestRequest();
         RestResponse res = new RestResponse();
         req.requestURI = '/services/apexrest/anonymize.user/';
@@ -263,17 +277,17 @@ private class DataCompliance_API_TEST {
         RestContext.request = req;
         RestContext.response = res;
         DataCompliance_API.anonymizeUser('');
-
+        
         Test.stopTest();
-
+        
         System.assertEquals(400, res.statusCode, 'Expected 400 status code');
         System.assert(res.responseBody.toString().contains('MISSING MDM_ID'), 'Expected MISSING MDM_ID error message');
     }
-
+    
     @isTest
     static void testAnonymizeUser_NonExistingMDM() {
         Test.startTest();
-
+        
         RestRequest req = new RestRequest();
         RestResponse res = new RestResponse();
         req.requestURI = '/services/apexrest/anonymize.user/999999';
@@ -281,10 +295,36 @@ private class DataCompliance_API_TEST {
         RestContext.request = req;
         RestContext.response = res;
         DataCompliance_API.anonymizeUser('999999');
-
+        
         Test.stopTest();
-
+        
         System.assertEquals(200, res.statusCode, 'Expected 200 status code for non-existing MDM_ID');
         System.assert(res.responseBody.toString().contains('MDM_ID DOESN´T EXIST'), 'Expected MDM_ID DOESN´T EXIST message');
     }
+
+    // ****************************************************************************************************************************
+    // ****************************************************** MOCK HPP CALL OUT ********************************************************************
+    // ****************************************************************************************************************************
+    
+    private class ADEOMockSuccess implements HttpCalloutMock {
+        public HTTPResponse respond(HTTPRequest req) {
+            HttpResponse res = new HttpResponse();
+            res.setStatusCode(200);
+            res.setBody('{}');
+            return res;
+        }
+    }
+
+    private class CombinedMock implements HttpCalloutMock {
+    public HTTPResponse respond(HTTPRequest req) {
+        HttpResponse res = new HttpResponse();
+        res.setStatusCode(200);
+        res.setBody('{}');
+        
+        if (req.getEndpoint().contains('Twilio')) {
+            res.setStatusCode(201);  // Twilio expects 201
+        }
+        return res;
+    }
+}
 }
