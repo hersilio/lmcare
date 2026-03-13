@@ -1,4 +1,4 @@
-public class LM_SplitText {
+public without sharing class LM_SplitText {
 	@invocableMethod(label='Split Text' description='Splits text by separator and outputs a collection of strings')
     public static List<List<String>> splitString(List<FlowInput> input){
         List<List<String>> output = new List<List<String>>();

@@ -288,52 +288,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account_Name__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>SCH_AssignedContact__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Google_ICS__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Google_Meet_URL__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Owner_TF__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Service_Resource_Changed_TF__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_StartSchedule__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Related_Opportunity__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Service_Resource__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Assigned_Resource__c</field>
             <table>ServiceAppointment</table>
         </columns>
         <columns>
@@ -348,6 +303,51 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource_Changed_TF__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Google_Meet_URL__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Owner_TF__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_StartSchedule__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account_Name__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Google_ICS__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Related_Opportunity__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Assigned_Resource__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_Service_Resource__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>HasMeetUrl__c</field>
             <table>ServiceAppointment</table>
         </columns>
@@ -356,14 +356,26 @@
             <field>GoogleMeetSchError__c</field>
             <table>ServiceAppointment</table>
         </columns>
-        <masterLabel>Service Appointments</masterLabel>
-    </sections>
-    <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Time_to_serve__c</field>
+            <field>Lead__c</field>
             <table>ServiceAppointment</table>
         </columns>
-        <masterLabel>Marcações</masterLabel>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EndTime__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DaysUntilAppointment__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EmailSubject__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <masterLabel>Service Appointments</masterLabel>
     </sections>
 </ReportType>

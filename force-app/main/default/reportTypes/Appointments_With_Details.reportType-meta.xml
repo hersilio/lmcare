@@ -2,7 +2,7 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>ServiceAppointment</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Usado em reports que precisam dos detalhes marcação
  - Marcacoes por canal de entrada</description>
     <join>
@@ -443,7 +443,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Service_Resource__c.RelatedRecord.LDAP__c</field>
+            <field>EndTime__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DaysUntilAppointment__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EmailSubject__c</field>
             <table>ServiceAppointment</table>
         </columns>
         <masterLabel>Service Appointments</masterLabel>
@@ -547,58 +557,6 @@
             <field>SCH_Service_Resource__c.RelatedRecord.Store_API_Name__c</field>
             <table>ServiceAppointment</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_Service_Resource__c.RelatedRecord.Title</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Dia_da_Semana__c</field>
-            <table>ServiceAppointment.Service_Appointment_Details__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Hora_do_dia__c</field>
-            <table>ServiceAppointment.Service_Appointment_Details__r</table>
-        </columns>
         <masterLabel>Detalhes Marcação</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account.BillingAddress</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account.BillingPostalCode</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <masterLabel>Dados Cliente</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ServiceTerritory.PostalCode</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <masterLabel>Loja</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Email</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <masterLabel>LEAD</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Time_to_serve__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <masterLabel>Marcações</masterLabel>
     </sections>
 </ReportType>

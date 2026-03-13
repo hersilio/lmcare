@@ -179,6 +179,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>Custo_Total_AT__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>Peritagem_Requerida__c</field>
             </layoutItems>
             <layoutItems>

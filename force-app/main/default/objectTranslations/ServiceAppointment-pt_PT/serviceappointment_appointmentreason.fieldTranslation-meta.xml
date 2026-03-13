@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Motivos do marcação</value>
+        <value>Motivos da marcação</value>
     </caseValues>
     <gender>Masculine</gender>
     <name>serviceappointment_appointmentreason</name>

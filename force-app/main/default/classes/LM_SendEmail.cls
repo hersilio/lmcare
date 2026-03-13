@@ -1,6 +1,6 @@
 //Class responsible for sending the email to the contact/email list.
 
-public class LM_SendEmail{
+public without sharing class LM_SendEmail{
     
     //Send Email Method.
     public static List<Messaging.SendEmailResult> SendEmail(EmailTemplate emailTemplate, List<String> receivers, List<String> CC, List<String> BCC, String targetObjectId, Boolean targetAsRecipient, Order order, List<Blob> emailAttachments) {
@@ -40,7 +40,7 @@ public class LM_SendEmail{
         mail.setWhatId(order.Id);
         
         if (!String.isBlank(targetObjectId)) mail.setTargetObjectId(targetObjectId);      
-        if (emailAttachments != null){
+        if (emailAttachments != null && !emailAttachments.isEmpty()){
             List<Messaging.EmailFileAttachment> efas = new List<Messaging.EmailFileAttachment>();
             Messaging.EmailFileAttachment efa = LM_PdfCreator.createPdfAttachment(emailAttachments[0], mdt.Attachment_Name__c);
             efas.add(efa);
@@ -59,14 +59,9 @@ public class LM_SendEmail{
         system.debug(mail);
         allmsg.add(mail);
 
-        try {
-            results = Messaging.sendEmail(allmsg, false);
-            System.Debug(results);
-            return results;
-        } catch (Exception e) {
-            System.debug(e.getMessage());
-            return null;
-        }
+        results = Messaging.sendEmail(allmsg, false);
+        System.Debug('Email results: '+ results);
+        return results;
 	        
         
     }

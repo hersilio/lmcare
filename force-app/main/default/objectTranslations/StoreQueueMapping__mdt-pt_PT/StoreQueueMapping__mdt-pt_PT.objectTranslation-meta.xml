@@ -8,5 +8,5 @@
         <plural>true</plural>
         <value>StoreQueueMappings</value>
     </caseValues>
-    <gender>Neuter</gender>
+    <gender>Masculine</gender>
 </CustomObjectTranslation>

@@ -153,5 +153,5 @@ ISPICKVAL({!$Record.StageName}, &apos;Aguarda Fecho&apos;)</filterFormula>
         </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>

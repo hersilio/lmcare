@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TriggerEvent__c</fullName>
+    <description>Evento especifico que aciona a avaliacao da regra.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Evento de Gatilho</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OnCreate</fullName>
+                <default>false</default>
+                <label>Na Criação</label>
+            </value>
+            <value>
+                <fullName>OnUpdate</fullName>
+                <default>false</default>
+                <label>Na Atualização</label>
+            </value>
+            <value>
+                <fullName>OnStageChange</fullName>
+                <default>false</default>
+                <label>Na Mudança de Fase</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Agendado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Convites para marcação</value>
+        <value>Convites para marcações</value>
     </caseValues>
     <gender>Masculine</gender>
     <name>serviceappointment_appointmentinvitation</name>

@@ -16,16 +16,16 @@
     <contentSniffingProtection>true</contentSniffingProtection>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
-    <genericErrorPage>Exception</genericErrorPage>
+    <genericErrorPage>LoginRightFrame_error</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
-    <indexPage>CommunitiesLanding</indexPage>
+    <inactiveIndexPage>LoginRightFrame_error</inactiveIndexPage>
+    <indexPage>LoginRightFrame</indexPage>
     <masterLabel>LoginRightFrame</masterLabel>
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
-    <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <serverIsDown>SNA_49oTk_sf_default_cdn_LoginRightFrame1</serverIsDown>
+    <serverIsDown>SNA_ZRLn6_sf_default_cdn_LoginRightFrame1</serverIsDown>
     <siteAdmin>marco.a.silva@leroymerlin.pt</siteAdmin>
     <siteGuestRecordDefaultOwner>marco.a.silva@leroymerlin.pt</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <urlPathPrefix>LoginRightFrame</urlPathPrefix>
+    <urlPathPrefix>loginrightframe</urlPathPrefix>
 </CustomSite>

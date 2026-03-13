@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>AppointmentSlotSummary__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Report Type para Lojas Sem Slots Disponíveis. Base para relatórios de AppointmentSlotSummary__c agrupados por loja e tipo de serviço onde IsFuture__c = false (sem slots futuros ativos).</description>
+    <label>Lojas Sem Slots Disponíveis</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Name</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Loja</displayNameOverride>
+            <field>ServiceTerritory__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Tipo de Serviço</displayNameOverride>
+            <field>WorkType__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Canal</displayNameOverride>
+            <field>EngagementChannelType__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Slots Hoje</displayNameOverride>
+            <field>Available_Slots_Today__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Slots Amanhã</displayNameOverride>
+            <field>Available_Slots_Tomorrow__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Próximo Slot Disponível</displayNameOverride>
+            <field>NextStartDate__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tem Slots Futuros</displayNameOverride>
+            <field>IsFuture__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UniqueKey__c</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>AppointmentSlotSummary__c</table>
+        </columns>
+        <masterLabel>Appointment Slot Summaries</masterLabel>
+    </sections>
+</ReportType>

@@ -77,10 +77,32 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>Nota de Venda</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Order Layout</layout>
         <sections>
             <label><!-- Dados Pagamento --></label>
             <section>Dados Pagamento</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pedido</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
         </sections>
     </layouts>
     <quickActions>

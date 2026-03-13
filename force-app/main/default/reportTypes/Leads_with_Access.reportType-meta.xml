@@ -51,6 +51,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>RecordType</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Title</field>
             <table>Lead</table>
         </columns>
@@ -366,7 +371,57 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Probabilidade_de_Convers_o__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Origem__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Numero_de_Conta_na_lead__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_teste_Email__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_teste_Phone__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SCH_teste_TextEmail__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UpdateTime__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>cliente_existente__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProjectId__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProjectTag__c</field>
+            <table>Lead</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Equipa__c</field>
             <table>Lead</table>
         </columns>
         <masterLabel>Leads</masterLabel>
@@ -386,11 +441,6 @@
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
             <table>Lead.ServiceAppointments__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SCH_OrigemMarcacao__c</field>
-            <table>Lead.ServiceAppointments__r.Service_Appointment_Details__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -669,6 +719,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>SCH_GoogleICS__c</field>
+            <table>Lead.ServiceAppointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>SCH_Office365ICS__c</field>
             <table>Lead.ServiceAppointments__r</table>
         </columns>
@@ -732,27 +787,21 @@
             <field>GoogleMeetSchError__c</field>
             <table>Lead.ServiceAppointments__r</table>
         </columns>
-        <masterLabel>Service Appointments</masterLabel>
-    </sections>
-    <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Dia_da_Semana__c</field>
-            <table>Lead.ServiceAppointments__r.Service_Appointment_Details__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Hora_do_dia__c</field>
-            <table>Lead.ServiceAppointments__r.Service_Appointment_Details__r</table>
-        </columns>
-        <masterLabel>Detalhes Marcação</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Time_to_serve__c</field>
+            <field>EndTime__c</field>
             <table>Lead.ServiceAppointments__r</table>
         </columns>
-        <masterLabel>Marcações</masterLabel>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DaysUntilAppointment__c</field>
+            <table>Lead.ServiceAppointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EmailSubject__c</field>
+            <table>Lead.ServiceAppointments__r</table>
+        </columns>
+        <masterLabel>Service Appointments</masterLabel>
     </sections>
 </ReportType>

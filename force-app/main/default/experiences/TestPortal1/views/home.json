@@ -1,0 +1,48 @@
+{
+  "appPageId" : "25616523-2abf-4692-a8d9-ace187a26a18",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b00873ca-32cd-4fc5-9a1c-244375815c77",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "86c5bd88-4f7a-4c85-930c-a4cfc9ccb42f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 48px;\">Let's get started!</span></p><ol><li><span style=\"font-size: 18px;\">Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li><li><span style=\"font-size: 18px;\">Want to add more pages? Take a look at the Pages menu.</span></li><li><span style=\"font-size: 18px;\">Want more components on your page? Drag and drop components from the Components panel.</span></li><li><span style=\"font-size: 18px;\">Want your users to see your company logo? Head on over to the Theme panel.</span></li><li><span style=\"font-size: 18px;\">Refine the look of your site with a custom theme layout. See the Experience Cloud Developer Guide.</span></li></ol>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "a0b22d13-eeaf-49ee-9418-7b9ceff6f232",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c26af471-ac5c-4b2e-a985-b534b346c2f6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "131185ea-b6e5-4201-99da-704f77cded5f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a2b1d595-7006-4b91-aeee-0a194bc4e71a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5fcea631-b5d0-4042-bf02-6cca4ab2fc42",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

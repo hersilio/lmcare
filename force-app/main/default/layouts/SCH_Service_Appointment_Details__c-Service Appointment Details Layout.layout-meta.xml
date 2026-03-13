@@ -26,14 +26,6 @@
                 <behavior>Edit</behavior>
                 <field>SCH_Observacoes__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Dia_da_Semana__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Hora_do_dia__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

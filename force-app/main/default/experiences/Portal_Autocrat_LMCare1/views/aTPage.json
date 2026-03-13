@@ -2,7 +2,7 @@
   "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
   "componentName" : "siteforce:dynamicLayout",
   "dataProviders" : [ ],
-  "id" : "58e410c0-9016-4881-b495-f4ac9b693cfa",
+  "id" : "58c9e870-629f-458c-aec7-494a37f4c27d",
   "label" : "AT Page",
   "regions" : [ {
     "components" : [ {
@@ -11,9 +11,9 @@
         "backgroundOverlay" : "rgba(0,0,0,0.5)",
         "contentAreaWidth" : 100,
         "sectionConfig" : {
-          "UUID" : "ae84e0bb-0f1f-4f90-be0a-48bc9e808140",
+          "UUID" : "fd8fc9d2-a470-4a29-835f-2a4236585f92",
           "columns" : [ {
-            "UUID" : "1f92b639-9233-4cdd-9b3d-f9f779f12da5",
+            "UUID" : "c63d478c-aedb-4fd9-b0b6-5d37ba87527f",
             "columnKey" : "1",
             "columnName" : "Column 1",
             "columnWidth" : "12",
@@ -23,40 +23,40 @@
         "sectionHeight" : 300
       },
       "componentName" : "forceCommunity:section",
-      "id" : "ae84e0bb-0f1f-4f90-be0a-48bc9e808140",
+      "id" : "fd8fc9d2-a470-4a29-835f-2a4236585f92",
       "regions" : [ {
         "components" : [ {
           "componentAttributes" : {
             "tabsetConfig" : {
-              "UUID" : "b21f8ae5-792e-4396-839e-c81ebd805891",
+              "UUID" : "0ac94d85-4c67-4899-bbe8-57c8d5ff3d5c",
               "activeTab" : "",
               "tabs" : [ {
-                "UUID" : "1eebfd5f-3b6e-402d-a85f-dd3cec3bee9f",
+                "UUID" : "6825e49e-97ce-47dd-ba87-457317389367",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "1",
                 "tabName" : "Novo Pedido AT"
               }, {
-                "UUID" : "bc1f97c4-7930-4a08-9f32-307fa7ac0056",
+                "UUID" : "cce40761-f995-4c43-a443-4fc49d868014",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "2",
                 "tabName" : "Pedidos AT"
               }, {
-                "UUID" : "3bdefb75-f9c6-4d0f-8aa8-f35ba4a294bc",
+                "UUID" : "9f082118-265f-46a5-8fb6-c8a128b6fb59",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
-                "tabKey" : "3",
+                "tabKey" : "39fcb",
                 "tabName" : "Dashboards"
               } ],
               "useOverflowMenu" : true
             }
           },
           "componentName" : "forceCommunity:tabLayout",
-          "id" : "b21f8ae5-792e-4396-839e-c81ebd805891",
+          "id" : "0ac94d85-4c67-4899-bbe8-57c8d5ff3d5c",
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
@@ -64,12 +64,12 @@
                 "flowName" : "LM_Assistencia_Tecnica_Portal"
               },
               "componentName" : "forceCommunity:flowCommunity",
-              "id" : "cc795155-6a80-4bff-aab9-c98abf2b235f",
+              "id" : "2e675a71-b550-4dac-a0b1-a9b195d4faf8",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "1eebfd5f-3b6e-402d-a85f-dd3cec3bee9f",
+            "id" : "6825e49e-97ce-47dd-ba87-457317389367",
             "regionLabel" : "Novo Pedido AT",
             "regionName" : "1",
             "renditionMap" : { },
@@ -78,13 +78,13 @@
             "components" : [ {
               "componentAttributes" : {
                 "enableInlineEdit" : false,
-                "filterName" : "AT_s_Nacional_Total",
+                "filterName" : "AT_Pedidos_de_Servi_os",
                 "layout" : "FULL",
                 "pageSize" : 25,
                 "scope" : "Order",
                 "showActionBar" : false,
                 "showChartsPanel" : false,
-                "showDisplay" : "showall",
+                "showDisplay" : "grid",
                 "showFilterPanel" : false,
                 "showImageIcon" : false,
                 "showManualRefreshButton" : true,
@@ -93,12 +93,12 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "0f96ec7a-76c8-43e4-876d-ff2351320db4",
+              "id" : "da57b6d0-33b1-4005-97a5-b4ea79e68776",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "bc1f97c4-7930-4a08-9f32-307fa7ac0056",
+            "id" : "cce40761-f995-4c43-a443-4fc49d868014",
             "regionLabel" : "Pedidos AT",
             "regionName" : "2",
             "renditionMap" : { },
@@ -107,17 +107,17 @@
             "components" : [ {
               "componentAttributes" : {
                 "height" : "850",
-                "recordId" : "kAZTQPhIYxWNNPPYprNhXVfIxPfdgl123"
+                "recordId" : "kAZTQPhIYxWNNPPYprNhXVfIxPfdgl12"
               },
               "componentName" : "forceCommunity:dashboard",
-              "id" : "bb71d2a7-d844-4986-a713-d0c3ddc7fa4c",
+              "id" : "effdf2b2-bcbe-49e1-8c41-804be3e52d07",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "3bdefb75-f9c6-4d0f-8aa8-f35ba4a294bc",
+            "id" : "9f082118-265f-46a5-8fb6-c8a128b6fb59",
             "regionLabel" : "Dashboards",
-            "regionName" : "3",
+            "regionName" : "39fcb",
             "renditionMap" : { },
             "type" : "region"
           } ],
@@ -125,7 +125,7 @@
           "renditionMap" : { },
           "type" : "component"
         } ],
-        "id" : "1f92b639-9233-4cdd-9b3d-f9f779f12da5",
+        "id" : "c63d478c-aedb-4fd9-b0b6-5d37ba87527f",
         "regionLabel" : "Column 1",
         "regionName" : "1",
         "renditionMap" : { },
@@ -135,7 +135,7 @@
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "310116e7-e066-479a-9832-7758cb3ca4d6",
+    "id" : "a129d4ec-73eb-496e-b39c-c420980ebe43",
     "regionName" : "content",
     "type" : "region"
   }, {
@@ -146,11 +146,11 @@
         "title" : "AT Page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "94352ba2-3f35-4cfc-8fa4-a19a81f01ab6",
+      "id" : "3d5f1de7-b647-43a8-a100-49f5f42068f7",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "96a71a5b-1916-4960-8b01-fefd30e4a78e",
+    "id" : "45762890-c44a-46bb-a1e6-55a91a49c7ef",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],

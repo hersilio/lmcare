@@ -27,9 +27,14 @@
     <tabs>standard-Incident</tabs>
     <tabs>standard-Problem</tabs>
     <tabs>standard-ChangeRequest</tabs>
+    <tabs>standard-WaveHomeLightning</tabs>
+    <tabs>ErrorLog__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>ErrorLog__c</tab>
+        </mappings>
         <mappings>
             <tab>Knowledge__kav</tab>
         </mappings>
@@ -62,6 +67,9 @@
         </mappings>
         <mappings>
             <tab>standard-Problem</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-WaveHomeLightning</tab>
         </mappings>
         <mappings>
             <tab>standard-home</tab>

@@ -2,7 +2,7 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>ServiceAppointment</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Report Type que lida com os Service Appointments.
 
 Total de Marcações por Loja e Tipo de Projeto
@@ -406,6 +406,21 @@ Performance por Tipo de Projeto</description>
             <field>CreatedBy.Username</field>
             <table>ServiceAppointment</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EndTime__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DaysUntilAppointment__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EmailSubject__c</field>
+            <table>ServiceAppointment</table>
+        </columns>
         <masterLabel>Service Appointments</masterLabel>
     </sections>
     <sections>
@@ -501,13 +516,5 @@ Performance por Tipo de Projeto</description>
             <table>ServiceAppointment</table>
         </columns>
         <masterLabel>Assigned Resources</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Time_to_serve__c</field>
-            <table>ServiceAppointment</table>
-        </columns>
-        <masterLabel>Marcações</masterLabel>
     </sections>
 </ReportType>

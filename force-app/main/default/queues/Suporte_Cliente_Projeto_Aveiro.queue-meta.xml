@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Suporte Cliente Projeto Aveiro</name>
+    <queueMembers>
+        <users>
+            <user>gutemberg.p.pedrosa@leroymerlin.pt</user>
+            <user>ines.t.valle@leroymerlin.pt</user>
+            <user>stepadmin@proj.leroy</user>
+            <user>tiago.p.landum@leroymerlin.pt</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

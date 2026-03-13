@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sistema Destino --></label>
+    <name>TargetSystem__c</name>
+    <picklistValues>
+        <masterLabel>ADEO</masterLabel>
+        <translation><!-- ADEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDM</masterLabel>
+        <translation><!-- MDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pyxis</masterLabel>
+        <translation><!-- Pyxis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOP</masterLabel>
+        <translation><!-- SOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

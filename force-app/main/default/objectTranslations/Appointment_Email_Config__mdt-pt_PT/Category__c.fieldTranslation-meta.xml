@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Casa de Banho</masterLabel>
+        <translation><!-- Casa de Banho --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cozinha</masterLabel>
+        <translation><!-- Cozinha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janelas</masterLabel>
+        <translation><!-- Janelas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roupeiros</masterLabel>
+        <translation><!-- Roupeiros --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

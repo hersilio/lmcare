@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>pt_PT</language>
+    <masterLabel>Assistncia_Tcnica_Instalador_Forn</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Assistência Técnica - Instalador &amp; Fornecedor.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

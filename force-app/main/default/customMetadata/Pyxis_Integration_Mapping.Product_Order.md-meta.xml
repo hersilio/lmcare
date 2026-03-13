@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Product_Order</label>
+    <protected>false</protected>
+    <values>
+        <field>Fields_Mapping__c</field>
+        <value xsi:type="xsd:string">OrderCode__c:orderNumber; Loja_Pyxis__c:store; AvailableDate__c:availableDate; TotalWithVat__c:totalWithVat; CreationChannel__c:creationChannel; DepositTotal__c:depositTotal; DepositRemaining__c:depositRemaining; ShippedFrom_Code__c:shippedFrom; DeliveryDate__c:deliveryDate; InternalMessageCreatedDate__c:internalMessageCreatedDate; InternalMessageCreatedBy_LDAP__c:internalMessageCreatedBy; InternalMessageText__c:internalMessageText; EligibleForReducedVat__c:eligibleForReducedVat; StatePyxis__c:orderStatus; CreatedDatePyxis__c:createdDate; LDAPcreatedByUser__c:createdByUser</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">Product_Order</value>
+    </values>
+    <values>
+        <field>RecordTypeAPIName__c</field>
+        <value xsi:type="xsd:string">ProductOrder</value>
+    </values>
+</CustomMetadata>

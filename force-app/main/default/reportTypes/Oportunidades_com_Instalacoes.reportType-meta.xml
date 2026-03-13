@@ -601,16 +601,9 @@
             <field>Instalacao_Concluida__c</field>
             <table>Opportunity.Instala_es__r</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Primeira_Instalacao__c</field>
-            <table>Opportunity.Instala_es__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Segunda_Data_de_Instalacao__c</field>
-            <table>Opportunity.Instala_es__r</table>
-        </columns>
         <masterLabel>Pendentes instalações</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Opportunities</masterLabel>
     </sections>
 </ReportType>

@@ -77,19 +77,11 @@
         <connector>
             <targetReference>Preenche_cod_pais_nas_person_accounts</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Phone</field>
-            <operator>StartsWith</operator>
-            <value>
-                <stringValue>9</stringValue>
-            </value>
-        </filters>
         <object>Account</object>
         <schedule>
             <frequency>Once</frequency>
             <startDate>2024-03-03</startDate>
-            <startTime>05:51:00.000Z</startTime>
+            <startTime>03:29:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>

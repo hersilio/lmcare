@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Regra 8 - Nova Versão Orçamento</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>AllowMultiple__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>DaysInStage__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>DependencyField__c</field>
+        <value xsi:type="xsd:string">VersionSynchronized</value>
+    </values>
+    <values>
+        <field>DependencyValue__c</field>
+        <value xsi:type="xsd:string">true</value>
+    </values>
+    <values>
+        <field>DueDateBase__c</field>
+        <value xsi:type="xsd:string">OrderCreatedDate</value>
+    </values>
+    <values>
+        <field>DueDateOffsetDays__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Stage__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TaskSubjectTemplate__c</field>
+        <value xsi:type="xsd:string">Verificar o orçamento carregado {NumeroOS} (versão {Versao})</value>
+    </values>
+    <values>
+        <field>TriggerEvent__c</field>
+        <value xsi:type="xsd:string">OnUpdate</value>
+    </values>
+    <values>
+        <field>TriggerType__c</field>
+        <value xsi:type="xsd:string">ServiceOrder</value>
+    </values>
+</CustomMetadata>

@@ -249,6 +249,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -289,8 +293,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -307,10 +319,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -349,8 +357,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -385,12 +401,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -405,12 +433,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -458,6 +506,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -468,12 +517,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -483,7 +533,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -492,13 +544,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -664,6 +724,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -704,8 +768,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -722,10 +794,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -764,8 +832,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -800,12 +876,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -820,12 +908,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -873,6 +981,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -883,12 +992,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -898,7 +1008,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -907,13 +1019,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1083,6 +1203,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -1123,8 +1247,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -1141,10 +1273,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -1183,8 +1311,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -1219,12 +1355,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -1239,12 +1387,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1293,6 +1461,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -1303,12 +1472,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -1318,7 +1488,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -1327,13 +1499,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1499,6 +1679,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -1539,8 +1723,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -1557,10 +1749,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -1599,8 +1787,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -1635,12 +1831,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -1655,12 +1863,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1708,6 +1936,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -1718,12 +1947,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -1733,7 +1963,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -1742,13 +1974,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1918,6 +2158,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -1958,8 +2202,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -1976,10 +2228,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -2018,8 +2266,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -2054,12 +2310,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -2074,12 +2342,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2128,6 +2416,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -2138,12 +2427,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -2153,7 +2443,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -2162,13 +2454,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -2334,6 +2634,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -2374,8 +2678,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -2392,10 +2704,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -2434,8 +2742,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -2470,12 +2786,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -2490,12 +2818,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2543,6 +2891,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -2553,12 +2902,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -2568,7 +2918,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -2577,13 +2929,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -2753,6 +3113,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -2793,8 +3157,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -2811,10 +3183,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -2853,8 +3221,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -2889,12 +3265,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -2909,12 +3297,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2963,6 +3371,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -2973,12 +3382,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -2988,7 +3398,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -2997,13 +3409,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -3169,6 +3589,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -3209,8 +3633,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -3227,10 +3659,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -3269,8 +3697,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -3305,12 +3741,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -3325,12 +3773,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -3378,6 +3846,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -3388,12 +3857,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -3403,7 +3873,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -3412,13 +3884,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -3588,6 +4068,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -3628,8 +4112,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -3646,10 +4138,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -3688,8 +4176,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -3724,12 +4220,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -3744,12 +4252,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -3798,6 +4326,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -3808,12 +4337,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -3823,7 +4353,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -3832,13 +4364,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -4004,6 +4544,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -4044,8 +4588,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -4062,10 +4614,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -4104,8 +4652,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -4140,12 +4696,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -4160,12 +4728,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -4213,6 +4801,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -4223,12 +4812,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -4238,7 +4828,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -4247,13 +4839,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -4423,6 +5023,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -4463,8 +5067,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -4481,10 +5093,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -4523,8 +5131,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -4559,12 +5175,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -4579,12 +5207,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -4633,6 +5281,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -4643,12 +5292,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -4658,7 +5308,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -4667,13 +5319,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -4839,6 +5499,10 @@
             <label>Cliente</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCc1</field>
             <label>Data de Alerta de Retificação</label>
         </opportunityListFieldsLabelMappings>
@@ -4879,8 +5543,16 @@
             <label>Desconto</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3s</field>
             <label>Discovery Completed</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8Pj7</field>
@@ -4897,10 +5569,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlC4p</field>
             <label>Justificação de alteração de fase</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBvy</field>
@@ -4939,8 +5607,16 @@
             <label>Motivo de Troca de Tipo de Venda</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000SsCbr</field>
             <label>Motivos de Perda de Loja</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw2</field>
@@ -4975,12 +5651,24 @@
             <label>Processo de Suporte Encerrado</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000Dmt3t</field>
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlBw4</field>
             <label>Secção</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000HlFgx</field>
@@ -4995,12 +5683,32 @@
             <label>Tipo de Venda Inicial</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N8d00000P8PjE</field>
             <label>Valor Total de Instalação</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N8d00000Suv6u</field>
             <label>Valor Total de Mercadoria</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -5048,6 +5756,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -5058,12 +5767,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -5073,7 +5783,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -5082,13 +5794,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>

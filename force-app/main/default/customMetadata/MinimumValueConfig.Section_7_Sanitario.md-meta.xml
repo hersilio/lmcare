@@ -15,11 +15,39 @@
         <value xsi:type="xsd:double">1500.0</value>
     </values>
     <values>
+        <field>Notes__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>SectionCode__c</field>
         <value xsi:type="xsd:string">7</value>
     </values>
     <values>
         <field>SectionName__c</field>
         <value xsi:type="xsd:string">Sanitário</value>
+    </values>
+    <values>
+        <field>SubsectionCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SubsectionName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SubtypeCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SubtypeName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TypeCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TypeName__c</field>
+        <value xsi:nil="true"/>
     </values>
 </CustomMetadata>

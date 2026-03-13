@@ -1,13 +1,13 @@
 {
   "componentVariants" : [ {
-    "id" : "20adfaca-e44a-438b-a1ee-cf7580802833",
+    "id" : "602d60f5-5049-4f0c-b58c-cd633927bd99",
     "propertyOverrides" : {
-      "activeViewId" : "6a832dcb-7bfd-4cef-98e7-de961036578f"
+      "activeViewId" : "7f26fecb-acf6-4269-931b-e82d27585e25"
     },
-    "targetId" : "fd86a03e-4554-49d6-9f78-2df47f0d469a",
+    "targetId" : "f1674e2e-d493-4d76-bdc5-e3c08ed23f53",
     "type" : "componentVariant"
   } ],
   "developerName" : "RE_Page_RE_Page_Page",
-  "id" : "cf8bf71f-fde2-4c08-adb7-e1c5ea57d769",
+  "id" : "e27c9023-91e7-4bd4-a952-529e7dc902b7",
   "type" : "experienceVariation"
 }

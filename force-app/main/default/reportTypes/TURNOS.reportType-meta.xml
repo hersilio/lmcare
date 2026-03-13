@@ -248,7 +248,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Colaborador Scheduler Ativo</displayNameOverride>
+            <displayNameOverride>Licença Scheduler Atribuída </displayNameOverride>
             <field>ServiceResource.IsActive</field>
             <table>Shift</table>
         </columns>
@@ -1298,6 +1298,9 @@
             <field>ServiceResource.RelatedRecord.Title</field>
             <table>Shift</table>
         </columns>
+        <masterLabel>Turnos</masterLabel>
+    </sections>
+    <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>TotalOnline__c</field>
@@ -1310,24 +1313,24 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Origem__c</field>
+            <table>Shift</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>TotalAllChannels__c</field>
             <table>Shift</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Tipo_de_Erro__c</field>
+            <field>IsRecurrenceEndingSoon__c</field>
             <table>Shift</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>ZDV__c</field>
+            <field>EndRecurrenceNotificationSentDate__c</field>
             <table>Shift</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ServiceResource.RelatedRecord.Id</field>
-            <table>Shift</table>
-        </columns>
-        <masterLabel>Turnos</masterLabel>
+        <masterLabel>Shifts</masterLabel>
     </sections>
 </ReportType>

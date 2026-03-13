@@ -2,7 +2,7 @@
   "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
   "componentName" : "siteforce:dynamicLayout",
   "dataProviders" : [ ],
-  "id" : "6a832dcb-7bfd-4cef-98e7-de961036578f",
+  "id" : "7f26fecb-acf6-4269-931b-e82d27585e25",
   "label" : "RE Page",
   "regions" : [ {
     "components" : [ {
@@ -11,9 +11,9 @@
         "backgroundOverlay" : "rgba(0,0,0,0.5)",
         "contentAreaWidth" : 100,
         "sectionConfig" : {
-          "UUID" : "74cdbf2b-eb74-44f9-809f-0eaa1cd6c12d",
+          "UUID" : "33faf25d-ed15-4ea9-beaf-07aef124e170",
           "columns" : [ {
-            "UUID" : "4245c1be-1c9d-4cec-9c00-f49766156aad",
+            "UUID" : "219253e1-d47d-44e7-9889-317a466f5f32",
             "columnKey" : "1",
             "columnName" : "Column 1",
             "columnWidth" : "12",
@@ -23,22 +23,22 @@
         "sectionHeight" : 300
       },
       "componentName" : "forceCommunity:section",
-      "id" : "74cdbf2b-eb74-44f9-809f-0eaa1cd6c12d",
+      "id" : "33faf25d-ed15-4ea9-beaf-07aef124e170",
       "regions" : [ {
         "components" : [ {
           "componentAttributes" : {
             "tabsetConfig" : {
-              "UUID" : "a53f72cc-952e-4833-9e16-47ef908bb075",
+              "UUID" : "8bb3b9b7-2e61-4bc4-8e19-606a1a7703d4",
               "activeTab" : "",
               "tabs" : [ {
-                "UUID" : "e901d417-56e2-49a4-9a24-9b23edb0243e",
+                "UUID" : "d16a66be-3e10-4cae-9c82-945905cc199d",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "1",
                 "tabName" : "Novo Pedido RE"
               }, {
-                "UUID" : "c9723726-c0ed-46a6-a3ba-de4616455eab",
+                "UUID" : "1609a498-7305-4af9-afce-8e02d2722d79",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
@@ -49,7 +49,7 @@
             }
           },
           "componentName" : "forceCommunity:tabLayout",
-          "id" : "a53f72cc-952e-4833-9e16-47ef908bb075",
+          "id" : "8bb3b9b7-2e61-4bc4-8e19-606a1a7703d4",
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
@@ -57,12 +57,12 @@
                 "flowName" : "LM_Recolha_Entulho_Portal"
               },
               "componentName" : "forceCommunity:flowCommunity",
-              "id" : "0350634d-4a84-49ef-855c-7761fa5972b9",
+              "id" : "4392b30d-23d4-4e10-8451-f4da81075242",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "e901d417-56e2-49a4-9a24-9b23edb0243e",
+            "id" : "d16a66be-3e10-4cae-9c82-945905cc199d",
             "regionLabel" : "Novo Pedido RE",
             "regionName" : "1",
             "renditionMap" : { },
@@ -86,12 +86,12 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "538d0940-57ce-43c8-830f-65922ebe0922",
+              "id" : "0fc330d0-5a38-48d5-8a4e-e25915c0d49f",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "c9723726-c0ed-46a6-a3ba-de4616455eab",
+            "id" : "1609a498-7305-4af9-afce-8e02d2722d79",
             "regionLabel" : "Pedidos RE",
             "regionName" : "2",
             "renditionMap" : { },
@@ -101,7 +101,7 @@
           "renditionMap" : { },
           "type" : "component"
         } ],
-        "id" : "4245c1be-1c9d-4cec-9c00-f49766156aad",
+        "id" : "219253e1-d47d-44e7-9889-317a466f5f32",
         "regionLabel" : "Column 1",
         "regionName" : "1",
         "renditionMap" : { },
@@ -111,7 +111,7 @@
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "9e678cc1-d996-4f9d-ac6d-9bec9954d585",
+    "id" : "cd351151-618b-4101-90de-2d7781458ef4",
     "regionName" : "content",
     "type" : "region"
   }, {
@@ -122,15 +122,15 @@
         "title" : "RE Page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "f83989a2-7e57-4d0c-a5ac-173236daab8e",
+      "id" : "adf7e06e-b339-4d1e-823a-d416e4884518",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "4520dab2-3639-45f1-8723-d1c44eb25855",
+    "id" : "a14a16fa-8553-4894-944f-d9636261591c",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",
   "type" : "view",
-  "viewType" : "custom-re"
+  "viewType" : "custom-r-e"
 }

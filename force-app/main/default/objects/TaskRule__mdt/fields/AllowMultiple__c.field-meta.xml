@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowMultiple__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Permite a criacao de multiplas tarefas para a mesma regra e o mesmo contexto.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Permitir Multiplas Tarefas</label>
+    <type>Checkbox</type>
+</CustomField>

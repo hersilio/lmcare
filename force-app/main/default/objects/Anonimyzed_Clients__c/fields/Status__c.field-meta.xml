@@ -4,7 +4,7 @@
     <description>Status of the API</description>
     <externalId>false</externalId>
     <label>Status</label>
-    <length>250</length>
+    <length>50</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

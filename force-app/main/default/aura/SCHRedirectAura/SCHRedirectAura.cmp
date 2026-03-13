@@ -1,0 +1,34 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+<!--<p class="slds-box slds-text-heading_medium">Pode Configurar Trabalhos Contratados ou Serviços ao clicar nos botões seguintes:</p>-->
+ 
+ 
+    <!--use boolean attribute for Store true/false value,
+    make default to "false" so modal box are not display on the load of component.
+    -->
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+   
+    <!--Use "slds-m-around_xx-large" class to add standard X-Large padding to the component-->
+    <div class="slds-m-around-large">
+    
+        <!--Use aura:if tag to display Model Box, on the bese of conditions. [isOpen boolean attribute] -->  
+        <aura:if isTrue="{!v.isOpen}">
+           
+            <!--###### MODAL BOX Start######-->
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header slds-modal__header_empty">
+                        <lightning:buttonIcon iconName="utility:close" class="slds-modal__close" onclick="{!c.closeModel}" variant="bare-inverse"  size="large"  />
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning:flow aura:id="flow"  />
+                    </div>
+                </div>
+               
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+            <!--###### MODAL BOX Part END Here ######-->
+           
+        </aura:if>
+    </div>
+</aura:component>

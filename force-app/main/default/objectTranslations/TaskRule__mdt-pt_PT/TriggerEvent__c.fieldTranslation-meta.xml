@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Evento de Gatilho --></label>
+    <name>TriggerEvent__c</name>
+    <picklistValues>
+        <masterLabel>Agendado</masterLabel>
+        <translation><!-- Agendado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Na Atualização</masterLabel>
+        <translation><!-- Na Atualização --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Na Criação</masterLabel>
+        <translation><!-- Na Criação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Na Mudança de Fase</masterLabel>
+        <translation><!-- Na Mudança de Fase --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

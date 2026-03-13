@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sistema Origem --></label>
+    <name>SourceSystem__c</name>
+    <picklistValues>
+        <masterLabel>L2Service</masterLabel>
+        <translation><!-- L2Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDM</masterLabel>
+        <translation><!-- MDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pyxis</masterLabel>
+        <translation><!-- Pyxis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOP</masterLabel>
+        <translation><!-- SOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

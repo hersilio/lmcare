@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Suporte Cliente Projeto ZDV Lx Este</name>
+    <queueMembers>
+        <users>
+            <user>celia.m.costa@leroymerlin.pt</user>
+            <user>gutemberg.p.pedrosa@leroymerlin.pt</user>
+            <user>ines.t.valle@leroymerlin.pt</user>
+            <user>jacielma.b.belo@leroymerlin.pt</user>
+            <user>joelson.s.wemana@leroymerlin.pt</user>
+            <user>laurindo.l.simoes@leroymerlin.pt</user>
+            <user>miguel.c.silva@leroymerlin.pt</user>
+            <user>stepadmin@proj.leroy</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

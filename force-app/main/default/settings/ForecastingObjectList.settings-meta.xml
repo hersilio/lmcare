@@ -94,12 +94,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -108,6 +132,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -120,6 +156,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -136,6 +176,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -218,10 +266,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -248,6 +292,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -351,6 +399,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -361,12 +410,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -376,7 +426,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -385,13 +437,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -491,12 +551,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -505,6 +589,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -517,6 +613,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -533,6 +633,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -615,10 +723,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -645,6 +749,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -748,6 +856,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -758,12 +867,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -773,7 +883,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -782,13 +894,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -888,16 +1008,40 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SPLITAMOUNT</field>
             <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -906,6 +1050,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -918,6 +1074,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -934,6 +1094,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -1016,10 +1184,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -1046,6 +1210,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -1150,6 +1318,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -1160,12 +1329,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -1175,7 +1345,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -1184,13 +1356,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -1290,12 +1470,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1304,6 +1508,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -1316,6 +1532,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -1332,6 +1552,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -1414,10 +1642,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -1444,6 +1668,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -1547,6 +1775,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -1557,12 +1786,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -1572,7 +1802,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -1581,13 +1813,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -1687,16 +1927,40 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SPLITAMOUNT</field>
             <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1705,6 +1969,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -1717,6 +1993,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -1733,6 +2013,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -1815,10 +2103,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -1845,6 +2129,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -1949,6 +2237,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -1959,12 +2248,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -1974,7 +2264,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -1983,13 +2275,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -2089,12 +2389,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2103,6 +2427,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -2115,6 +2451,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -2131,6 +2471,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -2213,10 +2561,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -2243,6 +2587,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -2346,6 +2694,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -2356,12 +2705,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -2371,7 +2721,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -2380,13 +2732,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -2486,16 +2846,40 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SPLITAMOUNT</field>
             <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2504,6 +2888,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -2516,6 +2912,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -2532,6 +2932,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -2614,10 +3022,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -2644,6 +3048,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -2748,6 +3156,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -2758,12 +3167,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -2773,7 +3183,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -2782,13 +3194,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -2888,12 +3308,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2902,6 +3346,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -2914,6 +3370,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -2930,6 +3390,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -3012,10 +3480,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -3042,6 +3506,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -3145,6 +3613,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -3155,12 +3624,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -3170,7 +3640,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -3179,13 +3651,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -3285,16 +3765,40 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SPLITAMOUNT</field>
             <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -3303,6 +3807,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -3315,6 +3831,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -3331,6 +3851,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -3413,10 +3941,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -3443,6 +3967,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -3547,6 +4075,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -3557,12 +4086,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -3572,7 +4102,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -3581,13 +4113,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -3687,12 +4227,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -3701,6 +4265,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -3713,6 +4289,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -3729,6 +4309,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -3811,10 +4399,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -3841,6 +4425,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -3944,6 +4532,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -3954,12 +4543,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -3969,7 +4559,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -3978,13 +4570,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -4084,16 +4684,40 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SPLITAMOUNT</field>
             <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -4102,6 +4726,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -4114,6 +4750,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -4130,6 +4770,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -4212,10 +4860,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -4242,6 +4886,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -4346,6 +4994,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -4356,12 +5005,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -4371,7 +5021,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -4380,13 +5032,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>
@@ -4486,12 +5146,36 @@
             <label>Data Limite de Feedback do Cliente</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHF</field>
+            <label>Regras de Venda Projeto Estabelecidas</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHG</field>
+            <label>Valor Total Material</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHD</field>
+            <label>Nome da Oportunidade (Pyxis)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.NAME</field>
             <label>Opportunity Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHE</field>
+            <label>Tipo de Venda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>SYNCEDQUOTE.NAME</field>
             <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHB</field>
+            <label>Motivo Perda Pyxis</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHC</field>
+            <label>Secção Predominante</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -4500,6 +5184,18 @@
         <forecastingObjectListLabelMappings>
             <field>ACCOUNT.SITE</field>
             <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHJ</field>
+            <label>Desconto Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHH</field>
+            <label>Valor Total</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000KMPHI</field>
+            <label>Valor Total Serviço</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.PRIVATE</field>
@@ -4512,6 +5208,10 @@
         <forecastingObjectListLabelMappings>
             <field>CONTRACT.CONTRACT_NUMBER</field>
             <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000J1IG5</field>
+            <label>Record Type Developer Name</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000Dmt3t</field>
@@ -4528,6 +5228,14 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlFgx</field>
             <label>Status de Aprovação</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc1</field>
+            <label>External Id</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000HsJc0</field>
+            <label>Criado a (Pyxis)</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
@@ -4610,10 +5318,6 @@
             <label>Secção</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
-            <field>00NSr00000APYlV</field>
-            <label>Lead Origem</label>
-        </forecastingObjectListLabelMappings>
-        <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw1</field>
             <label>Motivo de Perda de Serviço</label>
         </forecastingObjectListLabelMappings>
@@ -4640,6 +5344,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw9</field>
             <label>Motivo de Perda por Concorrência</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NAe00000LD7XS</field>
+            <label>Venda Financiada</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N8d00000HlBw7</field>
@@ -4743,6 +5451,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N8d00000Dmt3r</field>
             <field>00N8d00000SsCV5</field>
+            <field>00NAe00000HsJc0</field>
             <field>00N8d00000SsCc1</field>
             <field>00N8d00000SsCVK</field>
             <field>00N8d00000SsCcG</field>
@@ -4753,12 +5462,13 @@
             <field>00N8d00000HlBvv</field>
             <field>00N8d00000SsCbw</field>
             <field>00N8d00000HlBvx</field>
+            <field>00NAe00000KMPHJ</field>
             <field>00N8d00000Dmt3s</field>
+            <field>00NAe00000HsJc1</field>
             <field>00N8d00000P8Pj7</field>
             <field>00N8d00000P8Pj8</field>
             <field>00N8d00000P8PjA</field>
             <field>00N8d00000HlC4p</field>
-            <field>00NSr00000APYlV</field>
             <field>00N8d00000HlBvy</field>
             <field>00N8d00000HlBvz</field>
             <field>00N8d00000Dmt3u</field>
@@ -4768,7 +5478,9 @@
             <field>00N8d00000SsCcB</field>
             <field>00N8d00000HlBw8</field>
             <field>00N8d00000SsCbm</field>
+            <field>00NAe00000KMPHB</field>
             <field>00N8d00000SsCbr</field>
+            <field>00NAe00000KMPHD</field>
             <field>00N8d00000HlBw2</field>
             <field>00N8d00000P8PjB</field>
             <field>00N8d00000P8PjC</field>
@@ -4777,13 +5489,21 @@
             <field>00N8d00000P8Pj9</field>
             <field>00N8d00000HlBw0</field>
             <field>00N8d00000P8Pj6</field>
+            <field>00NAe00000J1IG5</field>
+            <field>00NAe00000KMPHF</field>
             <field>00N8d00000Dmt3t</field>
             <field>00N8d00000HlBw4</field>
+            <field>00NAe00000KMPHC</field>
             <field>00N8d00000HlFgx</field>
             <field>00N8d00000HlBw5</field>
             <field>00N8d00000HlBw6</field>
+            <field>00NAe00000KMPHE</field>
+            <field>00NAe00000KMPHH</field>
             <field>00N8d00000P8PjE</field>
             <field>00N8d00000Suv6u</field>
+            <field>00NAe00000KMPHG</field>
+            <field>00NAe00000KMPHI</field>
+            <field>00NAe00000LD7XS</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </forecastingObjectListUnselectedSettings>

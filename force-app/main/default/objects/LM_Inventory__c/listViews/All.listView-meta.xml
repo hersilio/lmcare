@@ -4,13 +4,13 @@
     <columns>NAME</columns>
     <columns>Loja__c</columns>
     <columns>Product__c</columns>
-    <columns>Expected_Rent_Date__c</columns>
-    <columns>Available_From__c</columns>
-    <columns>Status__c</columns>
     <columns>Hallway__c</columns>
     <columns>Cupboard__c</columns>
     <columns>Shelves__c</columns>
     <columns>Order__c</columns>
+    <columns>Status__c</columns>
+    <columns>Available_From__c</columns>
+    <columns>CREATEDBY_USER</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

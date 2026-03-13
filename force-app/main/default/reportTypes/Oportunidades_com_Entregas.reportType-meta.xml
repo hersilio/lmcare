@@ -523,4 +523,7 @@
         </columns>
         <masterLabel>Pendentes mercadorias</masterLabel>
     </sections>
+    <sections>
+        <masterLabel>Opportunities</masterLabel>
+    </sections>
 </ReportType>

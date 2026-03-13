@@ -1,4 +1,4 @@
-public with sharing class LM_TokenGenerator {
+public without sharing class LM_TokenGenerator {
 
     static final Integer SIZE = 6;
 

@@ -5,7 +5,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>LM_Care_Scheduler</name>
+        <name>SCH_LMCareScheduler</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -85,10 +85,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__LightningInstrumentation</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__SalesforceCMS</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -153,15 +149,23 @@
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
+        <name>standard__LightningScheduler</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>SCH_LM_SCHEDULER</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>standard__FlowsApp</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__ExpressionSetConsole</name>
-        <type>CustomApplication</type>
+        <name>GCP_Connector</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__LightningScheduler</name>
+        <name>standard__ExpressionSetConsole</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -171,14 +175,6 @@
     <appMenuItems>
         <name>standard__SalesCloudMobile</name>
         <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>TelePerformance</name>
-        <type>ExternalClientApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Teleperformance</name>
-        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
         <name>standard__Approvals</name>
@@ -193,23 +189,27 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Data_Compliance_Connected_App</name>
+        <name>DC_Connected_App</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__DigitalWallet</name>
+        <name>standard__Insights</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__Integration</name>
+        <name>standard__DataManager</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__IndustriesEpc</name>
-        <type>CustomApplication</type>
+        <name>Pyxis_Integration_External_App</name>
+        <type>ExternalClientApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__IndustriesEcm</name>
-        <type>CustomApplication</type>
+        <name>Salesforce_CLI</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PostmanConnection</name>
+        <type>ExternalClientApplication</type>
     </appMenuItems>
 </AppMenu>

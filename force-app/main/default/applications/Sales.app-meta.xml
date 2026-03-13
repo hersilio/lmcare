@@ -29,5 +29,6 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>MobileLanding</tabs>
+    <tabs>ErrorLog__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

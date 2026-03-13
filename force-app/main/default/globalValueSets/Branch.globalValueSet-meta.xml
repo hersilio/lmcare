@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1010311301</fullName>
+        <default>false</default>
+        <label>11301 MT INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>2010321301</fullName>
+        <default>false</default>
+        <label>21301 TAQ INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>4010341301</fullName>
+        <default>false</default>
+        <label>41301 AV INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>6010361301</fullName>
+        <default>false</default>
+        <label>61301 ITABE INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>7010371301</fullName>
+        <default>false</default>
+        <label>71301 S.MANU INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>20010310301</fullName>
+        <default>false</default>
+        <label>201301 STA CRUZ SUP</label>
+    </customValue>
+    <customValue>
+        <fullName>10010310301</fullName>
+        <default>false</default>
+        <label>101301 ITAPE SUP</label>
+    </customValue>
+    <customValue>
+        <fullName>9010391301</fullName>
+        <default>false</default>
+        <label>91301 ITABE II INSUMOS</label>
+    </customValue>
+    <customValue>
+        <fullName>1010311304</fullName>
+        <default>false</default>
+        <label>11304 - MT INSUMOS II</label>
+    </customValue>
+    <customValue>
+        <fullName>2010321304</fullName>
+        <default>false</default>
+        <label>21304 - TAQ INSUMOS II</label>
+    </customValue>
+    <customValue>
+        <fullName>4010341304</fullName>
+        <default>false</default>
+        <label>41304 - AV INSUMOS II</label>
+    </customValue>
+    <customValue>
+        <fullName>9010391304</fullName>
+        <default>false</default>
+        <label>91304 - ITABE 2 INSUMOS II</label>
+    </customValue>
+    <customValue>
+        <fullName>10010310304</fullName>
+        <default>false</default>
+        <label>101304 - ITAPE SUP II</label>
+    </customValue>
+    <customValue>
+        <fullName>20010310304</fullName>
+        <default>false</default>
+        <label>201304 - STA CRUZ SUP II</label>
+    </customValue>
+    <customValue>
+        <fullName>8010381301</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>8010381301</label>
+    </customValue>
+    <masterLabel>Filial</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

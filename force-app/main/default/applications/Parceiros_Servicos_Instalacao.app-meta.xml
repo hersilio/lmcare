@@ -14,6 +14,7 @@
     <label>Parceiros Serviços Instalação</label>
     <navType>Standard</navType>
     <tabs>Lead_Servicos__c</tabs>
+    <tabs>ErrorLog__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Parceiros_Servi_os_Instala_o_UtilityBar</utilityBar>
 </CustomApplication>

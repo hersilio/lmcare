@@ -113,7 +113,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>TotalAllChannels__c</field>
+            <field>TotalOnline__c</field>
             <table>Shift</table>
         </columns>
         <columns>
@@ -123,44 +123,24 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>TotalOnline__c</field>
+            <field>Origem__c</field>
             <table>Shift</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Licença LM CARE Ativa</displayNameOverride>
-            <field>ServiceResource.RelatedRecord.IsActive</field>
+            <field>TotalAllChannels__c</field>
             <table>Shift</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Colaborador Scheduler Ativo</displayNameOverride>
-            <field>ServiceResource.IsActive</field>
+            <field>IsRecurrenceEndingSoon__c</field>
             <table>Shift</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy.Email</field>
-            <table>Shift</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ServiceResource.RelatedRecord.CompanyName</field>
+            <field>EndRecurrenceNotificationSentDate__c</field>
             <table>Shift</table>
         </columns>
         <masterLabel>Shifts</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Tipo_de_Erro__c</field>
-            <table>Shift</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ZDV__c</field>
-            <table>Shift</table>
-        </columns>
-        <masterLabel>Turnos</masterLabel>
     </sections>
 </ReportType>

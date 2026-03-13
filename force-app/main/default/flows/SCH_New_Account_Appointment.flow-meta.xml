@@ -3262,6 +3262,7 @@ RIGHT(TEXT({!SCH_Get_SA.SchedEndTime}),3)</expression>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
+    <sourceTemplate>runtime_appointmentbooking__Flow</sourceTemplate>
     <stages>
         <name>AppointmentTypeStage</name>
         <isActive>true</isActive>

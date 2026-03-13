@@ -34,4 +34,20 @@
         <field>SubsectionName__c</field>
         <value xsi:type="xsd:string">Roupeiros</value>
     </values>
+    <values>
+        <field>SubtypeCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SubtypeName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TypeCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TypeName__c</field>
+        <value xsi:nil="true"/>
+    </values>
 </CustomMetadata>

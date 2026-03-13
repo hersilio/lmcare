@@ -88,18 +88,6 @@
                 <identifier>RecordSCH_OrigemMarcacao_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Dia_da_Semana__c</fieldItem>
-                <identifier>RecordDia_da_Semana__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Hora_do_dia__c</fieldItem>
-                <identifier>RecordHora_do_dia__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-c716d924-c5c1-4d8e-89a0-e49e60378b0e</name>
         <type>Facet</type>
     </flexiPageRegions>

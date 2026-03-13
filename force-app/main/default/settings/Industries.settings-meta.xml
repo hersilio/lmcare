@@ -9,22 +9,16 @@
     <enableBlockResourceAvailabilityOrgPref>true</enableBlockResourceAvailabilityOrgPref>
     <enableCapacitySchedulingPref>false</enableCapacitySchedulingPref>
     <enableCreateMultiAttendeeEventOrgPref>false</enableCreateMultiAttendeeEventOrgPref>
-    <enableDepriveSoqlAccessGuestUserOrgPref>true</enableDepriveSoqlAccessGuestUserOrgPref>
+    <enableDepriveSoqlAccessGuestUserOrgPref>false</enableDepriveSoqlAccessGuestUserOrgPref>
     <enableDepriveSoqlAccessOrgPref>true</enableDepriveSoqlAccessOrgPref>
-    <enableDiscoveryFrameworkMetadata>false</enableDiscoveryFrameworkMetadata>
     <enableDontSharePartyprofWPortalOrgPref>false</enableDontSharePartyprofWPortalOrgPref>
     <enableDropInAppointmentsOrgPref>false</enableDropInAppointmentsOrgPref>
-    <enableEnhancedQuestionCreation>true</enableEnhancedQuestionCreation>
-    <enableEpcDeleteAccess>false</enableEpcDeleteAccess>
     <enableEventManagementOrgPref>true</enableEventManagementOrgPref>
     <enableEventWriteOrgPref>false</enableEventWriteOrgPref>
-    <enableIndustriesAssessment>false</enableIndustriesAssessment>
-    <enableIndustriesAssessmentPrefill>false</enableIndustriesAssessmentPrefill>
     <enableMultiResourceOrgPref>true</enableMultiResourceOrgPref>
     <enableMultipleTopicsForShiftsOrgPref>false</enableMultipleTopicsForShiftsOrgPref>
     <enableNewTimelineSetupFlow>false</enableNewTimelineSetupFlow>
     <enableOverbookingOrgPref>false</enableOverbookingOrgPref>
-    <enablePCMConfigRules>false</enablePCMConfigRules>
     <enablePartyProfileParentSharingOrgPref>false</enablePartyProfileParentSharingOrgPref>
     <enablePartyprofParentMultiSharingOrgPref>false</enablePartyprofParentMultiSharingOrgPref>
     <enablePreBookedFallbackMechOrgPref>false</enablePreBookedFallbackMechOrgPref>

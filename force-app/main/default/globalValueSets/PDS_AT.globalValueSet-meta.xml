@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aguarda agendamento de peritagem</fullName>
+        <default>false</default>
+        <label>Aguarda agendamento de peritagem</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda agendamento do Fornecedor</fullName>
+        <default>false</default>
+        <label>Aguarda agendamento do Fornecedor</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda agendamento do Parceiro</fullName>
+        <default>false</default>
+        <label>Aguarda agendamento do Parceiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda conclusão do Parceiro</fullName>
+        <default>false</default>
+        <label>Aguarda conclusão do Parceiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda decisão superior</fullName>
+        <default>false</default>
+        <label>Aguarda decisão superior</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda entrega de material no Cliente</fullName>
+        <default>false</default>
+        <label>Aguarda entrega de material no Cliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda esclarecimentos por parte do Cliente</fullName>
+        <default>false</default>
+        <label>Aguarda esclarecimentos por parte do Cliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda esclarecimentos por parte do Parceiro</fullName>
+        <default>false</default>
+        <label>Aguarda esclarecimentos por parte do Parceiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda informação de conclusão do Fornecedor</fullName>
+        <default>false</default>
+        <label>Aguarda informação de conclusão do Fornecedor</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda levantamento/resposta por parte do cliente</fullName>
+        <default>false</default>
+        <label>Aguarda levantamento/resposta por parte do cliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda material para resolver AT</fullName>
+        <default>false</default>
+        <label>Aguarda material para resolver AT</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda relatório de peritagem</fullName>
+        <default>false</default>
+        <label>Aguarda relatório de peritagem</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda relatório do Fornecedor</fullName>
+        <default>false</default>
+        <label>Aguarda relatório do Fornecedor</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda relatório técnico</fullName>
+        <default>false</default>
+        <label>Aguarda relatório técnico</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda resposta da secção/Loja</fullName>
+        <default>false</default>
+        <label>Aguarda resposta da secção/Loja</label>
+    </customValue>
+    <customValue>
+        <fullName>Aguarda Validação</fullName>
+        <default>false</default>
+        <label>Aguarda Validação</label>
+    </customValue>
+    <customValue>
+        <fullName>AT enviada ao fornecedor</fullName>
+        <default>false</default>
+        <label>AT enviada ao fornecedor</label>
+    </customValue>
+    <customValue>
+        <fullName>AT enviada a Parceiro</fullName>
+        <default>false</default>
+        <label>AT enviada a Parceiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+        <label>Cancelado</label>
+    </customValue>
+    <customValue>
+        <fullName>Cliente não aceitou orçamento</fullName>
+        <default>false</default>
+        <label>Cliente não aceitou orçamento</label>
+    </customValue>
+    <customValue>
+        <fullName>Concluída</fullName>
+        <default>false</default>
+        <label>Concluída</label>
+    </customValue>
+    <customValue>
+        <fullName>Decisão abrir AT</fullName>
+        <default>false</default>
+        <label>Decisão abrir AT</label>
+    </customValue>
+    <customValue>
+        <fullName>Decisão não abrir AT</fullName>
+        <default>false</default>
+        <label>Decisão não abrir AT</label>
+    </customValue>
+    <customValue>
+        <fullName>Enviar AT a outro Parceiro</fullName>
+        <default>false</default>
+        <label>Enviar AT a outro Parceiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Fornecedor concluiu serviço</fullName>
+        <default>false</default>
+        <label>Fornecedor concluiu serviço</label>
+    </customValue>
+    <customValue>
+        <fullName>Fornecedor identificou causa Instalação</fullName>
+        <default>false</default>
+        <label>Fornecedor identificou causa Instalação</label>
+    </customValue>
+    <customValue>
+        <fullName>Parceiro concluiu serviço</fullName>
+        <default>false</default>
+        <label>Parceiro concluiu serviço</label>
+    </customValue>
+    <customValue>
+        <fullName>Parceiro não aceitou AT</fullName>
+        <default>false</default>
+        <label>Parceiro não aceitou AT</label>
+    </customValue>
+    <customValue>
+        <fullName>Peritagem não solicitada</fullName>
+        <default>false</default>
+        <label>Peritagem não solicitada</label>
+    </customValue>
+    <customValue>
+        <fullName>Peritagem solicitada</fullName>
+        <default>false</default>
+        <label>Peritagem solicitada</label>
+    </customValue>
+    <customValue>
+        <fullName>Relatório técnico recebido</fullName>
+        <default>false</default>
+        <label>Relatório técnico recebido</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsabilidade Civil acionada</fullName>
+        <default>false</default>
+        <label>Responsabilidade Civil acionada</label>
+    </customValue>
+    <customValue>
+        <fullName>Causa da AT identificada</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Causa da AT identificada</label>
+    </customValue>
+    <customValue>
+        <fullName>Fornecedor identificou causa Instalação/Cliente</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fornecedor identificou causa Instalação/Cliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Data de agendamento recebida</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Data de agendamento recebida</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalador não aceitou pedido AT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Instalador não aceitou pedido AT</label>
+    </customValue>
+    <masterLabel>PDS AT</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

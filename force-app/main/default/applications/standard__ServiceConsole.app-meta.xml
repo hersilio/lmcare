@@ -183,7 +183,11 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>MobileLanding</tabs>
+    <tabs>ErrorLog__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>ErrorLog__c</tab>
+        </mappings>
         <mappings>
             <tab>MobileLanding</tab>
         </mappings>

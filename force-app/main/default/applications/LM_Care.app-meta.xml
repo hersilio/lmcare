@@ -19,12 +19,22 @@
         <pageOrSobjectType>Instalacao__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_page_padr_o</content>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Order_Record_Page</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Order_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Order</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#1C8B1A</headerColor>
@@ -46,436 +56,6 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Conta_P_gina_de_registro2</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.PersonAccount</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Conta_P_gina_de_registro2</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>PersonAccount.PersonAccount</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Geral</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pedido_de_Servi_o_P_gina_de_registro1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>LM - Autocrat - Atelier de Reparação</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Barras_Tejadilho</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Aluguer_Ferramentas</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Assistencia_Tecnica</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Certificado_Devolucao</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Certificado_Devolucao</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Certificado_Devolucao</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Certificado_Devolucao</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_DCI</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.LM_Recolha_Entulho</recordType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_page_padr_o</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Leroy Merlin - Global</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Autocrat_Home_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
         <profile>LM - Autocrat - Atelier de Reparação</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -704,7 +284,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Lead_P_gina_de_registro</content>
+        <content>Lead</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Lead</pageOrSobjectType>
         <type>Flexipage</type>
@@ -712,7 +292,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Lead_P_gina_de_registro</content>
+        <content>Lead</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Lead</pageOrSobjectType>
         <type>Flexipage</type>
@@ -720,7 +300,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Lead_P_gina_de_registro</content>
+        <content>Lead</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Lead</pageOrSobjectType>
         <type>Flexipage</type>
@@ -728,7 +308,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Lead_P_gina_de_registro</content>
+        <content>Lead</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Lead</pageOrSobjectType>
         <type>Flexipage</type>
@@ -783,10 +363,195 @@
         <recordType>PersonAccount.PersonAccount</recordType>
         <type>Flexipage</type>
         <profile>LM - Autocrat - Atelier de Reparação</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidade_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Venda_Complexa</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidade_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Venda_Complexa</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidade_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Venda_Simples</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Oportunidade_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Venda_Simples</recordType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_page_padr_o</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Leroy Merlin - Global</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Pyxis_Layout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.SalesProject</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Pyxis_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.SalesProject</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Quote_Pyxis_Layout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Quote</pageOrSobjectType>
+        <recordType>Quote.SalesProject</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Quote_Pyxis_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Quote</pageOrSobjectType>
+        <recordType>Quote.SalesProject</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Pyxis_Layout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.ProductOrder</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Pyxis_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.ProductOrder</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Sales_Notes_Pyxis_Layout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.SalesNote</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Sales_Notes_Pyxis_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.SalesNote</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>LEROY MERLIN - Geral</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Lead</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Lead</pageOrSobjectType>
+        <recordType>Lead.Lead</recordType>
+        <type>Flexipage</type>
+        <profile>LEROY MERLIN - Geral</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
-    <tabs>Pesquisa_de_Conta</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-Opportunity</tabs>
@@ -796,6 +561,9 @@
     <tabs>standard-Event</tabs>
     <tabs>standard-Order</tabs>
     <tabs>LM_Inventory__c</tabs>
+    <tabs>Pesquisa_de_Conta</tabs>
+    <tabs>AppointmentSlot__c</tabs>
+    <tabs>ErrorLog__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LM_Care_UtilityBar</utilityBar>
 </CustomApplication>

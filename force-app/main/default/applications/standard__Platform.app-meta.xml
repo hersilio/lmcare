@@ -12,4 +12,5 @@
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
     <tabs>MobileLanding</tabs>
+    <tabs>ErrorLog__c</tabs>
 </CustomApplication>

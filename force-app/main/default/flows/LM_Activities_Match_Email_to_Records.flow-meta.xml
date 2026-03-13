@@ -221,20 +221,6 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>GetContcLeadsFromEmailAddr.contacts</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>GetContcLeadsFromEmailAddr.leads</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
                 <leftValueReference>GetAcctOpptyFromEmailAddr.opportunity</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>

@@ -56,9 +56,9 @@
         <label>LM_BRAGANCA</label>
     </customValue>
     <customValue>
-        <fullName>LM_CALDAS_DA_RAINHA</fullName>
+        <fullName>LM_CALDAS_RAINHA</fullName>
         <default>false</default>
-        <label>LM_CALDAS_DA_RAINHA</label>
+        <label>LM_CALDAS_RAINHA</label>
     </customValue>
     <customValue>
         <fullName>LM_CARCAVELOS</fullName>
@@ -259,6 +259,11 @@
         <fullName>LM_VISEU</fullName>
         <default>false</default>
         <label>LM_VISEU</label>
+    </customValue>
+    <customValue>
+        <fullName>LM_ONLINE</fullName>
+        <default>false</default>
+        <label>LM_ONLINE</label>
     </customValue>
     <masterLabel>Lojas</masterLabel>
     <sorted>true</sorted>

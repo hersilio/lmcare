@@ -113,7 +113,7 @@
     <decisions>
         <name>Contact_or_Account</name>
         <label>Contact or Account</label>
-        <locationX>776</locationX>
+        <locationX>775</locationX>
         <locationY>512</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -132,8 +132,8 @@
             <label>Contact</label>
         </rules>
         <rules>
-            <name>SCH_Account</name>
-            <conditionLogic>and</conditionLogic>
+            <name>SCH_Account_Opp</name>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.ParentRecordId</leftValueReference>
                 <operator>StartsWith</operator>
@@ -141,10 +141,17 @@
                     <stringValue>001</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.ParentRecordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>006</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>SCH_Get_Account</targetReference>
+                <targetReference>GetParentOpp</targetReference>
             </connector>
-            <label>Account</label>
+            <label>Account Or Opp</label>
         </rules>
         <rules>
             <name>SCH_Lead</name>
@@ -234,13 +241,13 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
-        <name>SCH_Get_Account</name>
-        <label>Get Account</label>
-        <locationX>533</locationX>
-        <locationY>515</locationY>
+        <name>GetParentOpp</name>
+        <label>GetParentOpp</label>
+        <locationX>542</locationX>
+        <locationY>517</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>SCH_Assign_Account</targetReference>
+            <targetReference>SCH_Get_Account</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -248,6 +255,34 @@
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>SCH_Get_Account</name>
+        <label>Get Account</label>
+        <locationX>542</locationX>
+        <locationY>684</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SCH_Assign_Account</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetParentOpp.AccountId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>

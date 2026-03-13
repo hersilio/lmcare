@@ -43,7 +43,7 @@
       "components" : [ {
         "componentAttributes" : {
           "config" : {
-            "contentItemContentKey" : "MCUM232RDDDVGZZNGTE5DT3FJKGY",
+            "contentItemContentKey" : "MCOLGJRZ7AVRFWLCJRIAA33GYHDM",
             "layoutDefinition" : {
               "attributes" : {
                 "additionalLinks" : "{}",
@@ -188,7 +188,7 @@
     }, {
       "components" : [ {
         "componentAttributes" : {
-          "NavigationMenuEditorRefresh" : "Default_Navigation1",
+          "NavigationMenuEditorRefresh" : "Default_Navigation2",
           "hideAppLauncher" : false,
           "hideHomeText" : false
         },

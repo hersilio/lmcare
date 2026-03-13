@@ -3,13 +3,13 @@
     <contactEmail>marco.a.silva@leroymerlin.pt</contactEmail>
     <label>GCP</label>
     <oauthConfig>
-        <callbackUrl>https://leroymerlin.my.salesforce.com</callbackUrl>
-        <consumerKey>3MVG9DREgiBqN9WlbSScT2YD2iJOFbYRqDIyzEX7lACTt.Jnjhz5kcy3ECKC.zmPmOXhcmZjpD85l0J.VKaaJ</consumerKey>
+        <callbackUrl>https://www.saleforce.com</callbackUrl>
+        <consumerKey>3MVG9LlLrkcRhGHYnStg4NH123CbOXPoKH6DyXKRCmYbj1o6DDC9HPestWSWv5ycQCXhBMjbxdbRfgR1QkL2w</consumerKey>
         <isAdminApproved>false</isAdminApproved>
-        <isClientCredentialEnabled>true</isClientCredentialEnabled>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
         <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
-        <isConsumerSecretOptional>true</isConsumerSecretOptional>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
         <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
         <isPkceRequired>true</isPkceRequired>
@@ -17,11 +17,11 @@
         <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
         <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
         <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
-        <scopes>Full</scopes>
+        <scopes>SFAP</scopes>
     </oauthConfig>
     <oauthPolicy>
         <ipRelaxation>ENFORCE</ipRelaxation>
         <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
-        <refreshTokenPolicy>zero</refreshTokenPolicy>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
     </oauthPolicy>
 </ConnectedApp>

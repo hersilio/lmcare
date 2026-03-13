@@ -680,6 +680,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>SCH_GoogleICS__c</field>
+            <table>Opportunity.Service_Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>SCH_Office365ICS__c</field>
             <table>Opportunity.Service_Appointments__r</table>
         </columns>
@@ -743,14 +748,21 @@
             <field>Lead__c</field>
             <table>Opportunity.Service_Appointments__r</table>
         </columns>
-        <masterLabel>Service Appointments</masterLabel>
-    </sections>
-    <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Time_to_serve__c</field>
+            <field>EndTime__c</field>
             <table>Opportunity.Service_Appointments__r</table>
         </columns>
-        <masterLabel>Marcações</masterLabel>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DaysUntilAppointment__c</field>
+            <table>Opportunity.Service_Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EmailSubject__c</field>
+            <table>Opportunity.Service_Appointments__r</table>
+        </columns>
+        <masterLabel>Service Appointments</masterLabel>
     </sections>
 </ReportType>

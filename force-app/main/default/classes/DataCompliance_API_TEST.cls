@@ -160,12 +160,12 @@ private class DataCompliance_API_TEST {
     static void testAnonymizeUser_ValidMDM() {
         Test.startTest();
 
-        RestRequest req = new RestRequest();
-        RestResponse res = new RestResponse();
-        req.requestURI = '/services/apexrest/anonymize.user/123456';
-        req.httpMethod = 'POST';
-        RestContext.request = req;
-        RestContext.response = res;
+        // RestRequest req = new RestRequest();
+        // RestResponse res = new RestResponse();
+        // req.requestURI = '/services/apexrest/anonymize.user/123456';
+        // req.httpMethod = 'POST';
+        // RestContext.request = req;
+        // RestContext.response = res;
 
         DataCompliance_API.anonymizeUser('123456');
 

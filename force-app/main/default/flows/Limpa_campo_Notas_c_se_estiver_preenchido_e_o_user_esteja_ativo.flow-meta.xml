@@ -88,8 +88,8 @@
         <object>User</object>
         <schedule>
             <frequency>Daily</frequency>
-            <startDate>2025-06-09</startDate>
-            <startTime>09:55:00.000Z</startTime>
+            <startDate>2025-06-30</startDate>
+            <startTime>23:30:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>

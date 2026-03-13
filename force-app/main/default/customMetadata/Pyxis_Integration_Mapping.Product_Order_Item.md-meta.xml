@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Product_Order_Item</label>
+    <protected>false</protected>
+    <values>
+        <field>Fields_Mapping__c</field>
+        <value xsi:type="xsd:string">ProductCode__c:productReferenceEan; StatePyxis__c:itemStatus; UnitPrice:unitPrice; StockQuantity__c:stockQuantity; DiscountPercentage__c:discountPercent; Description:lineComplementDescription; SupplierOrderNumber__c:supplierOrderNumber; Address1__c:address; Pickup__c:pickupLocation; Product_Name__c:nomenclature; SourceChannel__c:sourceChannel; SourceTransaction__c:sourceTransaction; Quantity:pdo; Type__c:itemType; AvailableDate__c:availableDate; ProductSection__c:codeSection; ProductSubSection__c:codeSubsection; ProductType__c:codeType; ProductSubType__c:codeSubtype; Store__c:sourceStore; ProductName__c:productName; Line_Number__c:lineNumber; LDAPcreatedByUser__c:createdByUser; LDAPlastModifiedByUser__c:lastModifiedByUser; TotalWithVat__c:amountIncludingVAT</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">Product_Order_Item</value>
+    </values>
+    <values>
+        <field>RecordTypeAPIName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

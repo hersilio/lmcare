@@ -8,15 +8,15 @@
     </values>
     <values>
         <field>ClientId__c</field>
-        <value xsi:type="xsd:string">0P14b7ea127ec0869665b4a9f99fb18108</value>
+        <value xsi:type="xsd:string">0A3351f9e7d3a6766c20e4ddd8da382736</value>
     </values>
     <values>
         <field>ClientSecret__c</field>
-        <value xsi:type="xsd:string">0b0fe1f52eb1a2f01a6b906bcdf9b9a600adfe548e1d6b27e9241297f4ca7920</value>
+        <value xsi:type="xsd:string">724449cf01d6d04a6dcd7725acb84dace9cfbc0e6760b0fda46ea02fca700767</value>
     </values>
     <values>
         <field>EndPoint__c</field>
-        <value xsi:type="xsd:string">https://idpb2e.adeo.com/as/token.oauth2</value>
+        <value xsi:type="xsd:string">https://idpb2e-prp.adeo.com/as/token.oauth2</value>
     </values>
     <values>
         <field>isSandBox__c</field>

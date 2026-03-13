@@ -66,16 +66,16 @@
         <label>13: ILUMINACAO</label>
     </customValue>
     <customValue>
-        <fullName>00 - Remodelação</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>00 - Remodelação</label>
-    </customValue>
-    <customValue>
         <fullName>11 - Pintura-Drogaria</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>11 - Pintura-Drogaria</label>
+    </customValue>
+    <customValue>
+        <fullName>04 - Ferramentas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>04 - Ferramentas</label>
     </customValue>
     <customValue>
         <fullName>02 - Carpintaria-Madeira</fullName>
@@ -84,16 +84,52 @@
         <label>02 - Carpintaria-Madeira</label>
     </customValue>
     <customValue>
+        <fullName>06 - Cerâmicas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>06 - Cerâmicas</label>
+    </customValue>
+    <customValue>
+        <fullName>07 - Sanitários</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>07 - Sanitários</label>
+    </customValue>
+    <customValue>
+        <fullName>09 - Jardim</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>09 - Jardim</label>
+    </customValue>
+    <customValue>
+        <fullName>12 - Decoração</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>12 - Decoração</label>
+    </customValue>
+    <customValue>
+        <fullName>13 - Iluminação</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>13 - Iluminação</label>
+    </customValue>
+    <customValue>
+        <fullName>00 - Remodelação</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>00 - Remodelação</label>
+    </customValue>
+    <customValue>
         <fullName>14 - Teste</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>14 - Teste</label>
     </customValue>
     <customValue>
-        <fullName>01 - Materiais</fullName>
+        <fullName>05 - Conforto e Energias Renováveis</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>01 - Materiais</label>
+        <label>05 - Conforto e Energias Renováveis</label>
     </customValue>
     <customValue>
         <fullName>01 - Materiais de Construção</fullName>
@@ -118,84 +154,6 @@
         <default>false</default>
         <isActive>false</isActive>
         <label>03 - Electricidade e Canalização</label>
-    </customValue>
-    <customValue>
-        <fullName>05 - Conforto e Energias Renováveis</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>05 - Conforto e Energias Renováveis</label>
-    </customValue>
-    <customValue>
-        <fullName>02 - Madeiras</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>02 - Madeiras</label>
-    </customValue>
-    <customValue>
-        <fullName>03 - Conforto</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>03 - Conforto</label>
-    </customValue>
-    <customValue>
-        <fullName>04 - Ferramentas</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>04 - Ferramentas</label>
-    </customValue>
-    <customValue>
-        <fullName>05 - Tapetes</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>05 - Tapetes</label>
-    </customValue>
-    <customValue>
-        <fullName>06 - Cerâmicas</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>06 - Cerâmicas</label>
-    </customValue>
-    <customValue>
-        <fullName>07 - Sanitários</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>07 - Sanitários</label>
-    </customValue>
-    <customValue>
-        <fullName>08 - Cozinhas</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>08 - Cozinhas</label>
-    </customValue>
-    <customValue>
-        <fullName>09 - Jardim</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>09 - Jardim</label>
-    </customValue>
-    <customValue>
-        <fullName>10 - Ferragens</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>10 - Ferragens</label>
-    </customValue>
-    <customValue>
-        <fullName>11 - Pintura</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>11 - Pintura</label>
-    </customValue>
-    <customValue>
-        <fullName>12 - Decoração</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>12 - Decoração</label>
-    </customValue>
-    <customValue>
-        <fullName>13 - Iluminação</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>13 - Iluminação</label>
     </customValue>
     <masterLabel>Secções do Produto</masterLabel>
     <sorted>false</sorted>

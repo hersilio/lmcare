@@ -2,8 +2,8 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>ServiceResource</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
-    <description>Service Resources With Shift</description>
+    <deployed>false</deployed>
+    <description>Service Resources with Shift</description>
     <join>
         <outerJoin>true</outerJoin>
         <relationship>ShiftServiceResources</relationship>
@@ -73,6 +73,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsPrimary</field>
+            <table>ServiceResource</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>uniqueID__c</field>
             <table>ServiceResource</table>
         </columns>
         <masterLabel>Service Resources</masterLabel>
@@ -180,7 +185,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>TotalAllChannels__c</field>
+            <field>TotalOnline__c</field>
             <table>ServiceResource.ShiftServiceResources</table>
         </columns>
         <columns>
@@ -190,22 +195,24 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>TotalOnline__c</field>
+            <field>Origem__c</field>
+            <table>ServiceResource.ShiftServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalAllChannels__c</field>
+            <table>ServiceResource.ShiftServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsRecurrenceEndingSoon__c</field>
+            <table>ServiceResource.ShiftServiceResources</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EndRecurrenceNotificationSentDate__c</field>
             <table>ServiceResource.ShiftServiceResources</table>
         </columns>
         <masterLabel>Shifts</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Tipo_de_Erro__c</field>
-            <table>ServiceResource.ShiftServiceResources</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ZDV__c</field>
-            <table>ServiceResource.ShiftServiceResources</table>
-        </columns>
-        <masterLabel>Turnos</masterLabel>
     </sections>
 </ReportType>

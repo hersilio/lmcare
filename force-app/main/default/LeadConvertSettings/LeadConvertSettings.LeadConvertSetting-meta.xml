@@ -7,6 +7,14 @@
             <inputField>Setor_de_Atividade__c</inputField>
             <outputField>Setor_de_Atividade__c</outputField>
         </mappingFields>
+        <mappingFields>
+            <inputField>SCH_teste_TextEmail__c</inputField>
+            <outputField>E_mail_Empresa__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>UpdateTime__c</inputField>
+            <outputField>Lead_Conversion_Control__c</outputField>
+        </mappingFields>
         <outputObject>Account</outputObject>
     </objectMapping>
     <objectMapping>

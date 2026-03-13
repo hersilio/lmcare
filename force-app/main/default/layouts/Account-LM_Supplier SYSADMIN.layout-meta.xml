@@ -34,6 +34,10 @@
                 <behavior>Edit</behavior>
                 <field>N_Fornecedor__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SCH_test_Phone__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

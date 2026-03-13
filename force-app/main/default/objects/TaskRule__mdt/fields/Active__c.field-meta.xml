@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indica se a regra esta ativa e pode ser avaliada pelo motor.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Ativa</label>
+    <type>Checkbox</type>
+</CustomField>

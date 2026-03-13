@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "9d2ec40e-e264-4de2-98dc-3d8516f658f2",
-  "appPageId" : "f0c539b8-8279-4a91-b9a6-0bf0463c307a",
+  "activeViewId" : "c27c8f81-aceb-4ba6-b013-a5ed3fdaeba1",
+  "appPageId" : "6cf31280-9c80-4704-862b-0fbdab3b3be9",
   "configurationTags" : [ ],
   "devName" : "Record_List",
-  "id" : "b3a755ad-b14d-4e43-a5db-34c437bdb48f",
+  "id" : "143b146d-29be-471d-9e21-9a6cf3167e80",
   "label" : "Record List",
   "pageAccess" : "UseParent",
   "routeType" : "list",

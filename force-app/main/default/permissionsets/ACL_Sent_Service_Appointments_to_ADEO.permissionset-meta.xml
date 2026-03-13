@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To flag users that can call the API to Send Service Appointments to ADEO</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ACL - Sent Service Appointments to ADEO</label>
+</PermissionSet>

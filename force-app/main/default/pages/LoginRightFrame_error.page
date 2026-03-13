@@ -1,0 +1,6 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+    <div style="font-family: sans-serif; text-align: center; padding: 20px; color: #666;">
+        <p>Pedimos desculpa, mas não foi possível carregar as informações de suporte neste momento.</p>
+        <p>Por favor, tente novamente mais tarde.</p>
+    </div>
+</apex:page>

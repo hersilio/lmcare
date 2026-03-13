@@ -59,6 +59,6 @@
         </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Obsolete</status>
     <triggerOrder>1500</triggerOrder>
 </Flow>

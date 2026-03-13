@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "6f3bf6ef-5095-4616-bc16-65861a0238b0",
-  "appPageId" : "f0c539b8-8279-4a91-b9a6-0bf0463c307a",
+  "activeViewId" : "08446e7d-016e-42c8-94a1-e455eaa27c79",
+  "appPageId" : "6cf31280-9c80-4704-862b-0fbdab3b3be9",
   "configurationTags" : [ ],
   "devName" : "Record_Detail",
-  "id" : "74368694-f4c2-4930-a882-ab1da349c532",
+  "id" : "753093cc-b21e-4396-9126-6be4add8ce9e",
   "label" : "Record Detail",
   "routeType" : "detail",
   "type" : "route",

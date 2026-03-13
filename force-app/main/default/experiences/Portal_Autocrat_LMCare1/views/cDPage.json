@@ -2,7 +2,7 @@
   "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
   "componentName" : "siteforce:dynamicLayout",
   "dataProviders" : [ ],
-  "id" : "1a10ec37-870c-487a-88b4-764522395b00",
+  "id" : "c7140faf-4fc3-4e47-9751-f4cbbe68ea99",
   "label" : "CD Page",
   "regions" : [ {
     "components" : [ {
@@ -11,9 +11,9 @@
         "backgroundOverlay" : "rgba(0,0,0,0.5)",
         "contentAreaWidth" : 100,
         "sectionConfig" : {
-          "UUID" : "c49bf9e7-8671-438c-a618-75aac67b6928",
+          "UUID" : "3afba26e-096f-479d-833e-c05f82a01643",
           "columns" : [ {
-            "UUID" : "b53ddde3-37b5-4053-9a14-fbdd52820432",
+            "UUID" : "e2ed1c53-caec-48a1-a8c4-583d8aa48e80",
             "columnKey" : "1",
             "columnName" : "Column 1",
             "columnWidth" : "12",
@@ -23,22 +23,22 @@
         "sectionHeight" : 300
       },
       "componentName" : "forceCommunity:section",
-      "id" : "c49bf9e7-8671-438c-a618-75aac67b6928",
+      "id" : "3afba26e-096f-479d-833e-c05f82a01643",
       "regions" : [ {
         "components" : [ {
           "componentAttributes" : {
             "tabsetConfig" : {
-              "UUID" : "bbf198cc-f3e0-4dda-b185-12f9b2d9207e",
+              "UUID" : "836455e8-09d1-4e80-a7b5-17771ac6efb6",
               "activeTab" : "",
               "tabs" : [ {
-                "UUID" : "0f0db978-ba2c-4269-ae6c-bf0a3c758ee0",
+                "UUID" : "90f26419-1b0f-4135-8f1a-92f4e7677ab5",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "1",
                 "tabName" : "Novo Pedido CD"
               }, {
-                "UUID" : "2e0337e4-5655-4dcf-a71f-7adddab625d7",
+                "UUID" : "9f52da95-b267-4713-9b08-ea43504257c2",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
@@ -49,7 +49,7 @@
             }
           },
           "componentName" : "forceCommunity:tabLayout",
-          "id" : "bbf198cc-f3e0-4dda-b185-12f9b2d9207e",
+          "id" : "836455e8-09d1-4e80-a7b5-17771ac6efb6",
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
@@ -57,12 +57,12 @@
                 "flowName" : "LM_Certificado_Devolucao_Portal"
               },
               "componentName" : "forceCommunity:flowCommunity",
-              "id" : "60429a8b-259f-43db-b863-e007f85606a6",
+              "id" : "7f9e6f95-0a2f-4d5c-ade9-d9f5592b4250",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "0f0db978-ba2c-4269-ae6c-bf0a3c758ee0",
+            "id" : "90f26419-1b0f-4135-8f1a-92f4e7677ab5",
             "regionLabel" : "Novo Pedido CD",
             "regionName" : "1",
             "renditionMap" : { },
@@ -81,17 +81,17 @@
                 "showFilterPanel" : false,
                 "showImageIcon" : false,
                 "showManualRefreshButton" : true,
-                "showObjectName" : false,
+                "showObjectName" : true,
                 "showPinnedList" : false,
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "6e91356a-7ca6-4b6f-acdb-00b7d1a87c17",
+              "id" : "1eeba0af-2ee0-489e-99d9-2b4a45670f98",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "2e0337e4-5655-4dcf-a71f-7adddab625d7",
+            "id" : "9f52da95-b267-4713-9b08-ea43504257c2",
             "regionLabel" : "Pedidos CD",
             "regionName" : "2",
             "renditionMap" : { },
@@ -101,7 +101,7 @@
           "renditionMap" : { },
           "type" : "component"
         } ],
-        "id" : "b53ddde3-37b5-4053-9a14-fbdd52820432",
+        "id" : "e2ed1c53-caec-48a1-a8c4-583d8aa48e80",
         "regionLabel" : "Column 1",
         "regionName" : "1",
         "renditionMap" : { },
@@ -111,7 +111,7 @@
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "485d7802-f18e-4b8c-b2df-d2fe84974e9c",
+    "id" : "673f0f8b-b479-4094-8e0d-3986e1cbb6e6",
     "regionName" : "content",
     "type" : "region"
   }, {
@@ -122,11 +122,11 @@
         "title" : "CD Page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "0a32a427-d55c-49c8-a8f6-427d0db4c02b",
+      "id" : "ddf39fb5-dc23-4f31-ba98-a4b25a907d8b",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "57d268bc-017e-42d9-9e43-d1abd77b795b",
+    "id" : "b103e59b-b89d-438a-b89f-a2c295105e11",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],

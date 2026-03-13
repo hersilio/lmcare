@@ -9,4 +9,27 @@
         <value>Produtos do pedido</value>
     </caseValues>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Order Product Layout</layout>
+        <sections>
+            <label><!-- Detalhes da Origem --></label>
+            <section>Detalhes da Origem</section>
+        </sections>
+        <sections>
+            <label><!-- Detalhes da linha --></label>
+            <section>Detalhes da linha</section>
+        </sections>
+        <sections>
+            <label><!-- Informação Disponibilidade --></label>
+            <section>Informação Disponibilidade</section>
+        </sections>
+        <sections>
+            <label><!-- Informação da linha --></label>
+            <section>Informação da linha</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

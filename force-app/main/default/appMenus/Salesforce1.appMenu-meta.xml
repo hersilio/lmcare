@@ -44,8 +44,4 @@
         <name>Groups</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
-    <appMenuItems>
-        <name>Pesquisa_de_Conta</name>
-        <type>CustomTab</type>
-    </appMenuItems>
 </AppMenu>

@@ -1,3 +1,5 @@
+// This class is now obsolete and must be deleted.
+
 @isTest
 global  class SCH_HttpMockClass implements HttpCalloutMock{
 

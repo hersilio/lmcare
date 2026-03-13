@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </customValue>
+    <customValue>
+        <fullName>Em curso</fullName>
+        <default>false</default>
+        <label>Em curso</label>
+    </customValue>
+    <customValue>
+        <fullName>Não Validado</fullName>
+        <default>false</default>
+        <label>Não Validado</label>
+    </customValue>
+    <customValue>
+        <fullName>Validado</fullName>
+        <default>false</default>
+        <label>Validado</label>
+    </customValue>
+    <customValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+    </customValue>
+    <customValue>
+        <fullName>Expirado</fullName>
+        <default>false</default>
+        <label>Expirado</label>
+    </customValue>
+    <customValue>
+        <fullName>Anulado</fullName>
+        <default>false</default>
+        <label>Anulado</label>
+    </customValue>
+    <customValue>
+        <fullName>NOT_VALIDATED</fullName>
+        <default>false</default>
+        <label>NOT_VALIDATED</label>
+    </customValue>
+    <customValue>
+        <fullName>100</fullName>
+        <default>false</default>
+        <label>100</label>
+    </customValue>
+    <customValue>
+        <fullName>110</fullName>
+        <default>false</default>
+        <label>110</label>
+    </customValue>
+    <customValue>
+        <fullName>PARTIALLY_AVAILABLE</fullName>
+        <default>false</default>
+        <label>PARTIALLY_AVAILABLE</label>
+    </customValue>
+    <customValue>
+        <fullName>INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST</fullName>
+        <default>false</default>
+        <label>INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST</label>
+    </customValue>
+    <masterLabel>Estado Pyxis</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

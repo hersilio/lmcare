@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Limpa campo Notas__c se este estiver preenchido (com &quot;Utilizador desativado por inatividade&quot;) e o user esteja ativo</description>
+    <masterLabel>to use ONCE - Clear NOTAS if user active and NOTAS contains inactivity message</masterLabel>
+</FlowDefinition>

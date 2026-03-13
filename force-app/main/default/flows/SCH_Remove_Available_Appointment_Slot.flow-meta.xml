@@ -19,12 +19,81 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Appointment_Slot</targetReference>
+                <targetReference>Scenario_Decision</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Scenario_Decision</name>
+        <label>Scenario</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew_Formula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_New_Appointment_Slot_Created</targetReference>
+            </connector>
+            <label>Is New</label>
+        </rules>
+        <rules>
+            <name>Is_Modified</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SchedStartTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SchedEndTime</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SCH_Service_Resource__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Old_Appointment_Slot_Modified</targetReference>
+            </connector>
+            <label>Is Modified</label>
+        </rules>
+        <rules>
+            <name>Is_Cancelled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canceled</stringValue>
+                </rightValue>
+            </conditions>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Is Cancelled</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>IsNew_Formula</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
     <interviewLabel>SCH - Remove Available Appointment Slot {!$Flow.CurrentDateTime}</interviewLabel>
     <label>SCH - Remove Available Appointment Slot</label>
     <processMetadataValues>
@@ -82,8 +151,8 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Update_Appointment_Slot</name>
-        <label>Update Appointment Slot</label>
+        <name>Update_New_Appointment_Slot_Created</name>
+        <label>Update New Appointment Slot</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <filterLogic>and</filterLogic>
@@ -116,6 +185,69 @@
         </inputAssignments>
         <object>AppointmentSlot__c</object>
     </recordUpdates>
+    <recordUpdates>
+        <name>Update_New_Appointment_Slot_Modified</name>
+        <label>Update New Appointment Slot</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AppointmentSlotSummary__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AppoitmentSummary.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ServiceResource__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SCH_Service_Resource__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>StartTime__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SchedStartTime</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Available__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>AppointmentSlot__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Old_Appointment_Slot_Modified</name>
+        <label>Update Old Appointment Slot</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_New_Appointment_Slot_Modified</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AppointmentSlotSummary__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AppoitmentSummary.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>null__NotFound</field>
+            <operator>EqualTo</operator>
+        </filters>
+        <inputAssignments>
+            <field>Available__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>AppointmentSlot__c</object>
+    </recordUpdates>
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -126,5 +258,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>InvalidDraft</status>
 </Flow>

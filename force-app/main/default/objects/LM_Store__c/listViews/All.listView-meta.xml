@@ -4,13 +4,11 @@
     <columns>NAME</columns>
     <columns>Store_Code__c</columns>
     <columns>GDrive_Folder__c</columns>
+    <columns>Store_API_Name__c</columns>
     <columns>Email__c</columns>
     <columns>Service_Email__c</columns>
     <columns>Phone_Number__c</columns>
-    <columns>RE_Partner__c</columns>
     <columns>Available_Services__c</columns>
-    <columns>Store_API_Name__c</columns>
-    <columns>LAST_UPDATE</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

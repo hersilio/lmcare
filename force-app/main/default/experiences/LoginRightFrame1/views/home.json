@@ -1,11 +1,11 @@
 {
-  "appPageId" : "f0c539b8-8279-4a91-b9a6-0bf0463c307a",
+  "appPageId" : "6cf31280-9c80-4704-862b-0fbdab3b3be9",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "acdc508f-a47d-47d4-8f66-a78cc3838759",
+  "id" : "8f7c2269-1798-4bc2-9a9a-dcf9cc937dd6",
   "label" : "Home",
   "regions" : [ {
-    "id" : "8a7e9e88-f5e3-4f33-90e9-701007102164",
+    "id" : "d14545e7-598e-46fd-a1df-51ebe29dce8a",
     "regionName" : "header",
     "type" : "region"
   }, {
@@ -14,16 +14,16 @@
         "richTextValue" : "<div>     <p><span style='font-size: 48px;'>Let's get started!</span></p>     <ol>         <li><span style='font-size: 18px;'>Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li>         <li><span style='font-size: 18px;'>Want to add more pages? Take a look at the Pages menu.</span></li>         <li><span style='font-size: 18px;'>Want more components on your page? Drag and drop components from the Components panel.</span></li>         <li><span style='font-size: 18px;'>Want your users to see your company logo? Head on over to the Theme panel.</span></li>         <li><span style='font-size: 18px;'>Refine the look of your site with a custom theme layout. See the Experience Cloud Developer Guide.</span></li>     </ol> </div>"
       },
       "componentName" : "forceCommunity:richTextInline",
-      "id" : "ce285903-7923-470e-803c-a5c8cc4dbd85",
+      "id" : "e5a9ef96-b1bd-4fb2-8298-b1495be2c478",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "3277bdc6-3beb-4b87-901d-c6bb2905e7db",
+    "id" : "d3ff00a6-4b02-495e-aa35-904b66fefca0",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "139013e2-fad0-43ab-8dfa-28bd00dd737a",
+    "id" : "ea8659df-fe42-4363-bc19-d4ffa6f98385",
     "regionName" : "footer",
     "type" : "region"
   }, {
@@ -34,11 +34,11 @@
         "title" : "Home"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "90a01b26-29f6-495e-a4c1-e387ef687d81",
+      "id" : "de23ce52-4e63-4d01-ac45-089996a0289b",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "f1a14d38-df89-4840-a0d3-c1f7c329239f",
+    "id" : "3b3a83db-8d2e-45aa-b336-cc38312b6f5b",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],

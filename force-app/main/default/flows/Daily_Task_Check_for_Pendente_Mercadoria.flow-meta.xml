@@ -235,7 +235,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>varTask</name>
         <dataType>SObject</dataType>

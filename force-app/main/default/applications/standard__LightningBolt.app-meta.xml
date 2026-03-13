@@ -9,5 +9,6 @@
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
     <tabs>MobileLanding</tabs>
+    <tabs>ErrorLog__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

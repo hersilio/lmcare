@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuração de Valores Mínimos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurações de Valores Mínimos</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Minimum Value Config Layout</layout>
+        <sections>
+            <label><!-- Observações --></label>
+            <section>Observações</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

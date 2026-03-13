@@ -21,37 +21,8 @@
         <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
     </businessHours>
     <holidays>
-        <activityDate>2026-01-01</activityDate>
-        <description>ANO NOVO</description>
-        <isRecurring>false</isRecurring>
-        <name>ANO NOVO</name>
-    </holidays>
-    <holidays>
         <activityDate>2025-12-25</activityDate>
-        <description>NATAL</description>
         <isRecurring>false</isRecurring>
-        <name>NATAL</name>
-    </holidays>
-    <holidays>
-        <activityDate>2026-04-05</activityDate>
-        <description>PÁSCOA</description>
-        <isRecurring>false</isRecurring>
-        <name>PÁSCOA</name>
-    </holidays>
-    <holidays>
-        <activityDate>2025-12-31</activityDate>
-        <description>VÉSPERA DE ANO NOVO</description>
-        <endTime>23:59:00.000Z</endTime>
-        <isRecurring>false</isRecurring>
-        <name>VÉSPERA DE ANO NOVO</name>
-        <startTime>17:00:00.000Z</startTime>
-    </holidays>
-    <holidays>
-        <activityDate>2025-12-24</activityDate>
-        <description>VÉSPERA DE NATA</description>
-        <endTime>23:59:00.000Z</endTime>
-        <isRecurring>false</isRecurring>
-        <name>VÉSPERA DE NATAL</name>
-        <startTime>17:00:00.000Z</startTime>
+        <name>Natal</name>
     </holidays>
 </BusinessHoursSettings>

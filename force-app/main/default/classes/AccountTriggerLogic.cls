@@ -13,6 +13,7 @@ public class AccountTriggerLogic {
   }
 
   public void checkSync(Map<Id, Account> newAccountMap,Map<Id, Account> oldAccountMap) {
+    System.debug('Aqui check permis');
     for (Account account : newAccountMap.values()) {
       Account acc = oldAccountMap.get(account.Id);
 
@@ -20,7 +21,7 @@ public class AccountTriggerLogic {
       String name = account.Name == null? account.firstName : account.Name;
 
       Boolean skipValidation = (name.contains('[Não Usar]') && acc.CreatedDate < Date.valueOf('2024-12-04T01:00:00.000+0000') && tempValidation.isActive__c);
-      
+        
       if (!skipValidation && (!account.isSynced__c || account.isSyncedTime__c < System.now().addMinutes(-30) || account.isSyncedTime__c == null) && acc.Numero_de_Conta__c != null) {
         account.addError(
           'A Conta não está sincronizada com o ELO, clique no botão Sincronizar para poder editar.'

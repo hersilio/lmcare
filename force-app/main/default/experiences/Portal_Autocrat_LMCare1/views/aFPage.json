@@ -2,7 +2,7 @@
   "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
   "componentName" : "siteforce:dynamicLayout",
   "dataProviders" : [ ],
-  "id" : "3daab002-a6a4-4bf8-bc70-132717ec8f9b",
+  "id" : "acf02cbf-041d-423b-a498-3a949790f45f",
   "label" : "AF Page",
   "regions" : [ {
     "components" : [ {
@@ -11,9 +11,9 @@
         "backgroundOverlay" : "rgba(0,0,0,0.5)",
         "contentAreaWidth" : 100,
         "sectionConfig" : {
-          "UUID" : "e51b2f88-6b30-4b58-b3d9-63f48c64457e",
+          "UUID" : "f8bb971d-7799-4173-a060-d67d53f5d32b",
           "columns" : [ {
-            "UUID" : "e312cff5-c6f8-440c-babf-74ac47da0315",
+            "UUID" : "e4f23066-7513-4843-9c5a-ae00ca429713",
             "columnKey" : "1",
             "columnName" : "Column 1",
             "columnWidth" : "12",
@@ -23,40 +23,40 @@
         "sectionHeight" : 300
       },
       "componentName" : "forceCommunity:section",
-      "id" : "e51b2f88-6b30-4b58-b3d9-63f48c64457e",
+      "id" : "f8bb971d-7799-4173-a060-d67d53f5d32b",
       "regions" : [ {
         "components" : [ {
           "componentAttributes" : {
             "tabsetConfig" : {
-              "UUID" : "4c77ab5c-95b1-4c17-a4cd-810b4ce0a9ec",
+              "UUID" : "37221227-8af8-4646-bff5-582aa77e86f2",
               "activeTab" : "",
               "tabs" : [ {
-                "UUID" : "bab025f4-ee75-489d-8af6-4099e6f3a51f",
-                "allowGuestUser" : false,
-                "locked" : false,
-                "seedComponents" : [ ],
-                "tabKey" : "1",
-                "tabName" : "Novo Pedido AF"
-              }, {
-                "UUID" : "58e90e2e-29eb-4264-9777-af2f19d76c9e",
+                "UUID" : "be69863a-befb-415a-a9a2-b3f105fb59cf",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "2",
-                "tabName" : "Pedidos AF"
+                "tabName" : "Novo Pedido AF"
               }, {
-                "UUID" : "b9328906-bc70-434a-9c60-92ae436eeda9",
+                "UUID" : "8c59a151-da67-41c9-9261-ded747fb6bb1",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
-                "tabKey" : "3",
+                "tabKey" : "1",
+                "tabName" : "Pedidos AF"
+              }, {
+                "UUID" : "15c3bd41-2578-4bc7-b7ce-3edcd20f48ed",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "63af2",
                 "tabName" : "Inventário"
               } ],
               "useOverflowMenu" : true
             }
           },
           "componentName" : "forceCommunity:tabLayout",
-          "id" : "4c77ab5c-95b1-4c17-a4cd-810b4ce0a9ec",
+          "id" : "37221227-8af8-4646-bff5-582aa77e86f2",
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
@@ -64,14 +64,14 @@
                 "flowName" : "LM_Aluguer_Ferramentas_Portal"
               },
               "componentName" : "forceCommunity:flowCommunity",
-              "id" : "0d6461d7-de60-47fc-a219-8cb740e8e88d",
+              "id" : "b14211d4-c7de-4646-9cf4-b7f36e8474aa",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "bab025f4-ee75-489d-8af6-4099e6f3a51f",
+            "id" : "be69863a-befb-415a-a9a2-b3f105fb59cf",
             "regionLabel" : "Novo Pedido AF",
-            "regionName" : "1",
+            "regionName" : "2",
             "renditionMap" : { },
             "type" : "region"
           }, {
@@ -93,14 +93,14 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "5837ae3c-f0f4-4832-8d2f-b95a5ae8102a",
+              "id" : "6ff4033a-c08c-43c3-9573-25cbf0a5126a",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "58e90e2e-29eb-4264-9777-af2f19d76c9e",
+            "id" : "8c59a151-da67-41c9-9261-ded747fb6bb1",
             "regionLabel" : "Pedidos AF",
-            "regionName" : "2",
+            "regionName" : "1",
             "renditionMap" : { },
             "type" : "region"
           }, {
@@ -122,14 +122,14 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "5107e9cf-98c9-4c7e-8bb7-6e399139bcd6",
+              "id" : "550cf20f-c150-43d1-8ae3-082d54000c35",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "b9328906-bc70-434a-9c60-92ae436eeda9",
+            "id" : "15c3bd41-2578-4bc7-b7ce-3edcd20f48ed",
             "regionLabel" : "Inventário",
-            "regionName" : "3",
+            "regionName" : "63af2",
             "renditionMap" : { },
             "type" : "region"
           } ],
@@ -137,7 +137,7 @@
           "renditionMap" : { },
           "type" : "component"
         } ],
-        "id" : "e312cff5-c6f8-440c-babf-74ac47da0315",
+        "id" : "e4f23066-7513-4843-9c5a-ae00ca429713",
         "regionLabel" : "Column 1",
         "regionName" : "1",
         "renditionMap" : { },
@@ -147,7 +147,7 @@
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "90f70089-c9d1-4053-8807-9fd785009bdd",
+    "id" : "92f15a3b-14e3-4f39-8c40-3ec4a3a62eb0",
     "regionName" : "content",
     "type" : "region"
   }, {
@@ -158,15 +158,15 @@
         "title" : "AF Page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "3516294c-79c3-4656-900c-b8acaac9b24e",
+      "id" : "8425b1f8-e4d4-4e6f-bdd1-c3e2c88aa2ad",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "8edfa830-9bc5-44e2-9523-8e5644d0657b",
+    "id" : "ec791e8d-3ab5-467d-b655-da3e26af8ab3",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",
   "type" : "view",
-  "viewType" : "custom-af"
+  "viewType" : "custom-a-f"
 }

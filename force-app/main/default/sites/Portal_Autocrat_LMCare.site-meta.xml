@@ -23,9 +23,9 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <serverIsDown>SNA_8WrKr_sf_default_cdn_Portal_Autocrat_LMCare1</serverIsDown>
-    <siteAdmin>trh@techremotehub.com.lmprd</siteAdmin>
-    <siteGuestRecordDefaultOwner>trh@techremotehub.com.lmprd</siteGuestRecordDefaultOwner>
+    <serverIsDown>SNA_ojVXK_sf_default_cdn_Portal_Autocrat_LMCare1</serverIsDown>
+    <siteAdmin>felipe.gil@techremotehub.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>felipe.gil@techremotehub.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <urlPathPrefix>autocrat</urlPathPrefix>
 </CustomSite>

@@ -247,6 +247,9 @@
             <layoutItems>
                 <customLink>Form_Or_amentista</customLink>
             </layoutItems>
+            <layoutItems>
+                <customLink>Form_Retifica_o_de_proposta_Or_amentista</customLink>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <layoutColumns/>

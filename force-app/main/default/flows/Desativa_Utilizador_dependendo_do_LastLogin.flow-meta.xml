@@ -33,7 +33,7 @@
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Ultimo_Login_VerificaData</name>
-            <conditionLogic>1 AND 2 AND 3 AND 4 AND 5</conditionLogic>
+            <conditionLogic>1 AND 2 AND 5 AND 6 AND (3 OR 4)</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.LastLoginDate</leftValueReference>
                 <operator>LessThanOrEqualTo</operator>
@@ -50,9 +50,16 @@
             </conditions>
             <conditions>
                 <leftValueReference>$Record.Profile.Name</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>System Administrator</stringValue>
+                    <stringValue>Leroy Merlin - Global</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LM CustomerPlusUser</stringValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -64,9 +71,9 @@
             </conditions>
             <conditions>
                 <leftValueReference>$Record.Profile.Name</leftValueReference>
-                <operator>EqualTo</operator>
+                <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>Leroy Merlin - Global</stringValue>
+                    <stringValue>System Administrator</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -80,7 +87,7 @@
         <description>calcular dias</description>
         <name>VerificaData</name>
         <dataType>DateTime</dataType>
-        <expression>NOW()-20</expression>
+        <expression>NOW()-30</expression>
     </formulas>
     <interviewLabel>Desativa Utilizador dependendo do LastLogin {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Desativa Utilizador dependendo do LastLogin</label>
@@ -126,9 +133,9 @@
         </filters>
         <object>User</object>
         <schedule>
-            <frequency>Daily</frequency>
-            <startDate>2025-07-01</startDate>
-            <startTime>23:45:00.000Z</startTime>
+            <frequency>Weekly</frequency>
+            <startDate>2025-05-20</startDate>
+            <startTime>16:15:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>

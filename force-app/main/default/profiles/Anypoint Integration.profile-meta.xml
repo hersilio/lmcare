@@ -11,12 +11,12 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>LM_Care_Scheduler</application>
+        <application>Parceiros_Servicos_Instalacao</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>Parceiros_Servicos_Instalacao</application>
+        <application>SCH_LMCareScheduler</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -56,7 +56,7 @@
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__DigitalWallet</application>
+        <application>standard__DataManager</application>
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
@@ -71,27 +71,12 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__IndustriesEcm</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__IndustriesEpc</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Integration</application>
+        <application>standard__Insights</application>
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningInstrumentation</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -176,7 +161,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ApiParseUtil</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AppointmentDTO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AppointmentDTOV2</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -185,6 +178,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>AppointmentEntryRestTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AppointmentEntryRestTestV2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AppointmentEntryRestV2</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -336,6 +337,22 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>IntegrationLogDeleteBatch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>IntegrationLogHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>IntegrationRestServiceBase</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>IntegrationValueMapper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>InvocableEmailSMSTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -364,7 +381,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>L2SAPIService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>L2SAPIServiceHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>L2SAPIServiceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LM_AppointmentSlotExecutionContext</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LM_EmailService_Opportunity</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -420,6 +453,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LM_SandboxInitializer</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LM_SandboxInitializer_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LM_SendEmail</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -436,11 +477,39 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LightningForgotPasswordController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningForgotPasswordControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningLoginFormController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningLoginFormControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningSelfRegisterController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningSelfRegisterControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>MDM_Client</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>MDM_ClientTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MappingSchedulerEmailTemplateTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -496,6 +565,42 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PyxisAPIService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceAssyncJobs</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceProductOrdersHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceQuotesHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceSaleNotesHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisAPIServiceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PyxisTransactionsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SCH_ButtonCancelRedirect</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SCH_ContentDocumentLinkBatch</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -540,6 +645,26 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>SCH_Send_Appointment_SMS</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SCH_Send_Appointment_SMSTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SCH_ServiceAppointmentCreateOnlineCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SCH_SlotNotificationInvocable</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SCH_SlotNotificationInvocableTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SCH_callOut</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -572,6 +697,26 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ServiceAppointmentCalloutDispatchAsync</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ServiceAppointmentCalloutHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ServiceAppointmentTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ServiceAppointmentTriggerHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ServiceAppointmentTriggerHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SiteLoginController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -600,7 +745,27 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TaskDateCalculator</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TaskRuleEngine</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TaskRuleEngineTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TaskRuleRepository</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TokenGeneratorTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TransactionTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -650,6 +815,26 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ACL_ADEO_API_Callout_Expecifications__mdt.base_query__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ACL_ADEO_API_Callout_Expecifications__mdt.field_names__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ACL_ADEO_API_Callout_Expecifications__mdt.object_type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ACL_ADEO_API_Callout_Expecifications__mdt.where_query__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Anonimyzed_Clients__c.Date_Time_of_Process__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -695,18 +880,28 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>AppointmentSlotSummary__c.Available_Slots_Today__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AppointmentSlotSummary__c.Available_Slots_Tomorrow__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>AppointmentSlotSummary__c.IsFuture__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>AppointmentSlotSummary__c.NextEndDate__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>AppointmentSlotSummary__c.NextStartDate__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -714,19 +909,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>AppointmentSlot__c.Available__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>AppointmentSlot__c.Dia_da_Semana__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>AppointmentSlot__c.Hora_do_dia__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -740,6 +925,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>AppointmentSlot__c.IsToday__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AppointmentSlot__c.IsTomorrow__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>AppointmentSlot__c.JobId__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -749,34 +944,24 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.End_Date__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Appointment_Email_Config__mdt.Category__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.Remaining_Appointments__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Appointment_Email_Config__mdt.Email_Status__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.Service_Resource__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Appointment_Email_Config__mdt.Requirements__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.Service_Territory__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.Start_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment_slots__c.Work_Type_Group__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Appointment_Email_Config__mdt.WorkTypeName__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1119,6 +1304,91 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.Direction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.DurationMs__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.EndDateTime__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.Endpoint__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.ErrorMessage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.ExternalId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.HttpMethod__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.HttpStatusCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.IntegrationKey__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.Operation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.RequestBody__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.SourceSystem__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.StartDateTime__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.TargetRecordId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.TargetSObject__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>IntegrationLog__c.TargetSystem__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Knowledge__kav.Answer__c</field>
         <readable>true</readable>
@@ -1315,11 +1585,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>LM_ContaLoja__c.Installer_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>LM_ContaLoja__c.Is_LM_Installer__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1341,12 +1606,12 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LM_ContaLoja__c.Tipo_de_Conta__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>LM_ContaLoja__c.Unique_ContaLoja__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1484,9 +1749,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>LM_Store__c.RE_Partner__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1496,6 +1761,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>LM_Store__c.Store_API_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LM_Store__c.Store_Code_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1585,6 +1855,86 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>MinimumValueConfig__mdt.CurrencyCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.IsActive__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.MinimumValue__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SectionCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SectionName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SubsectionCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SubsectionName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SubtypeCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.SubtypeName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.TypeCode__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MinimumValueConfig__mdt.TypeName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Nova_Lead_por_Email__e.Message__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Nova_Lead_por_Email__e.RecipientId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Nova_Lead_por_Email__e.RecordId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Nova_Lead_por_Email__e.Url__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Order_Internal_SLA__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1661,7 +2011,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PerformanceLog__c.DurationRollUp__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1705,18 +2055,33 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>SCH_Service_Appointment_Details__c.Dia_da_Semana__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SCH_Service_Appointment_Details__c.Hora_do_dia__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SCH_Service_Appointment_Details__c.SCH_Google_ICS__c</field>
+        <field>ProjectTagMapping__mdt.PortugueseTranslation__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pyxis_Integration_Mapping__mdt.Fields_Mapping__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pyxis_Integration_Mapping__mdt.RecordTypeAPIName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QualificationMapping__mdt.MapsToField__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QualificationMapping__mdt.SubtypeContains__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SCH_Service_Appointment_Details__c.SCH_Google_ICS__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1760,7 +2125,67 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>TaskRule__mdt.Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.AllowMultiple__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.DaysInStage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.DependencyField__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.DependencyValue__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.DueDateBase__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.DueDateOffsetDays__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.Stage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.TaskSubjectTemplate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.TriggerEvent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TaskRule__mdt.TriggerType__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>TempValidation__mdt.IsActive__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Territory_Notification_Email__c.IsActive__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <flowAccesses>
@@ -1909,6 +2334,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>LM_Email_Leads_Notification</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>LM_Enviar_Email_Assinado_Cliente</flow>
     </flowAccesses>
     <flowAccesses>
@@ -2033,11 +2462,27 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>OpportunityTaskRuleDispatcher</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>OpportunityTaskRuleScheduledDispatcher</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>OrderTaskRuleScheduledDispatcher</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>SCH_Appointment_SMS_Reminder_Daily</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>SCH_Confirmation_Email</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>SCH_DynamicEmailNotification</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -2058,6 +2503,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>SCH_New_Account_Appointment</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>SCH_New_Guest_Appointment</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -2085,6 +2534,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>SCH_SlotSummary_Territory_Notification</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>SCH_UpdateEvent</flow>
     </flowAccesses>
     <flowAccesses>
@@ -2105,7 +2558,19 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Task_Rule_Close_Tasks_Order</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>TesteSCH</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Trigger_Opp_Task_HUB_Analise_D_1</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>WorkOrderTaskRuleDispatcher</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -2116,10 +2581,13 @@
         <flow>teste_update_cod_pais_se_vazio</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>ACL_ADEO_API_Callout_Expecifications__mdt-ACL Appointment API to ADEO Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AccountBrand-Esquema de imagem corporativa de conta</layout>
+        <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ActionPlan-Layout de Plano de ação</layout>
@@ -2158,13 +2626,13 @@
         <layout>AppointmentSlotSummary__c-Appointment Slot Summary Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AppointmentSlot__c-Appointment Slot Layout</layout>
+        <layout>AppointmentSlot__c-Slot Disponível Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AppointmentTopicTimeSlot-Layout de Faixa de tempo do tópico de compromisso</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Appointment_slots__c-Appointment Slot Layout</layout>
+        <layout>Appointment_Email_Config__mdt-Appointment Email Config Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -2189,9 +2657,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>BatchJob-Layout de Tarefa de lote</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>BusinessBrand-Business Brand Layout</layout>
@@ -2248,7 +2713,7 @@
         <layout>CollaborationGroup-Group Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CommSubscription-Layout de Subscrição de comunicação</layout>
+        <layout>CommSubscriptionChannelType-Layout de Tipo de canal - subscrição de comunicação</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CommSubscriptionConsent-Layout de Consentimento de subscrição de comunicação</layout>
@@ -2270,9 +2735,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactRequest-Layout de Pedido de contacto</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContentAsset-Asset File Layout</layout>
@@ -2359,7 +2821,7 @@
         <layout>FlowOrchestrationWorkItem-Layout de Item de passo de orquestração</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>FlowRecord-Layout de Fluxo</layout>
+        <layout>FlowRecord-Flow Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Global-Global Layout</layout>
@@ -2372,6 +2834,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Instalacao__c-Layout de Instalação</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>IntegrationLog__c-Registo de Integração Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>InternalOrganizationUnit-Layout de Unidade de organização interna</layout>
@@ -2433,10 +2898,13 @@
         <layout>MappingSchedulerEmailTemplate__mdt-Mapping Scheduler Email Template Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>MinimumValueConfig__mdt-Minimum Value Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>OperatingHours-Layout de Horário de funcionamento</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>OperatingHoursHoliday-Layout de Horário de funcionamento - Feriado</layout>
+        <layout>OperatingHoursHoliday-Operating Hours Holiday Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Oportunidade de Venda Simples</layout>
@@ -2508,6 +2976,15 @@
         <layout>ProfileSkillUser-Skill User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ProjectTagMapping__mdt-Layout de Project Tag Mapping</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pyxis_Integration_Mapping__mdt-Pyxis Integration Mapping Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QualificationMapping__mdt-Qualification Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>QuickText-Quick Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2515,9 +2992,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-Quote Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Recommendation-Layout de Recomendação</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>RecordAlert-Layout de Alerta de registo</layout>
@@ -2535,12 +3009,6 @@
         <layout>SCH_Service_Appointment_Details__c-Service Appointment Details Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SalesforceContract-Layout de Contrato do Salesforce</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SalesforceInvoice-Salesforce Invoice Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Scorecard-Scorecard Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2554,9 +3022,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ServiceAppointment-Layout de Compromisso de serviço</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceAppointmentShift-Layout de Service Appointment Shift</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ServiceContract-Service Contract Layout</layout>
@@ -2586,9 +3051,6 @@
         <layout>ShiftWorkTopic-%5F%5FMISSING LABEL%5F%5F PropertyFile - val ShiftWorkTopic not found in section StandardLayouts</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SiqExchangeConnection-Layout de Ligação ao Exchange</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>SkillRequirement-Layout de Requisito de competência</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2607,7 +3069,13 @@
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>TaskRule__mdt-Regra de Tarefa Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>TempValidation__mdt-Temporary Validation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Territory_Notification_Email__c-Territory Notification Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>TimeSlot-Layout de Faixa de tempo</layout>
@@ -2632,6 +3100,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Waitlist-%5F%5FMISSING LABEL%5F%5F PropertyFile - val Waitlist not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WaitlistWorkType-Waitlist Work Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkAccess-Access Layout</layout>
@@ -2752,6 +3223,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>LoginRightFrame_error</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>MicrobatchSelfReg</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -2810,7 +3285,15 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>AppointmentSlot__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>ErrorLog__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>IntegrationLog__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -2831,6 +3314,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Pesquisa_de_Conta</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SCH_Service_Appointment_Details__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <userLicense>Identity</userLicense>

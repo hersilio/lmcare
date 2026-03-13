@@ -94,6 +94,8 @@ public with sharing class AppointmentSlotService {
     **/
     public static void createAppointmentSlots(Map<String, AppointmentSlot__c> appSlotMapToInsert, Map<String, AppointmentSlotSummary__c> appointmentSlotSummariesMap, String jsonInput, String resourceId, Id workTypeId, Id channelId, String jobId) {
         List<Object> slotList = (List<Object>) JSON.deserializeUntyped(jsonInput);
+        Date today = Date.today();
+        Date tomorrow = today.addDays(1); 
 
         for (Object slotObj : slotList) {
             Map<String, Object> slotMap = (Map<String, Object>) slotObj;
@@ -123,6 +125,8 @@ public with sharing class AppointmentSlotService {
 
             String uniqueKey = getUniqueKeySlotResource(resourceId, territoryId, channelId, workTypeId, startTime, endTime);
 
+
+
             AppointmentSlot__c newSlot = new AppointmentSlot__c();
             newSlot.ServiceResource__c = resourceId;
             newSlot.AppointmentSlotSummary__c = appointSlotSummary.Id;
@@ -133,6 +137,9 @@ public with sharing class AppointmentSlotService {
             newSlot.StartDate__c = getDate(startTime);
             newSlot.JobId__c = jobId;
 
+            newSlot.IsToday__c = (newSlot.StartDate__c == today);
+            newSlot.IsTomorrow__c = (newSlot.StartDate__c == tomorrow);
+            
             appSlotMapToInsert.put(uniqueKey, newSlot);
         }
     }

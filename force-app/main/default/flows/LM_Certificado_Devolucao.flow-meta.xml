@@ -2124,7 +2124,7 @@
         </connector>
         <fields>
             <name>Guidelines</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(32, 33, 36); font-size: 28px; font-family: sans-serif;&quot;&gt;Certificados Devolução &quot;Cliente em Conta&quot; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 28px;&quot;&gt;{!currentLoja.Store_Code__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(32, 33, 36); font-size: 28px; font-family: sans-serif;&quot;&gt;Certificados Devolução &quot;Cliente em Conta&quot; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 28px;&quot;&gt;{!currentLoja.Store_Code__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>

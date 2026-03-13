@@ -6,5 +6,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>msilv Conta pessoal de Cliente</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>Sede_Geral</parentRole>
+    <parentRole>LM_VAD_0_Coordenador_Vad</parentRole>
 </Role>

@@ -68,23 +68,25 @@
      class="logo" />
      
 
-        <h1>Portal LMCARE</h1>
+        <h1>Portal LMCARE LMQA</h1>
 
-        
+        <p>
+            Caso pretendas aceder ao portal comunidades LMQA, poderá fazê-lo por <a href="https://leroymerlin--lmqa.sandbox.my.site.com/autocrat/s/login/" target="_blank">aqui</a>.
+        </p>
 
         <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;" />
 
-         <div class="link-box">
-            O acesso deve ser feito através da opção <span class="bold-text">"Log in with PingID"</span>.
-        </div>
-        <div class="link-box">
-            Os acessos são desativados automaticamente após 20 dias de inatividade. Caso necessites de o reactivar, utiliza o <a href="https://adeo.service-now.com/lmpt?id=sc_cat_item&sys_id=74acc094c346719014fa36477d013149" target="_blank">link para o DSD</a> 
-            e escolhe a opção "Reativação".
+       
         </div>
 
+       
         <div class="link-box">
-            Se não tens conta criada deves pedir criação pelo <a href="https://adeo.service-now.com/lmpt?id=sc_cat_item&sys_id=74acc094c346719014fa36477d013149" target="_blank">link para o DSD</a>
-            e escolhe a opção "Acesso à Aplicação". <span class="bold-text">Após a submissão, o teu manager vai receber um email para aprovação</span>. Enquanto o pedido não for aprovado não segue para criação.
-        </div>
-    </div>
+    <p>Se tiveres dificuldade no acesso ou necessitares de criação de acesso deves contactar:</p>
+    <ul style="list-style-type: none; padding: 0;">
+        <li>marco.a.silva@leroymerlin.pt</li>
+        <li>ines.f.fernandes@ext.leroymerlin.pt</li>
+        <li>ricardo.b.simoes@ext.leroymerlin.pt</li>
+        <li>sergio.dalhke@ext.leroymerlin.pt</li>
+    </ul>
+</div>
 </apex:page>

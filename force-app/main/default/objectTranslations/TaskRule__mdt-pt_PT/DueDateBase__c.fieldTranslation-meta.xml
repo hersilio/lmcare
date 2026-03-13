@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Base da Data de Vencimento --></label>
+    <name>DueDateBase__c</name>
+    <picklistValues>
+        <masterLabel>Data de Criação</masterLabel>
+        <translation><!-- Data de Criação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data de Criação do Pedido</masterLabel>
+        <translation><!-- Data de Criação do Pedido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data de Fecho do Pedido</masterLabel>
+        <translation><!-- Data de Fecho do Pedido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data de Mudança de Fase</masterLabel>
+        <translation><!-- Data de Mudança de Fase --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

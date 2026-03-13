@@ -2,7 +2,7 @@
   "appPageId" : "555d77a1-8ee9-4e6c-87f0-c8b241724ee2",
   "componentName" : "siteforce:dynamicLayout",
   "dataProviders" : [ ],
-  "id" : "b990efc8-78e7-4341-980e-405d586b022e",
+  "id" : "a18f248c-0e19-4d82-b010-7351e1d7993a",
   "label" : "BT Page",
   "regions" : [ {
     "components" : [ {
@@ -11,9 +11,9 @@
         "backgroundOverlay" : "rgba(0,0,0,0.5)",
         "contentAreaWidth" : 100,
         "sectionConfig" : {
-          "UUID" : "40f26a20-e0ee-423e-9e5f-03d2b3bd1964",
+          "UUID" : "84bf9850-a7ee-49cb-bfc5-21bfc75fab70",
           "columns" : [ {
-            "UUID" : "011534b1-c081-410c-8f03-e88d24fc41f5",
+            "UUID" : "85cfff71-c59e-4504-8962-0d7f95bcbc52",
             "columnKey" : "1",
             "columnName" : "Column 1",
             "columnWidth" : "12",
@@ -23,40 +23,40 @@
         "sectionHeight" : 300
       },
       "componentName" : "forceCommunity:section",
-      "id" : "40f26a20-e0ee-423e-9e5f-03d2b3bd1964",
+      "id" : "84bf9850-a7ee-49cb-bfc5-21bfc75fab70",
       "regions" : [ {
         "components" : [ {
           "componentAttributes" : {
             "tabsetConfig" : {
-              "UUID" : "30425e8d-1b84-48cf-9330-a14a509ddec6",
+              "UUID" : "60e82083-c4ab-4104-b9e3-d41742fa39b0",
               "activeTab" : "",
               "tabs" : [ {
-                "UUID" : "ecd4cf49-0454-4d8a-aee0-6c0f5fece98e",
+                "UUID" : "66fe8b55-4096-4cd2-a80b-a810811ead52",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "1",
                 "tabName" : "Novo Pedido BT"
               }, {
-                "UUID" : "d2b61c75-d6af-4576-a13c-562f916d2201",
+                "UUID" : "f50b9f51-874c-48f8-86a4-bb873c2fb931",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
                 "tabKey" : "2",
                 "tabName" : "Pedidos BT"
               }, {
-                "UUID" : "948c06b6-cb25-4c35-b80d-a7429c36e656",
+                "UUID" : "cb821971-65ba-4c9a-baab-21d0df60a62a",
                 "allowGuestUser" : false,
                 "locked" : false,
                 "seedComponents" : [ ],
-                "tabKey" : "3",
+                "tabKey" : "f99a2",
                 "tabName" : "Inventário"
               } ],
               "useOverflowMenu" : true
             }
           },
           "componentName" : "forceCommunity:tabLayout",
-          "id" : "30425e8d-1b84-48cf-9330-a14a509ddec6",
+          "id" : "60e82083-c4ab-4104-b9e3-d41742fa39b0",
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
@@ -64,12 +64,12 @@
                 "flowName" : "LM_Barras_Tejadilho_Portal"
               },
               "componentName" : "forceCommunity:flowCommunity",
-              "id" : "b1bb7bdf-78f3-40b8-a9b3-168986986cb5",
+              "id" : "6f610ff2-cd9e-4c92-a783-ea22cf20f115",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "ecd4cf49-0454-4d8a-aee0-6c0f5fece98e",
+            "id" : "66fe8b55-4096-4cd2-a80b-a810811ead52",
             "regionLabel" : "Novo Pedido BT",
             "regionName" : "1",
             "renditionMap" : { },
@@ -93,12 +93,12 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "ea049a5c-15b4-4b6f-826d-7d5b29c51c76",
+              "id" : "6aee118d-6dae-40d5-ae32-8d941fabcb89",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "d2b61c75-d6af-4576-a13c-562f916d2201",
+            "id" : "f50b9f51-874c-48f8-86a4-bb873c2fb931",
             "regionLabel" : "Pedidos BT",
             "regionName" : "2",
             "renditionMap" : { },
@@ -107,7 +107,7 @@
             "components" : [ {
               "componentAttributes" : {
                 "enableInlineEdit" : false,
-                "filterName" : "Barra_de_Tejadilho",
+                "filterName" : "Barras_de_Tejadilho",
                 "layout" : "FULL",
                 "pageSize" : 25,
                 "scope" : "LM_Inventory__c",
@@ -122,14 +122,14 @@
                 "showSearchBar" : true
               },
               "componentName" : "forceCommunity:objectHome",
-              "id" : "73d1eb9c-ea5b-4b45-8566-27259999db52",
+              "id" : "8a1621d3-2295-4ee3-8d77-2fa4cbc5b285",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
             } ],
-            "id" : "948c06b6-cb25-4c35-b80d-a7429c36e656",
+            "id" : "cb821971-65ba-4c9a-baab-21d0df60a62a",
             "regionLabel" : "Inventário",
-            "regionName" : "3",
+            "regionName" : "f99a2",
             "renditionMap" : { },
             "type" : "region"
           } ],
@@ -137,7 +137,7 @@
           "renditionMap" : { },
           "type" : "component"
         } ],
-        "id" : "011534b1-c081-410c-8f03-e88d24fc41f5",
+        "id" : "85cfff71-c59e-4504-8962-0d7f95bcbc52",
         "regionLabel" : "Column 1",
         "regionName" : "1",
         "renditionMap" : { },
@@ -147,7 +147,7 @@
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "95f93e47-595e-4e45-9079-44e4e77975eb",
+    "id" : "24730344-ca67-41f1-aba6-ce7b6480055f",
     "regionName" : "content",
     "type" : "region"
   }, {
@@ -158,11 +158,11 @@
         "title" : "BT Page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "72d4ba24-3d6d-44f5-a37c-7079dad09719",
+      "id" : "293a5443-2278-4c6f-8e39-fda405e734fb",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "cd0a1b2e-1f9d-44ee-9476-950e2b5ee3ea",
+    "id" : "319f5ff3-6ac5-4c2c-aa50-5a3cb9bae80c",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],

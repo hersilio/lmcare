@@ -6,5 +6,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>VAD - Coordenador Vad</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>LM_VAD_0_Responsavel_Voz_Cliente_Omnicanal</parentRole>
+    <parentRole>VAD_Responsavel_Voz_Cliente_Omnicanal</parentRole>
 </Role>

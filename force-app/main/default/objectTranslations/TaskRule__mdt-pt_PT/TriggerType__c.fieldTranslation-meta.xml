@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Gatilho --></label>
+    <name>TriggerType__c</name>
+    <picklistValues>
+        <masterLabel>Agendado</masterLabel>
+        <translation><!-- Agendado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oportunidade</masterLabel>
+        <translation><!-- Oportunidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ordem de Serviço</masterLabel>
+        <translation><!-- Ordem de Serviço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedido</masterLabel>
+        <translation><!-- Pedido --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

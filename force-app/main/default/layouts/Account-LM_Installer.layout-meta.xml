@@ -3,27 +3,36 @@
     <excludeButtons>AccountHierarchy</excludeButtons>
     <excludeButtons>AddToActionableList</excludeButtons>
     <excludeButtons>AssignRecordLabel</excludeButtons>
+    <excludeButtons>BillNow</excludeButtons>
     <excludeButtons>BrowseCatalogs</excludeButtons>
-    <excludeButtons>ChangeOwnerOne</excludeButtons>
-    <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateAccountChannel</excludeButtons>
     <excludeButtons>CreateCallList</excludeButtons>
+    <excludeButtons>CreateCreditMemo</excludeButtons>
+    <excludeButtons>CreateIncident</excludeButtons>
     <excludeButtons>CreatePartnerChannelQuickAction</excludeButtons>
     <excludeButtons>CreateSalesSummaries</excludeButtons>
     <excludeButtons>CreateSurveyInvitation</excludeButtons>
-    <excludeButtons>Delete</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>Entitlements</excludeButtons>
+    <excludeButtons>EvalAccForResearchStudy</excludeButtons>
     <excludeButtons>GenerateDonorReceipt</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
+    <excludeButtons>LoginToNetworkAsPersonUser</excludeButtons>
+    <excludeButtons>LoginToPortalAsPersonUser</excludeButtons>
     <excludeButtons>PartnerScorecard</excludeButtons>
+    <excludeButtons>PreviewInvoices</excludeButtons>
     <excludeButtons>PrintableView</excludeButtons>
     <excludeButtons>RecordShareHierarchy</excludeButtons>
+    <excludeButtons>ResumeBilling</excludeButtons>
     <excludeButtons>SalesAIRelationshipGraph</excludeButtons>
     <excludeButtons>SendSurveyInvitation</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>StartOutboundConversation</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
+    <excludeButtons>SuspendBilling</excludeButtons>
     <excludeButtons>ViewDigitalWallet</excludeButtons>
     <excludeButtons>XClean</excludeButtons>
     <layoutSections>
@@ -60,6 +69,14 @@
                 <behavior>Edit</behavior>
                 <field>Processos__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SCH_test_Phone__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -70,16 +87,16 @@
                 <field>District__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>Country_key__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Phone</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>E_mail_Empresa__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Status__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -146,7 +163,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hSr0000008oqs</masterLabel>
+        <masterLabel>00hAe000000mqxC</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

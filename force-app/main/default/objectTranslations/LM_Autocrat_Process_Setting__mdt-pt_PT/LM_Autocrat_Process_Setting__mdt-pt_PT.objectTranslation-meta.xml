@@ -8,7 +8,7 @@
         <plural>true</plural>
         <value>Autocrat Process Settings</value>
     </caseValues>
-    <gender>Masculine</gender>
+    <gender>Neuter</gender>
     <layouts>
         <layout>Autocrat Process Setting Layout</layout>
         <sections>

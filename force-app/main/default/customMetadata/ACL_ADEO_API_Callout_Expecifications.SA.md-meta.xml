@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Service Appointments</label>
+    <protected>false</protected>
+    <values>
+        <field>base_query__c</field>
+        <value xsi:type="xsd:string">SELECT External_UUID__c, Lead__r.Numero_de_Conta_na_lead__c, Lead__r.ProjectId__c, Status, SchedStartTime FROM ServiceAppointment</value>
+    </values>
+    <values>
+        <field>field_names__c</field>
+        <value xsi:type="xsd:string">mdmId:Lead__r.Numero_de_Conta_na_lead__c; appointmentId:External_UUID__c; projectId:Lead__r.ProjectId__c; status:Status; date:SchedStartTime; appointmentSystem:&quot;SALESFORCE&quot;; createdBy:Lead__r.Numero_de_Conta_na_lead__c; bu:&quot;003&quot;</value>
+    </values>
+    <values>
+        <field>object_type__c</field>
+        <value xsi:type="xsd:string">ServiceAppointment</value>
+    </values>
+    <values>
+        <field>where_query__c</field>
+        <value xsi:type="xsd:string">WHERE SchedStartTime != NULL AND Lead__r.Numero_de_Conta_na_lead__c != NULL AND Lead__r.ProjectId__c != NULL AND Lead__r.LeadSource = &apos;L2S&apos;</value>
+    </values>
+</CustomMetadata>

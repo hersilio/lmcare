@@ -159,12 +159,23 @@
           </div>
   </div>
   <br/><br/>
-  <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
-        <p style="font-size:11px;">Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
-        <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
-            <apex:param value="{!Order.Data_Validacao_Token__c}" /> 
-        </apex:outputText> 
-        </p>
+    <apex:pageBlock rendered="{!Order.Cliente_Validou_Token__c}">
+        <apex:pageBlock rendered="{!Order.Validacao_Manual__c}">
+            <p style="font-size:10pt;">
+                    Documento assinado manualmente por {!Order.Account_Name__c}, NIF {!Order.NIF__c} em &nbsp;
+                    <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                    <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                    </apex:outputText>
+            </p>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!!Order.Validacao_Manual__c}">
+        <p style="font-size:10pt;">
+                Documento assinado por {!Order.Account_Name__c}, NIF {!Order.NIF__c} através de token pelo telemóvel {!Order.Account.Phone} em &nbsp;
+                <apex:outputText value="{0,date,dd'/'MM'/'yyyy 'às' HH:mm}">
+                <apex:param value="{!Order.Data_Validacao_Token__c}" />
+                </apex:outputText>
+            </p>
+        </apex:pageBlock>
     </apex:pageBlock>
 
 </main>

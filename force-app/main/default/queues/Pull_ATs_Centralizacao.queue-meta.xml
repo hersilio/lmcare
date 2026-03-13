@@ -3,9 +3,11 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Pull AT&apos;s Centralização</name>
     <queueMembers>
-        <publicGroups>
-            <publicGroup>Equipa_Central_de_Assist_ncias_T_cnicas</publicGroup>
-        </publicGroups>
+        <users>
+            <user>joao.s.moreira@leroymerlin.pt</user>
+            <user>rute.n.pisa@leroymerlin.pt</user>
+            <user>sara.s.brito@leroymerlin.pt</user>
+        </users>
     </queueMembers>
     <queueSobject>
         <sobjectType>Order</sobjectType>

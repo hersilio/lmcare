@@ -1,4 +1,4 @@
-public with sharing class LM_OrderCustomController {
+public without sharing class LM_OrderCustomController {
 	public Id recordId {get; set;}
 
     public LM_OrderCustomController(ApexPages.StandardController controller) {

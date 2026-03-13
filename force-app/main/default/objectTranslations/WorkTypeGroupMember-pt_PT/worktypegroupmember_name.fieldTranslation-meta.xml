@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Nomes dos membros do grupo de projeto</value>
+        <value>Nomes dos membros do grupo de projetos</value>
     </caseValues>
     <gender>Masculine</gender>
     <name>worktypegroupmember_name</name>

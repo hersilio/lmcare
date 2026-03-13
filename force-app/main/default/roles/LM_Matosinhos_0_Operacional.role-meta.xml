@@ -6,5 +6,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>LM Matosinhos- Operacional</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>LM_Matosinhos_0_Manager</parentRole>
+    <parentRole>LM_Matosinhos_Manager</parentRole>
 </Role>

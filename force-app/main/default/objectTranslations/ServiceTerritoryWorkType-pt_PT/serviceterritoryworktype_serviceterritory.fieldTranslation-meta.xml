@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Territórios de serviço</value>
+        <value>Lojas Serviço</value>
     </caseValues>
     <gender>Masculine</gender>
     <name>serviceterritoryworktype_serviceterritory</name>
