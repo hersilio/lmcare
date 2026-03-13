@@ -102,7 +102,7 @@ private class AppointmentEntryRestTest {
             serviceResourceId = resources[0].Id;
         }
         
-        List<User> users = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        List<User> users = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         if (!users.isEmpty()) {
             userId = users[0].Id;
         }
@@ -172,7 +172,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_MissingLead() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -198,7 +198,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_MissingExtendedFields() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -224,7 +224,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_MissingAssignedResources() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -250,7 +250,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_MalformedQualificationSubtypes() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -280,7 +280,7 @@ private class AppointmentEntryRestTest {
     static void testCreateSADetails() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             Lead testLead = new Lead(
@@ -315,7 +315,7 @@ private class AppointmentEntryRestTest {
     
     @IsTest
     static void testGetClientByMdmId() {
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             Test.startTest();
@@ -331,7 +331,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_Success_New() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -360,7 +360,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_Conflict_NoSlotsAvailable() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             Lead testLead = new Lead(
@@ -406,7 +406,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_ExistingLeadByProjectId() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             String existingProjectId = 'new-project-id-123';
@@ -453,7 +453,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_EmptyQualificationsList() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -479,7 +479,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_BlankCanalIntegracao() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -511,7 +511,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_BlankLojaDeAngariacao() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
@@ -543,7 +543,8 @@ private class AppointmentEntryRestTest {
     static void testCreateAssignedResource_New() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
+
         
         System.runAs(testUser) {
             Lead testLead = new Lead(
@@ -580,8 +581,8 @@ private class AppointmentEntryRestTest {
     static void testMakePost_LeadWithNoExtendedFields() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
-        
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
+
         System.runAs(testUser) {
             AppointmentDTO appointment = createAppointmentDTOWithIds();
             appointment.lead.extendedFields = null;
@@ -607,7 +608,7 @@ private class AppointmentEntryRestTest {
     static void testMakePost_NullAppointment() {
         setupIds();
         
-        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE LIMIT 1];
+        User testUser = [SELECT Id FROM User WHERE IsActive = TRUE AND UserType = 'Standard' AND Email != null ORDER BY CreatedDate ASC LIMIT 1];
         
         System.runAs(testUser) {
             String jsonBody = 'null';
