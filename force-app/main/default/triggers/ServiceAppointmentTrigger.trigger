@@ -19,7 +19,7 @@ trigger ServiceAppointmentTrigger on ServiceAppointment (after insert, after upd
 
         }
         if(Trigger.isUpdate){
-            ServiceAppointmentTriggerHandler.handleAfterUpdate(Trigger.new, Trigger.oldMap);
+            ServiceAppointmentTriggerHandler.handleAfterUpdate(Trigger.new, Trigger.oldMap, Trigger.old);
         }
     }
 }

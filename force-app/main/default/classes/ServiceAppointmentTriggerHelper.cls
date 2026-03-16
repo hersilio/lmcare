@@ -553,18 +553,32 @@ public with sharing class ServiceAppointmentTriggerHelper {
     }
   }
   
-  public static void sentToADEO(Set<Id> appointmentIds) {
-    System.debug('in sendToADEO');
+  public static void sentToADEO(List<ServiceAppointment> newRecs, List<ServiceAppointment> oldRecs){
+    Set<Id> idsToSent = new Set<Id>();
+    Boolean hasPermission = false;
     if(runTrigger){
-    System.debug('in sendToADEO 2');
+      for (Integer i = 0; i < newRecs.size(); i++) {
+        if(oldRecs != null){
+          if( newRecs[i].Status != oldRecs[i].Status ||
+          newRecs[i].SchedStartTime != oldRecs[i].SchedStartTime){
+            idsToSent.add(newRecs[i].Id);
+          }
+        }
+        else{
+          idsToSent.add(newRecs[i].Id);
+        }
+      }
+      
       User userInfo = [SELECT (select  Id, PermissionSet.name from PermissionSetAssignments) FROM USER WHERE Id =: UserInfo.getUserId() LIMIT 1];
       for(PermissionSetAssignment psa : userInfo.PermissionSetAssignments){
         if(psa.PermissionSet.Name == 'ACL_Sent_Service_Appointments_to_ADEO'){
-              System.debug('in sendToADEO 3');
-
-          ServiceAppointmentCalloutHandler.builtHttpRequest(appointmentIds);
+          hasPermission = true;
+          break;
         }
       }
+    }
+    if(hasPermission){
+      ServiceAppointmentCalloutHandler.builtHttpRequest(idsToSent);
     }
   }
 }
