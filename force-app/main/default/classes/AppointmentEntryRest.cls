@@ -2,8 +2,8 @@
  * @description       : REST API to create Service Appointments from external systems
  * @author            : Hersilio Belini de Oliveira
  * @group             :
- * @last modified on  : 2026-03-06
- * @last modified by  : Catarina Lopes
+ * @last modified on  : 03-14-2026
+ * @last modified by  : Hersilio
  **/
 @RestResource(urlMapping = '/appointments/*')
 global with sharing class AppointmentEntryRest {
@@ -56,7 +56,7 @@ global with sharing class AppointmentEntryRest {
             // Calculate Duration
             Decimal durationInHours = (sa.SchedEndTime.getTime() - sa.schedStartTime.getTime())/1000/60/60;
             sa.duration = durationInHours;
-            // System.debug(sa);
+            System.debug('Service Appointment: ' + JSON.serialize(sa));
             insert sa;
             createAssignedResource(sa, appointment.assignedResources[0].serviceResourceId);
             createSADetails(sa);
@@ -71,8 +71,8 @@ global with sharing class AppointmentEntryRest {
             logSuccess(body, sa);
 
         } catch (Exception e) {
-            // System.debug('Error: ' + e.getMessage());
-            logError(500, e.getMessage(), body);
+            System.debug('Error: ' + e.getMessage() + ' Stack Trace: ' + e.getStackTraceString());
+            logError(500, e.getMessage() + ' : ' + e.getStackTraceString(), body);
             sendErrorResponse(res, 500, 'Internal Server Error: ' + e.getMessage(), body);
         }
     }
