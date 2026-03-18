@@ -2,7 +2,7 @@
  * @description       : REST API to create Service Appointments from external systems
  * @author            : Hersilio Belini de Oliveira
  * @group             :
- * @last modified on  : 03-14-2026
+ * @last modified on  : 03-18-2026
  * @last modified by  : Hersilio
  **/
 @RestResource(urlMapping = '/appointments/*')
@@ -34,7 +34,6 @@ global with sharing class AppointmentEntryRest {
             }
 
             // Validate assigned resources
-            // System.debug('appointment.assignedResources: ' + appointment.assignedResources);
             if (appointment.assignedResources == null || appointment.assignedResources.isEmpty()) {
                 sendErrorResponse(res, 400, 'Assigned resources are missing in the request.', body);
                 return;
@@ -146,7 +145,6 @@ global with sharing class AppointmentEntryRest {
         // }
 
         MDM_Client client = clients[0];
-        // System.debug('++++ client = '+client);
 
         return client;
     }
@@ -397,13 +395,10 @@ global with sharing class AppointmentEntryRest {
         if(!serviceTerritoryList.isEmpty()){
             formattedStore = serviceTerritoryList[0].Name;
         }
-        System.debug('Canal de integração storeId: ' + canalIntegracao);
         if (String.isBlank(canalIntegracao)){
-            System.debug('111111');
             lead.Canal_de_Interacao__c = 'Scheduler Online';
             lead.Equipa__c = 'Loja';
         } else {
-            System.debug('2222222');
             lead.Canal_de_Interacao__c = canalIntegracao;
             lead.Equipa__c = 'Loja';
         }
@@ -425,7 +420,7 @@ global with sharing class AppointmentEntryRest {
 
         // Associate SA with Lead
         sa.ParentRecordId = lead.Id;
-        System.debug('lead.id: ' + lead.Id);
+        sa.Lead__c = lead.Id;
         return sa;
     }
 
