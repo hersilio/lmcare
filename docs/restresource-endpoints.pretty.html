@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentação dos endpoints RestResource</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  :root {
+    --ink: #1f2937;
+    --muted: #5b6470;
+    --line: #d7dde5;
+    --panel: #f6f8fb;
+    --accent: #0b5cab;
+    --code-bg: #111827;
+    --code-fg: #e5eefb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.45;
+    font-size: 11pt;
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 180px);
+  }
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 4px 4px 40px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17pt;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c7d7ea;
+    color: #153454;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 13pt;
+    margin: 20px 0 8px;
+    color: #154e75;
+    page-break-after: avoid;
+  }
+  p { margin: 7px 0; }
+  p.label {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #153454;
+  }
+  ul {
+    margin: 8px 0 10px 20px;
+    padding: 0;
+  }
+  li { margin: 4px 0; }
+  code.inline {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: #eef4fb;
+    color: #0d3f73;
+    border: 1px solid #d9e6f5;
+    padding: 1px 5px;
+    border-radius: 6px;
+    font-size: .92em;
+  }
+  pre {
+    margin: 8px 0 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--code-bg);
+    color: var(--code-fg);
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    font-size: 9pt;
+    line-height: 1.45;
+    page-break-inside: avoid;
+  }
+  pre.text {
+    background: var(--panel);
+    color: #213449;
+    border: 1px solid var(--line);
+  }
+  .section { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="section">
+<h2>1. AppointmentEntryRest</h2>
+<p>Classe: <code class="inline">AppointmentEntryRest</code></p>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/appointments
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;serviceAppointment&quot;: {
+    &quot;serviceTerritoryId&quot;: &quot;0HhAe0000001ENVKA2&quot;,
+    &quot;schedStartTime&quot;: &quot;2026-02-28T20:45:00Z&quot;,
+    &quot;schedEndTime&quot;: &quot;2026-02-28T21:45:00Z&quot;,
+    &quot;workTypeId&quot;: &quot;08qAe0000008YfdIAE&quot;,
+    &quot;engagementChannelTypeId&quot;: &quot;0eFAe000000034LMAQ&quot;,
+    &quot;extendedFields&quot;: [
+      {
+        &quot;name&quot;: &quot;IsAnonymousBooking&quot;,
+        &quot;value&quot;: &quot;true&quot;
+      }
+    ],
+    &quot;description&quot;: &quot;Descrição do agendamento&quot;
+  },
+  &quot;lead&quot;: {
+    &quot;firstName&quot;: &quot;Maria&quot;,
+    &quot;lastName&quot;: &quot;Silva&quot;,
+    &quot;email&quot;: &quot;maria@email.com&quot;,
+    &quot;phone&quot;: &quot;+351910000000&quot;,
+    &quot;company&quot;: &quot;Empresa X&quot;,
+    &quot;extendedFields&quot;: [
+      {
+        &quot;name&quot;: &quot;Loja_de_Angariacao__c&quot;,
+        &quot;value&quot;: &quot;0HhAe0000001ENVKA2&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Canal_de_Interacao__c&quot;,
+        &quot;value&quot;: &quot;Scheduler Online&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Numero_de_Conta_na_lead__c&quot;,
+        &quot;value&quot;: &quot;70203863&quot;
+      },
+      {
+        &quot;name&quot;: &quot;LeadSource&quot;,
+        &quot;value&quot;: &quot;L2S&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ProjectId__c&quot;,
+        &quot;value&quot;: &quot;e8a8b710-3cad-40c2-87bd-b735f345a146&quot;
+      }
+    ]
+  },
+  &quot;assignedResources&quot;: [
+    {
+      &quot;serviceResourceId&quot;: &quot;0HnAe0000009HJNKA2&quot;,
+      &quot;isRequiredResource&quot;: true,
+      &quot;isPrimaryResource&quot;: true
+    }
+  ],
+  &quot;qualifications&quot;: [
+    {
+      &quot;subtype&quot;: &quot;L2S_BATHROOM_QUALIF_LVL_1&quot;,
+      &quot;questions&quot;: [
+        {
+          &quot;label&quot;: &quot;Pergunta 1&quot;,
+          &quot;answers&quot;: [
+            {
+              &quot;label&quot;: &quot;Resposta 1&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;result&quot;: {
+    &quot;assignedResourceIds&quot;: null,
+    &quot;parentRecordId&quot;: &quot;00QXXXXXXXXXXXX&quot;,
+    &quot;serviceAppointmentId&quot;: &quot;08pXXXXXXXXXXXX&quot;
+  }
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;error&quot;: &quot;Missing required lead or extended fields information in the request.&quot;
+}
+</pre>
+<p class="label">Status codes observados:</p>
+<ul>
+<li><code class="inline">201</code> quando cria o <code class="inline">ServiceAppointment</code></li>
+<li><code class="inline">400</code> quando faltam <code class="inline">lead.extendedFields</code> ou <code class="inline">assignedResources</code></li>
+<li><code class="inline">409</code> quando o slot não está disponível</li>
+<li><code class="inline">500</code> para erro interno ou <code class="inline">qualification subtype</code> inválido</li>
+</ul>
+<p class="label">Observações:</p>
+<ul>
+<li>O endpoint usa somente <code class="inline">POST</code>.</li>
+<li>O <code class="inline">response.result.assignedResourceIds</code> existe no DTO, mas hoje não está sendo preenchido na resposta.</li>
+</ul>
+</section>
+<section class="section">
+<h2>2. AppointmentEntryRestV2</h2>
+<p>Classe: <code class="inline">AppointmentEntryRestV2</code></p>
+<p class="label">Base do endpoint:</p>
+<pre class="text">
+POST /services/apexrest/appointments/v2/*
+</pre>
+<h3>2.1 Criar appointment</h3>
+<p class="label">Endpoint pretendido:</p>
+<pre class="text">
+POST /services/apexrest/appointments/v2/appointment
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;operation&quot;: &quot;CREATE&quot;,
+  &quot;appointment&quot;: {
+    &quot;workTypeId&quot;: &quot;08qAe0000003PzZIAU&quot;,
+    &quot;serviceTerritoryId&quot;: &quot;0HhAe0000001ENVKA2&quot;,
+    &quot;schedStartTime&quot;: &quot;2025-10-28T09:00:00Z&quot;,
+    &quot;schedEndTime&quot;: &quot;2025-10-28T10:00:00Z&quot;,
+    &quot;engagementChannelTypeId&quot;: &quot;0eFAe000000034LMAQ&quot;,
+    &quot;description&quot;: &quot;Agendamento via Portal&quot;
+  },
+  &quot;customer&quot;: {
+    &quot;mdmId&quot;: &quot;70150193&quot;,
+    &quot;type&quot;: &quot;B2C&quot;,
+    &quot;lead&quot;: {
+      &quot;firstName&quot;: &quot;Maria&quot;,
+      &quot;lastName&quot;: &quot;Silva&quot;,
+      &quot;phones&quot;: [
+        {
+          &quot;phoneNumber&quot;: &quot;+351999999999&quot;,
+          &quot;primary&quot;: true
+        }
+      ],
+      &quot;emails&quot;: [
+        {
+          &quot;address&quot;: &quot;maria@email.com&quot;,
+          &quot;primary&quot;: true
+        }
+      ]
+    }
+  },
+  &quot;resources&quot;: [
+    {
+      &quot;serviceResourceId&quot;: &quot;0HnAe0000004OzpKAE&quot;,
+      &quot;role&quot;: &quot;Primary&quot;,
+      &quot;primary&quot;: true
+    }
+  ],
+  &quot;meta&quot;: {
+    &quot;locale&quot;: &quot;pt-PT&quot;
+  }
+}
+</pre>
+<p class="label">Response JSON de sucesso pretendido:</p>
+<pre class="json">
+{
+  &quot;result&quot;: {
+    &quot;assignedResourceIds&quot;: [
+      &quot;0HnAe0000004OzpKAE&quot;
+    ],
+    &quot;parentRecordId&quot;: &quot;00QXXXXXXXXXXXX&quot;,
+    &quot;serviceAppointmentId&quot;: &quot;08pXXXXXXXXXXXX&quot;,
+    &quot;appointmentNumber&quot;: &quot;SA-00012345&quot;,
+    &quot;status&quot;: &quot;Scheduled&quot;,
+    &quot;schedStartTime&quot;: &quot;2025-10-28T09:00:00.000Z&quot;,
+    &quot;schedEndTime&quot;: &quot;2025-10-28T10:00:00.000Z&quot;
+  }
+}
+</pre>
+<p class="label">Response JSON de erro pretendido:</p>
+<pre class="json">
+{
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;Invalid Request&quot;,
+    &quot;message&quot;: &quot;Missing appointment data.&quot;,
+    &quot;requestId&quot;: null
+  }
+}
+</pre>
+<h3>2.2 Reagendar appointment</h3>
+<p class="label">Endpoint pretendido:</p>
+<pre class="text">
+POST /services/apexrest/appointments/v2/appointment/{appointmentId}
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;operation&quot;: &quot;PATCH&quot;,
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;08pXXXXXXXXXXXXXXX&quot;,
+    &quot;schedStartTime&quot;: &quot;2025-10-29T10:00:00Z&quot;,
+    &quot;schedEndTime&quot;: &quot;2025-10-29T11:00:00Z&quot;,
+    &quot;description&quot;: &quot;Reagendamento solicitado pelo cliente&quot;
+  },
+  &quot;meta&quot;: {
+    &quot;locale&quot;: &quot;pt-PT&quot;
+  }
+}
+</pre>
+<p class="label">Response JSON de sucesso pretendido:</p>
+<pre class="json">
+{
+  &quot;result&quot;: {
+    &quot;serviceAppointmentId&quot;: &quot;08pXXXXXXXXXXXXXXX&quot;,
+    &quot;status&quot;: &quot;Scheduled&quot;,
+    &quot;schedStartTime&quot;: &quot;2025-10-29T10:00:00.000Z&quot;,
+    &quot;schedEndTime&quot;: &quot;2025-10-29T11:00:00.000Z&quot;
+  }
+}
+</pre>
+<h3>2.3 Cancelar appointment</h3>
+<p class="label">Endpoint pretendido:</p>
+<pre class="text">
+POST /services/apexrest/appointments/v2/appointment/{appointmentId}
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;operation&quot;: &quot;CANCEL&quot;,
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;08pXXXXXXXXXXXXXXX&quot;
+  },
+  &quot;cancellation&quot;: {
+    &quot;reason&quot;: &quot;Cliente solicitou cancelamento&quot;,
+    &quot;notes&quot;: &quot;Contato via portal&quot;,
+    &quot;notifyCustomer&quot;: true
+  },
+  &quot;meta&quot;: {
+    &quot;locale&quot;: &quot;pt-PT&quot;
+  }
+}
+</pre>
+<p class="label">Response JSON de sucesso pretendido:</p>
+<pre class="json">
+{
+  &quot;result&quot;: {
+    &quot;serviceAppointmentId&quot;: &quot;08pXXXXXXXXXXXXXXX&quot;,
+    &quot;status&quot;: &quot;Canceled&quot;
+  }
+}
+</pre>
+<h3>2.4 Listar appointments do cliente</h3>
+<p class="label">Endpoint pretendido:</p>
+<pre class="text">
+POST /services/apexrest/appointments/v2/client/{clientMdmId}
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;totalSize&quot;: 2,
+  &quot;records&quot;: [
+    {
+      &quot;Id&quot;: &quot;08pXXXXXXXXXXXXXXX&quot;,
+      &quot;AppointmentNumber&quot;: &quot;SA-00012345&quot;,
+      &quot;CreatedDate&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+      &quot;Status&quot;: &quot;Scheduled&quot;,
+      &quot;SchedStartTime&quot;: &quot;2026-03-20T09:00:00.000Z&quot;,
+      &quot;SchedEndTime&quot;: &quot;2026-03-20T10:00:00.000Z&quot;,
+      &quot;Description&quot;: &quot;Agendamento via Portal&quot;,
+      &quot;ParentRecordId&quot;: &quot;00QXXXXXXXXXXXXXXX&quot;
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de erro pretendido:</p>
+<pre class="json">
+{
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;Not Found&quot;,
+    &quot;message&quot;: &quot;No appointments found for the client.&quot;,
+    &quot;requestId&quot;: null
+  }
+}
+</pre>
+<p class="label">Observações importantes:</p>
+<ul>
+<li>Embora o comentário do código sugira <code class="inline">PATCH</code> e <code class="inline">CANCEL</code>, a classe expõe somente <code class="inline">@HttpPost</code>.</li>
+<li>O roteamento interno usa <code class="inline">requestURI.split(&#x27;/&#x27;)[3]</code> e <code class="inline">split(&#x27;/&#x27;)[4]</code>, o que não bate com a URI completa padrão do Apex REST (<code class="inline">/services/apexrest/...</code>). Na prática, a rota pode não cair nos <code class="inline">when &#x27;appointment&#x27;</code> e <code class="inline">when &#x27;client&#x27;</code> como esperado.</li>
+<li>O código da resposta tem problemas de inicialização:</li>
+<li><code class="inline">AppointmentResponseDTO responseDTO;</code> não é instanciado antes de <code class="inline">responseDTO.result = resultDTO</code>.</li>
+<li><code class="inline">ErrorResponse</code> também não instancia <code class="inline">error</code> antes de acessar <code class="inline">error.code</code>.</li>
+<li>Para a equipe de engenharia, vale tratar a <code class="inline">v2</code> como contrato pretendido, não como contrato hoje confiável em produção.</li>
+</ul>
+</section>
+<section class="section">
+<h2>3. L2SAPIService</h2>
+<p>Classe: <code class="inline">L2SAPIService</code></p>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/leads/v1/lead
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;mdmId&quot;: &quot;2462&quot;,
+  &quot;leadSource&quot;: &quot;Website&quot;,
+  &quot;team&quot;: &quot;VAD&quot;,
+  &quot;status&quot;: &quot;New&quot;,
+  &quot;storeId&quot;: &quot;001&quot;,
+  &quot;projectId&quot;: &quot;PROJ-001&quot;,
+  &quot;projectTag&quot;: &quot;BATHROOM&quot;,
+  &quot;qualification&quot;: [
+    {
+      &quot;subtype&quot;: &quot;L2S_BATHROOM_QUALIF_LVL_1&quot;,
+      &quot;questions&quot;: [
+        {
+          &quot;label&quot;: &quot;Question 1&quot;,
+          &quot;answers&quot;: [
+            {
+              &quot;label&quot;: &quot;Answer 1&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;mdmId&quot;: &quot;2462&quot;,
+  &quot;leadId&quot;: &quot;00QXXXXXXXXXXXX&quot;
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;errorMessage&quot;: &quot;Missing required fields: mdmId, leadSource, team, status, projectId, projectTag&quot;,
+  &quot;detailAction&quot;: null
+}
+</pre>
+<p class="label">Status codes observados:</p>
+<ul>
+<li><code class="inline">201</code> sucesso</li>
+<li><code class="inline">400</code> body ausente, JSON inválido ou campos obrigatórios faltando</li>
+<li><code class="inline">404</code> cliente não encontrado no MDM</li>
+<li><code class="inline">500</code> subtype de qualificação inválido ou erro inesperado</li>
+</ul>
+<p class="label">Observações:</p>
+<ul>
+<li>O único endpoint válido nessa classe é <code class="inline">/lead</code>. Qualquer outro sufixo em <code class="inline">/leads/v1/*</code> devolve <code class="inline">404</code>.</li>
+</ul>
+</section>
+<section class="section">
+<h2>4. PyxisAPIService</h2>
+<p>Classe: <code class="inline">PyxisAPIService</code></p>
+<p class="label">Base do endpoint:</p>
+<pre class="text">
+POST /services/apexrest/pyxis/*
+</pre>
+<p class="label">Sub-endpoints válidos:</p>
+<ul>
+<li><code class="inline">/services/apexrest/pyxis/quotes</code></li>
+<li><code class="inline">/services/apexrest/pyxis/product-orders</code></li>
+<li><code class="inline">/services/apexrest/pyxis/sale-notes</code></li>
+</ul>
+<h3>4.1 Quotes</h3>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/pyxis/quotes
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;externalId&quot;: &quot;260516&quot;,
+  &quot;customer&quot;: {
+    &quot;name&quot;: &quot;TEST ACCOUNT&quot;,
+    &quot;number&quot;: &quot;123346&quot;,
+    &quot;email&quot;: &quot;ml@gmail.com&quot;
+  },
+  &quot;quotes&quot;: [
+    {
+      &quot;store&quot;: &quot;004&quot;,
+      &quot;createdDate&quot;: &quot;2025-10-31T14:30:00Z&quot;,
+      &quot;quoteNumber&quot;: &quot;267898&quot;,
+      &quot;createdByUser&quot;: &quot;9001074112&quot;,
+      &quot;creationChannel&quot;: &quot;Valor&quot;,
+      &quot;state&quot;: &quot;100&quot;,
+      &quot;quoteExpirationDate&quot;: &quot;2025-10-31T14:30:00Z&quot;,
+      &quot;quoteStatus&quot;: &quot;100&quot;,
+      &quot;internalMessageCreatedDate&quot;: &quot;2025-10-31T14:30:00Z&quot;,
+      &quot;internalMessageCreatedBy&quot;: &quot;9001074112&quot;,
+      &quot;internalMessageText&quot;: &quot;FROM Postman API Callout&quot;,
+      &quot;quoteLineItems&quot;: [
+        {
+          &quot;lineNumber&quot;: &quot;0&quot;,
+          &quot;productReferenceEan&quot;: &quot;01t8d0000086DFLAA2&quot;,
+          &quot;productName&quot;: &quot;2 lâminas 5-50 mm Dexter CLEAN CUT&quot;,
+          &quot;stockQuantity&quot;: &quot;3&quot;,
+          &quot;pdo&quot;: &quot;15&quot;,
+          &quot;itemStatus&quot;: &quot;100&quot;,
+          &quot;unitPrice&quot;: &quot;14&quot;,
+          &quot;discountPercent&quot;: &quot;20.5&quot;,
+          &quot;totalAmount&quot;: &quot;10.4&quot;,
+          &quot;section&quot;: &quot;Valor&quot;,
+          &quot;subsection&quot;: &quot;Valor&quot;,
+          &quot;type&quot;: &quot;PF&quot;,
+          &quot;subtype&quot;: &quot;Valor&quot;,
+          &quot;nomenclature&quot;: &quot;TEST Nomeclature&quot;,
+          &quot;supplier&quot;: &quot;10.4&quot;,
+          &quot;transformChannel&quot;: &quot;TEST Transform Channel&quot;,
+          &quot;transformTransaction&quot;: &quot;TEST Transform Transaction&quot;,
+          &quot;transformStore&quot;: &quot;004&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;recordsCreate&quot;: [
+    {
+      &quot;attributes&quot;: {
+        &quot;type&quot;: &quot;Quote&quot;
+      },
+      &quot;Id&quot;: &quot;0Q0XXXXXXXXXXXX&quot;
+    }
+  ],
+  &quot;statusCode&quot;: 201
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;statusCode&quot;: 400,
+  &quot;error&quot;: {
+    &quot;errorMessage&quot;: &quot;Payload vazio ou inválido.&quot;,
+    &quot;detailAction&quot;: &quot;stack trace / detalhe técnico&quot;
+  }
+}
+</pre>
+<h3>4.2 Product Orders</h3>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/pyxis/product-orders
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;externalId&quot;: &quot;260516&quot;,
+  &quot;customer&quot;: {
+    &quot;name&quot;: &quot;TEST ACCOUNT&quot;,
+    &quot;number&quot;: &quot;123346&quot;,
+    &quot;email&quot;: &quot;ml@gmail.com&quot;
+  },
+  &quot;productOrders&quot;: [
+    {
+      &quot;customerName&quot;: &quot;TEST&quot;,
+      &quot;customerNumber&quot;: &quot;TEST&quot;,
+      &quot;customerEmail&quot;: &quot;TEST&quot;,
+      &quot;orderNumber&quot;: &quot;21122&quot;,
+      &quot;store&quot;: &quot;004&quot;,
+      &quot;createdDate&quot;: &quot;2025-11-11T15:45:00.000Z&quot;,
+      &quot;availableDate&quot;: &quot;2025-11-11T15:45:00.000Z&quot;,
+      &quot;totalWithVat&quot;: &quot;150&quot;,
+      &quot;createdByUser&quot;: &quot;9001074112&quot;,
+      &quot;creationChannel&quot;: &quot;Valor&quot;,
+      &quot;orderStatus&quot;: &quot;10&quot;,
+      &quot;depositTotal&quot;: &quot;20.5&quot;,
+      &quot;depositRemaining&quot;: &quot;20.45&quot;,
+      &quot;shippedFrom&quot;: &quot;LM_ALBUFEIRA&quot;,
+      &quot;deliveryDate&quot;: &quot;2025-11-11T15:45:00.000Z&quot;,
+      &quot;internalMessageCreatedDate&quot;: &quot;2025-11-03T15:45:00.000Z&quot;,
+      &quot;internalMessageCreatedBy&quot;: &quot;TEST Created By&quot;,
+      &quot;internalMessageText&quot;: &quot;TEST interal Message&quot;,
+      &quot;eligibleForReducedVat&quot;: false,
+      &quot;orderItems&quot;: [
+        {
+          &quot;lineNumber&quot;: &quot;0&quot;,
+          &quot;productReferenceEan&quot;: &quot;01u8d00000FfqqcAAB&quot;,
+          &quot;productName&quot;: &quot;2 lâminas 5-50 mm Dexter CLEAN CUT&quot;,
+          &quot;stockQuantity&quot;: &quot;20&quot;,
+          &quot;itemType&quot;: &quot;Valor&quot;,
+          &quot;itemStatus&quot;: &quot;10&quot;,
+          &quot;availableDate&quot;: &quot;2025-11-03T15:45:00.000Z&quot;,
+          &quot;sourceQuoteNumber&quot;: &quot;&quot;,
+          &quot;unitPrice&quot;: &quot;25.5&quot;,
+          &quot;discountPercent&quot;: &quot;12.5&quot;,
+          &quot;pdo&quot;: &quot;12&quot;,
+          &quot;amountIncludingVAT&quot;: &quot;50&quot;,
+          &quot;lineComplementDescription&quot;: &quot;TEST Desc&quot;,
+          &quot;supplierOrderNumber&quot;: &quot;TEST Supplie Ord Num&quot;,
+          &quot;address&quot;: &quot;Location 1&quot;,
+          &quot;pickupLocation&quot;: &quot;004&quot;,
+          &quot;createdByUser&quot;: &quot;9001074112&quot;,
+          &quot;lastModifiedByUser&quot;: &quot;9001074112&quot;,
+          &quot;codeSection&quot;: &quot;7&quot;,
+          &quot;codeSubsection&quot;: &quot;8&quot;,
+          &quot;codeType&quot;: &quot;8&quot;,
+          &quot;codeSubtype&quot;: &quot;9&quot;,
+          &quot;nomenclature&quot;: &quot;TEST&quot;,
+          &quot;sourceChannel&quot;: &quot;Valor&quot;,
+          &quot;sourceTransaction&quot;: &quot;Valor&quot;,
+          &quot;sourceStore&quot;: &quot;004&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;recordsCreate&quot;: [
+    {
+      &quot;attributes&quot;: {
+        &quot;type&quot;: &quot;Order&quot;
+      },
+      &quot;Id&quot;: &quot;801XXXXXXXXXXXX&quot;
+    }
+  ],
+  &quot;statusCode&quot;: 201
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;statusCode&quot;: 500,
+  &quot;error&quot;: {
+    &quot;errorMessage&quot;: &quot;mensagem técnica do erro&quot;,
+    &quot;detailAction&quot;: &quot;stack trace / detalhe técnico&quot;
+  }
+}
+</pre>
+<h3>4.3 Sale Notes</h3>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/pyxis/sale-notes
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{
+  &quot;externalId&quot;: &quot;260516&quot;,
+  &quot;customer&quot;: {
+    &quot;name&quot;: &quot;JOSE ALMEIDA&quot;,
+    &quot;number&quot;: &quot;123346&quot;,
+    &quot;email&quot;: &quot;ml@gmail.com&quot;
+  },
+  &quot;saleNoteOrders&quot;: [
+    {
+      &quot;salesNoteNumber&quot;: &quot;009877&quot;,
+      &quot;store&quot;: &quot;004&quot;,
+      &quot;salesDate&quot;: &quot;2025-11-03T15:45:00.000Z&quot;,
+      &quot;totalWithVat&quot;: &quot;150&quot;,
+      &quot;createdByUser&quot;: &quot;0058d000008aV4JAAU&quot;,
+      &quot;creationChannel&quot;: &quot;Valor&quot;,
+      &quot;salesNoteStatus&quot;: &quot;10&quot;,
+      &quot;internalMessageCreatedDate&quot;: &quot;2025-11-03T15:45:00.000Z&quot;,
+      &quot;internalMessageCreatedBy&quot;: &quot;TEST&quot;,
+      &quot;internalMessageText&quot;: &quot;TEST&quot;,
+      &quot;orderItems&quot;: [
+        {
+          &quot;lineNumber&quot;: 0,
+          &quot;productReferenceEan&quot;: &quot;49........&quot;,
+          &quot;productName&quot;: &quot;10 lixas 93X93MM&quot;,
+          &quot;stockQuantity&quot;: &quot;23.4&quot;,
+          &quot;pdo&quot;: &quot;20&quot;,
+          &quot;itemType&quot;: &quot;PF&quot;,
+          &quot;itemStatus&quot;: &quot;10&quot;,
+          &quot;unitPrice&quot;: &quot;12.23&quot;,
+          &quot;discountPercent&quot;: &quot;12.5&quot;,
+          &quot;totalWithVat&quot;: &quot;12.5&quot;,
+          &quot;lineComplementDescription&quot;: &quot;TEST Desc&quot;,
+          &quot;createdByUser&quot;: &quot;0058d000008aV4JAAU&quot;,
+          &quot;lastModifiedByUser&quot;: &quot;0058d000008aV4JAAU&quot;,
+          &quot;codeSection&quot;: &quot;Valor&quot;,
+          &quot;codeSubsection&quot;: &quot;Valor&quot;,
+          &quot;codeType&quot;: &quot;Valor&quot;,
+          &quot;codeSubtype&quot;: &quot;Valor&quot;,
+          &quot;nomenclature&quot;: &quot;TEST&quot;,
+          &quot;supplier&quot;: &quot;TEST&quot;,
+          &quot;sourceTransactionType&quot;: &quot;Valor&quot;
+        }
+      ]
+    }
+  ]
+}
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;recordsCreate&quot;: [
+    {
+      &quot;attributes&quot;: {
+        &quot;type&quot;: &quot;Order&quot;
+      },
+      &quot;Id&quot;: &quot;801XXXXXXXXXXXX&quot;
+    }
+  ],
+  &quot;statusCode&quot;: 201
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;dateTimeProcess&quot;: &quot;2026-03-18T12:00:00.000Z&quot;,
+  &quot;statusCode&quot;: 400,
+  &quot;error&quot;: {
+    &quot;errorMessage&quot;: &quot;Payload vazio ou inválido.&quot;,
+    &quot;detailAction&quot;: &quot;stack trace / detalhe técnico&quot;
+  }
+}
+</pre>
+<p class="label">Observações importantes:</p>
+<ul>
+<li>O contrato real do payload usa <code class="inline">customer.number</code> para obter o MDM do cliente. Apesar de alguns wrappers tipados terem o campo <code class="inline">mdmId</code>, o código que resolve o cliente lê <code class="inline">customer.number</code> diretamente do JSON cru.</li>
+<li>O array <code class="inline">recordsCreate</code> é serializado a partir de <code class="inline">SObject</code>. Os campos exatos podem variar conforme o metadata mapping e os campos populados no momento do DML.</li>
+<li>Qualquer endpoint diferente de <code class="inline">quotes</code>, <code class="inline">product-orders</code> e <code class="inline">sale-notes</code> retorna <code class="inline">404</code>.</li>
+</ul>
+</section>
+<section class="section">
+<h2>5. SCH_DailyAvailablityController</h2>
+<p>Classe: <code class="inline">SCH_DailyAvailablityController</code></p>
+<p class="label">Endpoint:</p>
+<pre class="text">
+GET /services/apexrest/dailyAvailability
+</pre>
+<p class="label">Query params obrigatórios:</p>
+<ul>
+<li><code class="inline">startDate</code> no formato <code class="inline">YYYY-MM-DD</code></li>
+<li><code class="inline">endDate</code> no formato <code class="inline">YYYY-MM-DD</code></li>
+<li><code class="inline">workTypeGroupId</code></li>
+<li><code class="inline">storeId</code></li>
+<li><code class="inline">engagementChannelTypeId</code></li>
+</ul>
+<p class="label">Request JSON:</p>
+<pre class="json">
+null
+</pre>
+<p class="label">Exemplo de chamada:</p>
+<pre class="text">
+GET /services/apexrest/dailyAvailability?startDate=2026-03-20&amp;endDate=2026-03-31&amp;workTypeGroupId=0VGAe0000000001&amp;storeId=0HhAe0000001ENVKA2&amp;engagementChannelTypeId=0eFAe000000034LMAQ
+</pre>
+<p class="label">Response JSON de sucesso:</p>
+<pre class="json">
+{
+  &quot;2026-03-20&quot;: 4,
+  &quot;2026-03-21&quot;: 3,
+  &quot;2026-03-24&quot;: 7
+}
+</pre>
+<p class="label">Response JSON de erro:</p>
+<pre class="json">
+{
+  &quot;error&quot;: &quot;Missing required parameter(s): startDate, endDate&quot;
+}
+</pre>
+<p class="label">Outros erros observados:</p>
+<pre class="json">
+{
+  &quot;error&quot;: &quot;Invalid date format. Use YYYY-MM-DD.&quot;
+}
+</pre>
+<pre class="json">
+{
+  &quot;error&quot;: &quot;Invalid parameter format. Ensure workTypeGroupId, storeId, and engagementChannelTypeId are valid Salesforce IDs.&quot;
+}
+</pre>
+<pre class="json">
+{
+  &quot;message&quot;: &quot;No available dates found for the specified criteria.&quot;
+}
+</pre>
+</section>
+<section class="section">
+<h2>6. DataCompliance_API</h2>
+<p>Classe: <code class="inline">DataCompliance_API</code></p>
+<p class="label">Endpoint:</p>
+<pre class="text">
+POST /services/apexrest/anonymize.user/{mdmId}
+</pre>
+<p class="label">Request JSON:</p>
+<pre class="json">
+{}
+</pre>
+<p class="label">Observação:</p>
+<ul>
+<li>O body não é usado pela implementação atual. O <code class="inline">mdmId</code> é lido do último segmento da URI.</li>
+</ul>
+<p>Response JSON de sucesso quando atualiza registros:</p>
+<pre class="json">
+{
+  &quot;records&quot;: [
+    {
+      &quot;recId&quot;: &quot;001XXXXXXXXXXXX&quot;,
+      &quot;recObjectType&quot;: &quot;Account&quot;
+    },
+    {
+      &quot;recId&quot;: &quot;003XXXXXXXXXXXX&quot;,
+      &quot;recObjectType&quot;: &quot;Contact&quot;
+    },
+    {
+      &quot;recId&quot;: &quot;006XXXXXXXXXXXX&quot;,
+      &quot;recObjectType&quot;: &quot;Opportunity&quot;
+    },
+    {
+      &quot;recId&quot;: &quot;08pXXXXXXXXXXXX&quot;,
+      &quot;recObjectType&quot;: &quot;ServiceAppointment&quot;
+    }
+  ],
+  &quot;timeStamp&quot;: &quot;2026-03-18 12:00:00&quot;,
+  &quot;recordsUpdated&quot;: 4,
+  &quot;endPoint&quot;: &quot;/services/apexrest/anonymize.user/70203863&quot;,
+  &quot;mdmId&quot;: &quot;70203863&quot;,
+  &quot;status&quot;: &quot;Valid Request - MDM_ID UPDATED&quot;
+}
+</pre>
+<p>Response JSON quando o cliente não existe no Salesforce:</p>
+<pre class="json">
+{
+  &quot;records&quot;: [],
+  &quot;timeStamp&quot;: &quot;2026-03-18 12:00:00&quot;,
+  &quot;recordsUpdated&quot;: 0,
+  &quot;endPoint&quot;: &quot;/services/apexrest/anonymize.user/99999999&quot;,
+  &quot;mdmId&quot;: &quot;99999999&quot;,
+  &quot;status&quot;: &quot;Valid Request - MDM_ID DOESN´T EXIST IN SALESFORCE&quot;
+}
+</pre>
+<p>Response JSON quando existe atividade em aberto:</p>
+<pre class="json">
+{
+  &quot;openActivity&quot;: &quot;true&quot;,
+  &quot;timeStamp&quot;: &quot;2026-03-18 12:00:00&quot;,
+  &quot;recordsUpdated&quot;: 0,
+  &quot;endPoint&quot;: &quot;/services/apexrest/anonymize.user/70203863&quot;,
+  &quot;mdmId&quot;: &quot;70203863&quot;,
+  &quot;status&quot;: &quot;Not Updated - CLIENT WITH OPEN ACTIVITY&quot;
+}
+</pre>
+<p>Response JSON quando falta <code class="inline">mdmId</code> na rota:</p>
+<pre class="json">
+{
+  &quot;records&quot;: [],
+  &quot;timeStamp&quot;: &quot;2026-03-18 12:00:00&quot;,
+  &quot;recordsUpdated&quot;: 0,
+  &quot;endPoint&quot;: &quot;/services/apexrest/anonymize.user&quot;,
+  &quot;mdmId&quot;: &quot;anonymize.user&quot;,
+  &quot;status&quot;: &quot;Bad Request  - MISSING MDM_ID IN ENDPOINT&quot;
+}
+</pre>
+<p class="label">Status codes observados:</p>
+<ul>
+<li><code class="inline">200</code> atualizado com sucesso</li>
+<li><code class="inline">200</code> mdmId inexistente no Salesforce</li>
+<li><code class="inline">400</code> mdmId ausente na URI</li>
+<li><code class="inline">400</code> cliente com atividade em aberto</li>
+<li><code class="inline">500</code> erro interno</li>
+</ul>
+</section>
+<section class="section">
+<h2>Resumo rápido para a equipe</h2>
+<ul>
+<li>Endpoints ativos encontrados: <code class="inline">appointments</code>, <code class="inline">appointments/v2</code>, <code class="inline">leads/v1</code>, <code class="inline">pyxis</code>, <code class="inline">dailyAvailability</code>, <code class="inline">anonymize.user</code>.</li>
+<li><code class="inline">AppointmentEntryRestV2</code> precisa de revisão antes de ser tratado como contrato estável.</li>
+<li>No <code class="inline">Pyxis</code>, o campo confiável para identificar cliente no request atual é <code class="inline">customer.number</code>.</li>
+</ul>
+</section>
+</div></body></html>
