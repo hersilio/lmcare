@@ -113,8 +113,8 @@ public with sharing class ServiceAppointmentTriggerHelper {
       Boolean isVideo = ect != null && ect.ContactPointType == 'Video';
       Boolean isInPerson = ect != null && ect.ContactPointType == 'InPerson';
       
-      // 1 Cancelado: email sempre, SMS nao
-      if (sa.Status == 'Canceled') {
+      // 1 Cancelado: email sempre, SMS nao — só envia quando o estado muda PARA Canceled
+      if (sa.Status == 'Canceled' && oldSa.Status != 'Canceled') {
         toNotify.add(sa);
         continue;
       }
