@@ -12,14 +12,14 @@ public with sharing class ServiceAppointmentTriggerHandler {
     {
         // ServiceAppointmentTriggerHelper.invalidateSlotsAfterInsert(newList);
         ServiceAppointmentTriggerHelper.sendNotificationsAfterInsert(newList);
-        ServiceAppointmentTriggerHelper.sentToADEO(newMap.keySet());
+        ServiceAppointmentTriggerHelper.sentToADEO(newList, null);
     }
 
-    public static void handleAfterUpdate(List<ServiceAppointment> newList,Map<Id, ServiceAppointment> oldMap)
+    public static void handleAfterUpdate(List<ServiceAppointment> newList, Map<Id, ServiceAppointment> oldMap, List<ServiceAppointment> oldList)
     {
         // ServiceAppointmentTriggerHelper.invalidateSlotsAfterUpdate(newList, oldMap);
         ServiceAppointmentTriggerHelper.sendNotificationsAfterUpdate(newList, oldMap);
-        ServiceAppointmentTriggerHelper.sentToADEO(oldMap.keySet());
+        ServiceAppointmentTriggerHelper.sentToADEO(newList, oldList);
     }
 
       public static void handleBeforeInsert(List<ServiceAppointment> newList)
