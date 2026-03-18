@@ -34,7 +34,6 @@ global with sharing class AppointmentEntryRest {
             }
 
             // Validate assigned resources
-            // System.debug('appointment.assignedResources: ' + appointment.assignedResources);
             if (appointment.assignedResources == null || appointment.assignedResources.isEmpty()) {
                 sendErrorResponse(res, 400, 'Assigned resources are missing in the request.', body);
                 return;
@@ -56,7 +55,6 @@ global with sharing class AppointmentEntryRest {
             // Calculate Duration
             Decimal durationInHours = (sa.SchedEndTime.getTime() - sa.schedStartTime.getTime())/1000/60/60;
             sa.duration = durationInHours;
-            // System.debug(sa);
             insert sa;
             createAssignedResource(sa, appointment.assignedResources[0].serviceResourceId);
             createSADetails(sa);
@@ -71,7 +69,6 @@ global with sharing class AppointmentEntryRest {
             logSuccess(body, sa);
 
         } catch (Exception e) {
-            // System.debug('Error: ' + e.getMessage());
             logError(500, e.getMessage(), body);
             sendErrorResponse(res, 500, 'Internal Server Error: ' + e.getMessage(), body);
         }
@@ -146,7 +143,6 @@ global with sharing class AppointmentEntryRest {
         // }
 
         MDM_Client client = clients[0];
-        // System.debug('++++ client = '+client);
 
         return client;
     }
@@ -397,13 +393,10 @@ global with sharing class AppointmentEntryRest {
         if(!serviceTerritoryList.isEmpty()){
             formattedStore = serviceTerritoryList[0].Name;
         }
-        System.debug('Canal de integração storeId: ' + canalIntegracao);
         if (String.isBlank(canalIntegracao)){
-            System.debug('111111');
             lead.Canal_de_Interacao__c = 'Scheduler Online';
             lead.Equipa__c = 'Loja';
         } else {
-            System.debug('2222222');
             lead.Canal_de_Interacao__c = canalIntegracao;
             lead.Equipa__c = 'Loja';
         }
@@ -425,7 +418,7 @@ global with sharing class AppointmentEntryRest {
 
         // Associate SA with Lead
         sa.ParentRecordId = lead.Id;
-        System.debug('lead.id: ' + lead.Id);
+        sa.Lead__c = lead.Id;
         return sa;
     }
 

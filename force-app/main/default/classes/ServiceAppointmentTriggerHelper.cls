@@ -577,7 +577,6 @@ public with sharing class ServiceAppointmentTriggerHelper {
         }
       }
     }
-    
     if(hasPermission){
       ServiceAppointmentCalloutHandler.builtHttpRequest(idsToSent);
     }

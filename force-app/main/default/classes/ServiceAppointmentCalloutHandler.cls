@@ -26,7 +26,6 @@ public with sharing class ServiceAppointmentCalloutHandler {
                                                                 LIMIT 1];
             Map<String, String> fieldMap = bodyPayload(saSetting.field_names__c);
             List<ServiceAppointment> serviceApps = Database.query(saSetting.base_query__c + ' ' + saSetting.where_query__c + ' AND Id IN : appointmentIds');
-            System.debug('serviceApps: ' + serviceApps);
 
             if(serviceApps.isEmpty()){System.debug('NO APPOINTMENTS TO SEND TO ADEO');return;}
 
