@@ -2,7 +2,7 @@
  * @description       : L2S Lead creation handler
  * @author            :
  * @group             :
- * @last modified on  : 2026-03-02
+ * @last modified on  : 2026-03-19
  * @last modified by  : Catarina Lopes
  **/
 public with sharing class L2SAPIServiceHandler {
@@ -47,14 +47,24 @@ public with sharing class L2SAPIServiceHandler {
             return errorResult(400, 'Missing required fields: ' + String.join(missingFields, ', '), null);
         }
         Lead lead = new Lead();
-        List<Lead> existingLeads = [Select Id, Description, ProjectId__c, Canal_de_Interacao__c, Equipa__c, Loja_de_Angariacao__c FROM Lead WHERE ProjectId__c = :request.projectId LIMIT 1];
+        List<Lead> existingLeads = [Select Id, Description, ProjectId__c, Canal_de_Interacao__c, Equipa__c, Loja_de_Angariacao__c, Status FROM Lead WHERE ProjectId__c = :request.projectId LIMIT 1];
         System.debug('existingLeads: ' + existingLeads);
         if (!existingLeads.isEmpty()) {
             lead = existingLeads[0];
         }
         lead.Numero_de_Conta_na_lead__c = request.mdmId;
         lead.LeadSource = request.leadSource;
-        lead.Status = request.status;
+
+        List<LeadStatusMapping__mdt> leadMappings = [SELECT Id, DeveloperName, MappedStatus__c FROM LeadStatusMapping__mdt];
+        for (LeadStatusMapping__mdt mapping : leadMappings) {
+            if (request.status == mapping.DeveloperName) {
+                lead.Status = mapping.MappedStatus__c;
+            }
+            if (lead.Status == 'Unqualified') {
+                lead.Motivo_de_Perda__c = 'Outros';
+            }
+        }
+
         System.debug('has service appointment: ' + hasServiceAppointment(lead));
         if(!hasServiceAppointment(lead)){
             if (String.isNotBlank(request.team)) {
