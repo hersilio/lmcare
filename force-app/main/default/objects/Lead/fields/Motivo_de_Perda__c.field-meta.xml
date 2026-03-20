@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_Perda__c</fullName>
+    <label>Motivo de Perda</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Falta de dados para avançar</fullName>
+                <default>false</default>
+                <label>Falta de dados para avançar</label>
+            </value>
+            <value>
+                <fullName>Cliente não pretende comprar</fullName>
+                <default>false</default>
+                <label>Cliente não pretende comprar</label>
+            </value>
+            <value>
+                <fullName>Resposta fora do tempo</fullName>
+                <default>false</default>
+                <label>Resposta fora do tempo</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>NÃO USAR_L2S</fullName>
+                <default>false</default>
+                <label>NÃO USAR_L2S</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
