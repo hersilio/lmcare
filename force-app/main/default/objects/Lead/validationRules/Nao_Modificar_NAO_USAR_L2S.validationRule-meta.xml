@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nao_Modificar_NAO_USAR_L2S</fullName>
+    <active>true</active>
+    <description>Impede que o motivo de perda seja alterado caso seja NÃO USAR_L2S</description>
+    <errorConditionFormula>AND( ISCHANGED(Motivo_de_Perda__c),ISPICKVAL(PRIORVALUE(Motivo_de_Perda__c),&quot;NÃO USAR_L2S&quot;))</errorConditionFormula>
+    <errorDisplayField>Motivo_de_Perda__c</errorDisplayField>
+    <errorMessage>Motivo de Perda não pode ser alterado</errorMessage>
+</ValidationRule>
