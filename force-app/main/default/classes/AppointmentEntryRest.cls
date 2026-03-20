@@ -2,8 +2,8 @@
  * @description       : REST API to create Service Appointments from external systems
  * @author            : Hersilio Belini de Oliveira
  * @group             :
- * @last modified on  : 03-18-2026
- * @last modified by  : Hersilio
+ * @last modified on  : 03-19-2026
+ * @last modified by  : Catarina Lopes
  **/
 @RestResource(urlMapping = '/appointments/*')
 global with sharing class AppointmentEntryRest {
@@ -21,6 +21,8 @@ global with sharing class AppointmentEntryRest {
         String body = request.requestBody.toString();
         System.debug('body --> \n' + body);
 
+        Datetime startDateTime = System.now();
+
         try {
 
             // Deserialize the appointment data
@@ -29,26 +31,26 @@ global with sharing class AppointmentEntryRest {
 
             // Validate input data
             if (appointment == null || appointment.lead == null || appointment.lead.extendedFields == null) {
-                sendErrorResponse(res, 400, 'Missing required lead or extended fields information in the request.', body);
+                sendErrorResponse(res, 400, 'Missing required lead or extended fields information in the request.', body, startDateTime);
                 return;
             }
 
             // Validate assigned resources
             if (appointment.assignedResources == null || appointment.assignedResources.isEmpty()) {
-                sendErrorResponse(res, 400, 'Assigned resources are missing in the request.', body);
+                sendErrorResponse(res, 400, 'Assigned resources are missing in the request.', body, startDateTime);
                 return;
             }
 
             ServiceAppointment sa = createServiceAppointmentLead(appointment);
 
             if (sa.Description == 'Malformed Qualification Subtypes') {
-                sendErrorResponse(res, 500, 'Qualification subtypes are improperly formatted.', body);
+                sendErrorResponse(res, 500, 'Qualification subtypes are improperly formatted.', body, startDateTime);
                 return;
             }
 
             // Check for available appointment slots
             if (!hasAppointmentSlots(sa)) {
-                sendErrorResponse(res, 409, 'Appointment slot not available.', body);
+                sendErrorResponse(res, 409, 'Appointment slot not available.', body, startDateTime);
                 return;
             }
 
@@ -67,12 +69,12 @@ global with sharing class AppointmentEntryRest {
             res.statusCode = 201;
             res.responseBody = Blob.valueOf(JSON.serialize(returnDTO));
 
-            logSuccess(body, sa);
+            logSuccess(body, sa, startDateTime);
 
         } catch (Exception e) {
             System.debug('Error: ' + e.getMessage() + ' Stack Trace: ' + e.getStackTraceString());
-            logError(500, e.getMessage() + ' : ' + e.getStackTraceString(), body);
-            sendErrorResponse(res, 500, 'Internal Server Error: ' + e.getMessage(), body);
+            logError(500, e.getMessage() + ' : ' + e.getStackTraceString(), body, startDateTime);
+            sendErrorResponse(res, 500, 'Internal Server Error: ' + e.getMessage(), body, startDateTime);
         }
     }
 
@@ -81,13 +83,14 @@ global with sharing class AppointmentEntryRest {
     * @param body The request body
     * @param sa The created ServiceAppointment
     **/
-    private static void logSuccess(String body, ServiceAppointment sa) {
+    private static void logSuccess(String body, ServiceAppointment sa, Datetime startDateTime) {
         IntegrationLogHandler.IntegrationLogWrapper logWrapper = new IntegrationLogHandler.IntegrationLogWrapper();
         logWrapper.requestBody = body;
         logWrapper.integrationKey = 'AppointmentEntry';
         logWrapper.httpStatusCode = 201;
-        logWrapper.startDateTime = System.now();
+        logWrapper.startDateTime = startDateTime;
         logWrapper.endDateTime = System.now();
+        logWrapper.durationMs = (Integer) (logWrapper.endDateTime.getTime() - startDateTime.getTime());
         logWrapper.direction = 'Inbound';
         logWrapper.status = 'Success';
         logWrapper.targetSObject = 'ServiceAppointment';
@@ -105,13 +108,14 @@ global with sharing class AppointmentEntryRest {
     * @param message The error message
     * @param body The request body
     **/
-    private static void logError(Integer statusCode, String message, String body) {
+    private static void logError(Integer statusCode, String message, String body, Datetime startDateTime) {
         IntegrationLogHandler.IntegrationLogWrapper logWrapper = new IntegrationLogHandler.IntegrationLogWrapper();
         logWrapper.requestBody = body;
         logWrapper.integrationKey = 'AppointmentEntry';
         logWrapper.httpStatusCode = statusCode;
-        logWrapper.startDateTime = System.now();
+        logWrapper.startDateTime = startDateTime;
         logWrapper.endDateTime = System.now();
+        logWrapper.durationMs = (Integer) (logWrapper.endDateTime.getTime() - startDateTime.getTime());
         logWrapper.direction = 'Inbound';
         logWrapper.status = 'Error';
         logWrapper.errorMessage = message;
@@ -484,10 +488,10 @@ global with sharing class AppointmentEntryRest {
     * @param message The error message
     * @param body The request body for logging
     **/
-    private static void sendErrorResponse(RestResponse res, Integer statusCode, String message, String body) {
+    private static void sendErrorResponse(RestResponse res, Integer statusCode, String message, String body, Datetime startDateTime) {
         res.statusCode = statusCode;
         res.responseBody = Blob.valueOf(JSON.serialize(new ErrorResponse(message)));
-        logError(statusCode, message, body);
+        logError(statusCode, message, body, startDateTime);
     }
 
     /**
