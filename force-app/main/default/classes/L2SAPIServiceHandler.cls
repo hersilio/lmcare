@@ -157,7 +157,7 @@ public with sharing class L2SAPIServiceHandler {
             }
         }
 
-        if (hasServiceAppointment(lead) && String.isBlank(lead.Loja_de_Angariacao__c)) {
+        if (hasServiceAppointment(lead) && lead.Loja_de_Angariacao__c != sa[0].ServiceTerritory.Name) {
             lead.Loja_de_Angariacao__c = sa[0].ServiceTerritory.Name;
         } else if(String.isBlank(request.storeId) && !hasServiceAppointment(lead) && String.isBlank(lead.Loja_de_Angariacao__c)){
             Integer clientStore = Integer.valueOf(client.declaredStoreAttachement);
