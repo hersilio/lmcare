@@ -2,7 +2,7 @@
  * @description       : L2S Lead creation handler
  * @author            :
  * @group             :
- * @last modified on  : 2026-03-19
+ * @last modified on  : 2026-03-26
  * @last modified by  : Catarina Lopes
  **/
 public with sharing class L2SAPIServiceHandler {
@@ -47,7 +47,7 @@ public with sharing class L2SAPIServiceHandler {
             return errorResult(400, 'Missing required fields: ' + String.join(missingFields, ', '), null);
         }
         Lead lead = new Lead();
-        List<Lead> existingLeads = [Select Id, Description, ProjectId__c, Canal_de_Interacao__c, Equipa__c, Loja_de_Angariacao__c, Status FROM Lead WHERE ProjectId__c = :request.projectId LIMIT 1];
+        List<Lead> existingLeads = [Select Id, Description, ProjectId__c, Canal_de_Interacao__c, Equipa__c, Loja_de_Angariacao__c, OwnerId, Status FROM Lead WHERE ProjectId__c = :request.projectId LIMIT 1];
         System.debug('existingLeads: ' + existingLeads);
         if (!existingLeads.isEmpty()) {
             lead = existingLeads[0];
@@ -61,11 +61,12 @@ public with sharing class L2SAPIServiceHandler {
                 lead.Status = mapping.MappedStatus__c;
             }
             if (lead.Status == 'Unqualified') {
-                lead.Motivo_de_Perda__c = 'Outros';
+                lead.Motivo_de_Perda__c = 'NÃO USAR_L2S';
             }
         }
 
         System.debug('has service appointment: ' + hasServiceAppointment(lead));
+        List<ServiceAppointment> sa = new List<ServiceAppointment>();
         if(!hasServiceAppointment(lead)){
             if (String.isNotBlank(request.team)) {
                 lead.Equipa__c = request.team;
@@ -74,6 +75,9 @@ public with sharing class L2SAPIServiceHandler {
                 lead.Equipa__c = 'VAD';
                 lead.Canal_de_Interacao__c = 'VAD';
             }
+        } else {
+            sa = [SELECT Id, OwnerId, ServiceTerritory.Name FROM ServiceAppointment WHERE Lead__c = :lead.Id LIMIT 1];
+            lead.OwnerId = sa[0].OwnerId;
         }
 
         lead.ProjectId__c = request.projectId;
@@ -108,7 +112,7 @@ public with sharing class L2SAPIServiceHandler {
         }else{
             clients = c_PesquisaConta.getAccountsMdm(new List<String>{request.mdmId}, 'Nº de Cliente');
         }
-        
+
         if (clients == null || clients.isEmpty()) {
             return errorResult(404, 'No client found with the given MDM ID.', null);
         }
@@ -153,8 +157,7 @@ public with sharing class L2SAPIServiceHandler {
             }
         }
 
-        if (hasServiceAppointment(lead) && String.isBlank(lead.Loja_de_Angariacao__c)) {
-            List<ServiceAppointment> sa = [SELECT Id, ServiceTerritory.Name FROM ServiceAppointment WHERE Lead__c = :lead.Id];
+        if (hasServiceAppointment(lead) && lead.Loja_de_Angariacao__c != sa[0].ServiceTerritory.Name) {
             lead.Loja_de_Angariacao__c = sa[0].ServiceTerritory.Name;
         } else if(String.isBlank(request.storeId) && !hasServiceAppointment(lead) && String.isBlank(lead.Loja_de_Angariacao__c)){
             Integer clientStore = Integer.valueOf(client.declaredStoreAttachement);
@@ -168,7 +171,7 @@ public with sharing class L2SAPIServiceHandler {
             if(!territories.isEmpty()){
                 lead.Loja_de_Angariacao__c = territories[0].Name;
             }
-        } else if (!hasServiceAppointment(lead)) {
+        } else if (!hasServiceAppointment(lead) && !String.isBlank(request.storeId)) {
             List<ServiceTerritory> territories = [
                 SELECT Id, Name, StoreID__c
                 FROM ServiceTerritory
@@ -250,7 +253,11 @@ public with sharing class L2SAPIServiceHandler {
         }
 
         Database.DMLOptions dmlOptions = new Database.DMLOptions();
-        dmlOptions.assignmentRuleHeader.useDefaultRule = true;
+        if (!hasServiceAppointment(lead)) {
+            dmlOptions.assignmentRuleHeader.useDefaultRule = true;
+        } else{
+            dmlOptions.assignmentRuleHeader.useDefaultRule = false;
+        }
         lead.setOptions(dmlOptions);
 
 
